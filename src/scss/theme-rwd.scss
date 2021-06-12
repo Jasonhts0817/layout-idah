@@ -1,0 +1,19 @@
+@import "./features";
+
+@include response(PC) {
+    @include header-PC;
+    @include footer-PC;
+    @include index-PC;
+  }
+  
+  @include response(Tablet) {
+    @include header-Tablet;
+    @include footer-Tablet;
+    @include index-Tablet;
+  }
+  
+  @include response(Mobile) {
+    @include header-Mobile;
+    @include footer-Mobile;
+    @include index-Mobile;
+  }

@@ -1,0 +1,15 @@
+@mixin response($res) {
+  @if ($res == PC) {
+    @media screen and (min-width: ($desktop-min-width + 1)) {
+      @content;
+    }
+  } @else if ($res == Tablet) {
+    @media screen and (min-width: ($tablet-min-width + 1)) {
+      @content;
+    }
+  } @else if ($res == Mobile) {
+    @media screen and (max-width: $tablet-min-width) {
+      @content;
+    }
+  }
+}

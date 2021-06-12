@@ -1,0 +1,12 @@
+@import "./features";
+
+// common
+@import "./main/_reset.scss";
+@import "./main/common.scss";
+
+
+@include header;
+@include footer;
+@include index;
+
+
