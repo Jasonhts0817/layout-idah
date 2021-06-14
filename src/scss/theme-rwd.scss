@@ -1,18 +1,21 @@
 @import "./features";
 
 @include response(PC) {
+    @include atomic-PC;
     @include header-PC;
     @include footer-PC;
     @include index-PC;
   }
   
   @include response(Tablet) {
+    @include atomic-Tablet;
     @include header-Tablet;
     @include footer-Tablet;
     @include index-Tablet;
   }
   
   @include response(Mobile) {
+    @include atomic-Mobile;
     @include header-Mobile;
     @include footer-Mobile;
     @include index-Mobile;

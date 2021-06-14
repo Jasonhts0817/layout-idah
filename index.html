@@ -39,7 +39,7 @@
 <body data-is-lazy="false">
     <header class="hdr">
         <div class="hdr-container">
-            <div class="nav-section">
+            <div id="menuList" class="nav-section">
                 <div class="nav-container">
                     <nav class="nav-list">
                         <a href="#" class="nav-item nav-item-news">最新文章</a>
@@ -49,6 +49,15 @@
                         <a href="#" class="nav-item nav-item-fittness">運動健身</a>
                         <a href="#" class="nav-item nav-item-expert">潮健專家</a>
                     </nav>
+                    <label class="search D(n,p)">
+                        <input type="text">
+                    </label>
+                    <div class="link-list D(n,p)">
+                        <a>關於我們</a>
+                        <a>媒體查詢</a>
+                        <a>連絡我們</a>
+                        <a>外部連結</a>
+                    </div>
                     <div class="social-list">
                         <a href="#"><img src="src/images/cool-health/social/cool-health_material-08.svg"></a>
                         <a href="#"><img src="src/images/cool-health/social/cool-health_material-09.svg"></a>
@@ -56,18 +65,24 @@
                         <a href="#"><img src="src/images/cool-health/social/cool-health_material-11.svg"></a>
                     </div>
                 </div>
-                <div class="hover-icon">
+                <div class="hover-icon D(n,t)">
                     <img src="src/images/cool-health/navigation/cool-health_material-04.svg">
                 </div>
             </div>
             <div class="logo-container">
                 <h1 class="logo">
-                    <a><img src="src/images/cool-health/logo/cool-health_material-01.svg"></a>
+                    <a href="#">
+                        <img class="D(n,t)" src="src/images/cool-health/logo/cool-health_material-01.svg">
+                        <img class="D(n,p)" src="src/images/cool-health/logo/cool-health_material-02.svg">
+                    </a>
                 </h1>
-                <label class="search">
+                <label class="search D(n,t)">
                     <input type="text">
                 </label>
             </div>
+            <button id="menuBtn" class="menu D(n,p)">
+                <img src="src/images/cool-health/navigation/cool-health_material-03.svg">
+            </button>
         </div>
     </header>
     <main class="conatiner">
@@ -80,6 +95,21 @@
     </main>
     <footer class="footer-container">
     </footer>
+    <div id="mask" class="bg-mask"></div>
+    <script>
+        $(document).ready(function () {
+            menuClick();
+        });
+        function menuClick() {
+            const menuBtn = $("#menuBtn");
+            const menuList = $("#menuList");
+            const mask = $("#mask");
+            menuBtn.click(function () {
+                menuList.toggleClass("active");
+                mask.toggleClass("active");
+            });
+        }
+    </script>
 </body>
 
 </html>

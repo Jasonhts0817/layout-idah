@@ -1,0 +1,35 @@
+@mixin atomic {
+    .D\(n\){
+        display: none;
+    }
+    .D\(b\){
+        display: block;
+    }
+}
+
+@mixin atomic-PC {
+    .D\(n\,p\){
+        display: none;
+    }
+    .D\(b\,p\){
+        display: block;
+    }
+}
+
+@mixin atomic-Tablet {
+    .D\(n\,t\){
+        display: none;
+    }
+    .D\(b\,t\){
+        display: block;
+    }
+}
+
+@mixin atomic-Mobile {
+    .D\(n\,m\){
+        display: none;
+    }
+    .D\(b\,m\){
+        display: block;
+    }
+}

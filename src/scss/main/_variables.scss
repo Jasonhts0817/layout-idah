@@ -4,7 +4,7 @@ $tablet-min-width: 767px;
 // $header-hegiht-pc: 0px;
 $header-hegiht-mobile: 70px;
 $header-footer-pc: 140px;
-$header-footer-mobile: 100px;
+$header-footer-mobile: 50px;
 $container: 1200px;
 
 $color-gdt: (
@@ -13,6 +13,7 @@ $color-gdt: (
 
 $color: (
   opacity-0: rgba(0,0,0,0),
+  opacity-5: rgba(0,0,0,0.3),
   news: #B1B3B6,
   fashion: #002BC1,
   fittness: #FF8200,
@@ -20,4 +21,11 @@ $color: (
   aesthetic: #FF82A2,
   gray: #EAEAEA,
   dark-gray: #999A9A,
+  white:#fff,
+  black: #000,
 );
+
+$z-index: (
+  header: 3,
+  mask: 1,
+)
