@@ -1,7 +1,11 @@
-@mixin index {
+@mixin index {    
 }
 
 @mixin index-PC {
+    .conatiner{
+        background-color: map-get($map: $color, $key: ghost-white);
+        width: 100vw;
+    }
 }
 
 @mixin index-Tablet {

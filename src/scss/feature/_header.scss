@@ -2,6 +2,9 @@
 }
 
 @mixin header-PC {
+    .header-container{
+        background-color: map-get($map: $color, $key: gray);
+    }
 }
 
 @mixin header-Tablet {

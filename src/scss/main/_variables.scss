@@ -1,17 +1,21 @@
 $desktop-min-width: 1366px;
 $tablet-min-width: 767px;
 
-$header-hegiht-pc: 100px;
+$header-hegiht-pc: 140px;
 $header-hegiht-mobile: 70px;
-$header-footer-pc: 100px;
+$header-footer-pc: 140px;
 $header-footer-mobile: 100px;
+$container: 1200px;
 
 $color-gdt: (
   dark-gray-gdt: linear-gradient(-90deg, #919191, #c1c3c4),
 );
 
 $color: (
-  white: #ffffff,
-  gray: #c1c3c4,
-  dark-gray: #919191,
+  fasion: #002BC1,
+  fittness: #FF8200,
+  tech: #0081C1,
+  aesthetic-med: #FF82A2,
+  gray: #EAEAEA,
+  dark-gray: #999A9A,
 );
