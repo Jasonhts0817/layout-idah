@@ -1,7 +1,7 @@
 $desktop-min-width: 1366px;
 $tablet-min-width: 767px;
 
-$header-hegiht-pc: 140px;
+// $header-hegiht-pc: 0px;
 $header-hegiht-mobile: 70px;
 $header-footer-pc: 140px;
 $header-footer-mobile: 100px;
@@ -12,10 +12,12 @@ $color-gdt: (
 );
 
 $color: (
-  fasion: #002BC1,
+  opacity-0: rgba(0,0,0,0),
+  news: #B1B3B6,
+  fashion: #002BC1,
   fittness: #FF8200,
   tech: #0081C1,
-  aesthetic-med: #FF82A2,
+  aesthetic: #FF82A2,
   gray: #EAEAEA,
   dark-gray: #999A9A,
 );
