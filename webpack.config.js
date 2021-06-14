@@ -29,7 +29,14 @@ const config = {
     new HtmlWebpackPlugin({ template: "index.html", minify: false, inject: !isProduction }),
     new MiniCssExtractPlugin({ filename: "css/[name].css" }),
     new RemoveEmptyScriptsPlugin(),
-    new CopyPlugin({ patterns: [{ from: "src/assets", to: "" }] })
+    new CopyPlugin({
+      patterns: [
+        { from: "src/css", to: "./css" },
+        { from: "src/fonts", to: "./fonts" },
+        { from: "src/images", to: "./images" },
+        { from: "src/js", to: "./js" },
+      ]
+    })
   ],
   module: {
     rules: [
