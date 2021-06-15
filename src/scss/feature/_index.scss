@@ -1,15 +1,27 @@
-@mixin index {    
+@mixin index {
+  .slide-bullet {
+    border-radius: 50%;
+  }
 }
 
 @mixin index-PC {
-    .conatiner{
-        background-color: map-get($map: $color, $key: ghost-white);
-        width: 100vw;
-    }
+  .conatiner {
+    background-color: map-get($map: $color, $key: ghost-white);
+    width: $container;
+    margin: 0 auto;
+    padding-top: $header-hegiht-pc;
+  }
 }
-
+@mixin index-PC-Tablet {
+}
 @mixin index-Tablet {
 }
-
+@mixin index-Tablet-Mobile {
+  .conatiner {
+    background-color: map-get($map: $color, $key: ghost-white);
+    margin: 0 auto;
+    padding-top: $header-hegiht-mobile;
+  }
+}
 @mixin index-Mobile {
 }

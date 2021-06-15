@@ -1,7 +1,7 @@
 $desktop-min-width: 1366px;
 $tablet-min-width: 767px;
 
-// $header-hegiht-pc: 0px;
+$header-hegiht-pc: 130px;
 $header-hegiht-mobile: 70px;
 $header-footer-pc: 140px;
 $header-footer-mobile: 50px;
@@ -12,20 +12,20 @@ $color-gdt: (
 );
 
 $color: (
-  opacity-0: rgba(0,0,0,0),
-  opacity-5: rgba(0,0,0,0.3),
-  news: #B1B3B6,
-  fashion: #002BC1,
-  fittness: #FF8200,
-  tech: #0081C1,
-  aesthetic: #FF82A2,
-  gray: #EAEAEA,
-  dark-gray: #999A9A,
-  white:#fff,
+  opacity-0: rgba(0, 0, 0, 0),
+  opacity-5: rgba(0, 0, 0, 0.3),
+  news: #b1b3b6,
+  fashion: #002bc1,
+  fittness: #ff8200,
+  tech: #0081c1,
+  aesthetic: #ff82a2,
+  gray: #eaeaea,
+  dark-gray: #999a9a,
+  white: #fff,
   black: #000,
 );
 
 $z-index: (
   header: 3,
   mask: 1,
-)
+);

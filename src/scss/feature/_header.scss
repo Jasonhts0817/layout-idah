@@ -1,256 +1,282 @@
-@mixin header { 
-    .hdr{
-        width: 100%;
-        background-color: map-get($map: $color, $key: gray);
-        z-index: map-get($map: $z-index, $key: header);
-        position: absolute;
-        top: 0;
-    }   
-    .search{
-        position: relative;
-        input[type="text"]{
-            width: 100%;
-            border: none;
-        }
-        &::before{
-            content: url('../images/cool-health/navigation/cool-health_material-05.svg');
-            position: absolute;
-            top: 5px;
-            right: 5px;
-            width: 20px;
-            height: 20px;
-        }
+@mixin header {
+  .hdr {
+    width: 100%;
+    background-color: map-get($map: $color, $key: gray);
+    z-index: map-get($map: $z-index, $key: header);
+    position: fixed;
+    top: 0;
+  }
+  .search {
+    position: relative;
+    input[type="text"] {
+      width: 100%;
+      border: none;
     }
+    &::before {
+      content: url("../images/cool-health/navigation/cool-health_material-05.svg");
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      width: 20px;
+      height: 20px;
+    }
+  }
 }
 
 @mixin header-PC {
-    .hdr-container{
-        max-width: $container;
-        margin: 0 auto;
-        padding: 0px 65px;
+  .hdr-container {
+    max-width: $container;
+    min-height: $header-hegiht-pc;
+    margin: 0 auto;
+    padding: 0px 65px;
+  }
+  .nav-section {
+    .nav-container {
+      overflow: hidden;
+      height: 0px;
+      transition: height 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
-    .nav-section{
-        .nav-container{
-            overflow: hidden;
-            height: 0px;
-            transition: height 0.3s;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+    &:hover {
+      .nav-container {
+        transition: height 0.3s;
+        height: 80px;
+      }
+    }
+  }
+  .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    .nav-item {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      padding: 30px 0;
+      border-top: map-get($map: $color, $key: opacity-0) solid 4px;
+      &.nav-item-news {
+        &:hover,
+        &:active,
+        &:focus {
+          border-top: map-get($map: $color, $key: news) solid 4px;
+          color: map-get($map: $color, $key: news);
         }
-        &:hover{
-            .nav-container{
-                transition: height 0.3s;
-                height: 80px;
-            }
+      }
+      &.nav-item-fashion {
+        &:hover,
+        &:active,
+        &:focus {
+          border-top: map-get($map: $color, $key: fashion) solid 4px;
+          color: map-get($map: $color, $key: fashion);
         }
-    }
-    .nav-list{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 80%;
-        .nav-item{
-            font-size: 16px;
-            font-weight: 700;
-            letter-spacing: 4px;
-            padding: 30px 0;
-            border-top: map-get($map: $color, $key: opacity-0) solid 4px;
-            &.nav-item-news:hover{
-                border-top: map-get($map: $color, $key: news) solid 4px;
-                color:  map-get($map: $color, $key: news);
-            }
-            &.nav-item-fashion:hover{
-                border-top: map-get($map: $color, $key: fashion) solid 4px;
-                color:  map-get($map: $color, $key: fashion);
-            }
-            &.nav-item-tech:hover{
-                border-top: map-get($map: $color, $key: tech) solid 4px;
-                color:  map-get($map: $color, $key: tech);
-            }
-            &.nav-item-aesthetic:hover{
-                border-top: map-get($map: $color, $key: aesthetic) solid 4px;
-                color:  map-get($map: $color, $key: aesthetic);
-            }
-            &.nav-item-fittness:hover{
-                border-top: map-get($map: $color, $key: fittness) solid 4px;
-                color:  map-get($map: $color, $key: fittness);
-            }
-            &.nav-item-expert:hover{
-                border-top: map-get($map: $color, $key: fashion) solid 4px;
-                color:  map-get($map: $color, $key: fashion);
-            }
+      }
+      &.nav-item-tech {
+        &:hover,
+        &:active,
+        &:focus {
+          border-top: map-get($map: $color, $key: tech) solid 4px;
+          color: map-get($map: $color, $key: tech);
         }
-    }
-    .social-list{
-        display: flex;
-        justify-content: flex-end;
-        width: 20%;
-        img{
-            margin: 34px 0 30px 0;
-            width: 16px;
-            height:16px;
-            margin-left: 17px;
+      }
+      &.nav-item-aesthetic {
+        &:hover,
+        &:active,
+        &:focus {
+          border-top: map-get($map: $color, $key: aesthetic) solid 4px;
+          color: map-get($map: $color, $key: aesthetic);
         }
-    }
-    .hover-icon{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        img{
-            width: 30px;
-            height: 30px;
-            margin: 4px 0 17px 0;
+      }
+      &.nav-item-fittness {
+        &:hover,
+        &:active,
+        &:focus {
+          border-top: map-get($map: $color, $key: fittness) solid 4px;
+          color: map-get($map: $color, $key: fittness);
         }
-    }
-    .logo-container{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .logo{
-        width: 78.8%;
-        padding-right: 20px;
-        img{
-            max-width: 560px;
+      }
+      &.nav-item-expert {
+        &:hover,
+        &:active,
+        &:focus {
+          border-top: map-get($map: $color, $key: fashion) solid 4px;
+          color: map-get($map: $color, $key: fashion);
         }
+      }
     }
-    .search{
-        width: 21.2%;
-        input[type="text"]{
-            min-height: 30px !important;
-        }
+  }
+  .social-list {
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+    img {
+      margin: 34px 0 30px 0;
+      width: 16px;
+      height: 16px;
+      margin-left: 17px;
     }
+  }
+  .hover-icon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 30px;
+      height: 30px;
+      margin: 4px 0 17px 0;
+    }
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    width: 78.8%;
+    padding-right: 20px;
+    img {
+      max-width: 560px;
+    }
+  }
+  .search {
+    width: 21.2%;
+    input[type="text"] {
+      min-height: 30px !important;
+    }
+  }
 }
-
+@mixin header-PC-Tablet {
+}
 @mixin header-Tablet {
-    .hdr-container{
-        position: relative;
-        height: $header-hegiht-mobile;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .logo{
-        img{
-            max-width: 109px;
-        }
-    }
-    .menu{
-        position: absolute;
-        display: flex;
-        align-items: center;
-        padding: 0 18px;
-        top: 0;
-        right: 0;
-        height: $header-hegiht-mobile;
-        img{
-            height: 35px;
-        }
-    }
-
-    .nav-section{
-        position: absolute;
-        top:$header-hegiht-mobile;
-        right: 0;
-        overflow: hidden;
-        width: 0;
-        min-height: 100vh;
-        background-color: map-get($map: $color, $key: white);
-        transition: all 0.3s;
-        &.active{
-            width: 245px;
-            .nav-container{                
-                display: block;
-            }
-        }
-    }
-    .nav-container{
-        display: none;
-        text-align: center;
-    }
-
-    .nav-list{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        .nav-item{
-            width: 100%;
-            font-size: 20px;
-            font-weight: 700;
-            letter-spacing: 4px;
-            text-align: center;
-            padding: 32px 0;
-            border-top: map-get($map: $color, $key: fashion) solid 1px;
-            &:last-child{
-                border-bottom: map-get($map: $color, $key: fashion) solid 1px;
-            }
-            &.nav-item-news{
-                border-right: map-get($map: $color, $key: news) solid 15px;
-            }
-            &.nav-item-fashion{
-                border-right: map-get($map: $color, $key: fashion) solid 15px;
-            }
-            &.nav-item-tech{
-                border-right: map-get($map: $color, $key: tech) solid 15px;
-            }
-            &.nav-item-aesthetic{
-                border-right: map-get($map: $color, $key: aesthetic) solid 15px;
-            }
-            &.nav-item-fittness{
-                border-right: map-get($map: $color, $key: fittness) solid 15px;
-            }
-            &.nav-item-expert{
-                border-right: map-get($map: $color, $key: fashion) solid 15px;
-            }
-            &:hover{
-                color: map-get($map: $color, $key: black);
-            }
-        }
-    }
-    .search{
-        margin: 30px 30px 20px 30px;
-        input[type="text"]{            
-            border: map-get($map: $color, $key: fashion) solid 1px;
-            min-height: 30px !important;
-        }
-    }
-    .link-list{
-        display: flex;
-        flex-wrap: wrap;
-        margin:  0 30px;
-        a{
-            font-size: 10px;
-            width: 50%;
-            padding: 10px
-        }
-    }    
-    .social-list{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 30px;
-        img{
-            width: 22px;
-            height:22px;
-        }
-    }
-    .bg-mask{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: map-get($map: $color, $key: opacity-0);
-        transition:  0.3s;
-        &.active{
-            z-index: map-get($map: $z-index, $key: mask);
-            pointer-events: none;
-            background-color: map-get($map: $color, $key: opacity-5);
-        }
-    }
 }
+@mixin header-Tablet-Mobile {
+  .hdr-container {
+    position: relative;
+    height: $header-hegiht-mobile;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    img {
+      max-width: 109px;
+    }
+  }
+  .menu {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    top: 0;
+    right: 0;
+    height: $header-hegiht-mobile;
+    img {
+      height: 35px;
+    }
+  }
 
+  .nav-section {
+    position: absolute;
+    top: $header-hegiht-mobile;
+    right: 0;
+    overflow: hidden;
+    width: 0;
+    min-height: 100vh;
+    background-color: map-get($map: $color, $key: white);
+    transition: all 0.3s;
+    &.active {
+      width: 245px;
+      .nav-container {
+        display: block;
+      }
+    }
+  }
+  .nav-container {
+    display: none;
+    text-align: center;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .nav-item {
+      width: 100%;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      text-align: center;
+      padding: 32px 0;
+      border-top: map-get($map: $color, $key: fashion) solid 1px;
+      &:last-child {
+        border-bottom: map-get($map: $color, $key: fashion) solid 1px;
+      }
+      &.nav-item-news {
+        border-right: map-get($map: $color, $key: news) solid 15px;
+      }
+      &.nav-item-fashion {
+        border-right: map-get($map: $color, $key: fashion) solid 15px;
+      }
+      &.nav-item-tech {
+        border-right: map-get($map: $color, $key: tech) solid 15px;
+      }
+      &.nav-item-aesthetic {
+        border-right: map-get($map: $color, $key: aesthetic) solid 15px;
+      }
+      &.nav-item-fittness {
+        border-right: map-get($map: $color, $key: fittness) solid 15px;
+      }
+      &.nav-item-expert {
+        border-right: map-get($map: $color, $key: fashion) solid 15px;
+      }
+      &:hover {
+        color: map-get($map: $color, $key: black);
+      }
+    }
+  }
+  .search {
+    margin: 30px 30px 20px 30px;
+    input[type="text"] {
+      border: map-get($map: $color, $key: fashion) solid 1px;
+      min-height: 30px !important;
+    }
+  }
+  .link-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 30px;
+    a {
+      font-size: 10px;
+      width: 50%;
+      padding: 10px;
+    }
+  }
+  .social-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    img {
+      width: 22px;
+      height: 22px;
+    }
+  }
+  .bg-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: map-get($map: $color, $key: opacity-0);
+    transition: 0.3s;
+    &.active {
+      z-index: map-get($map: $z-index, $key: mask);
+      pointer-events: none;
+      background-color: map-get($map: $color, $key: opacity-5);
+    }
+  }
+}
 @mixin header-Mobile {
-  
 }

@@ -3,7 +3,15 @@
     @media screen and (min-width: ($desktop-min-width)) {
       @content;
     }
+  } @else if ($res == PC-Tablet) {
+    @media screen and (min-width: ($tablet-min-width + 1)) {
+      @content;
+    }
   } @else if ($res == Tablet) {
+    @media screen and (max-width: ($desktop-min-width - 1)) and (min-width: ($tablet-min-width + 1)) {
+      @content;
+    }
+  } @else if ($res == Tablet-Mobile) {
     @media screen and (max-width: ($desktop-min-width - 1)) {
       @content;
     }

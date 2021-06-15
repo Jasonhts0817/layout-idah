@@ -1,22 +1,51 @@
 @import "./features";
 
 @include response(PC) {
-    @include atomic-PC;
-    @include header-PC;
-    @include footer-PC;
-    @include index-PC;
-  }
-  
-  @include response(Tablet) {
-    @include atomic-Tablet;
-    @include header-Tablet;
-    @include footer-Tablet;
-    @include index-Tablet;
-  }
-  
-  @include response(Mobile) {
-    @include atomic-Mobile;
-    @include header-Mobile;
-    @include footer-Mobile;
-    @include index-Mobile;
-  }
+  @include atomic-PC;
+  @include header-PC;
+  @include footer-PC;
+  @include index-PC;
+  @include promote-PC;
+  @include news-PC;
+  @include category-PC;
+}
+
+@include response(PC-Tablet) {
+  @include atomic-PC-Tablet;
+  @include header-PC-Tablet;
+  @include footer-PC-Tablet;
+  @include index-PC-Tablet;
+  @include promote-PC-Tablet;
+  @include news-PC-Tablet;
+  @include category-PC-Tablet;
+}
+
+@include response(Tablet) {
+  @include atomic-Tablet;
+  @include header-Tablet;
+  @include footer-Tablet;
+  @include index-Tablet;
+  @include promote-Tablet;
+  @include news-Tablet;
+  @include category-Tablet;
+}
+
+@include response(Tablet-Mobile) {
+  @include atomic-Tablet-Mobile;
+  @include header-Tablet-Mobile;
+  @include footer-Tablet-Mobile;
+  @include index-Tablet-Mobile;
+  @include promote-Tablet-Mobile;
+  @include news-Tablet-Mobile;
+  @include category-Tablet-Mobile;
+}
+
+@include response(Mobile) {
+  @include atomic-Mobile;
+  @include header-Mobile;
+  @include footer-Mobile;
+  @include index-Mobile;
+  @include promote-Mobile;
+  @include news-Mobile;
+  @include category-Mobile;
+}

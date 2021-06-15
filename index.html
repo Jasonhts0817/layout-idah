@@ -27,6 +27,8 @@
     </link>
     <link href="css/theme.css?t=20200405" rel="stylesheet" type="text/css">
     </link>
+    <link href="css/skins/default/style.css" rel="stylesheet" type="text/css">
+    </link>
     <script>
         var MYAPP = {
 
@@ -42,12 +44,12 @@
             <div id="menuList" class="nav-section">
                 <div class="nav-container">
                     <nav class="nav-list">
-                        <a href="#" class="nav-item nav-item-news">最新文章</a>
-                        <a href="#" class="nav-item nav-item-fashion">潮爆新資</a>
-                        <a href="#" class="nav-item nav-item-tech">科技潮品</a>
-                        <a href="#" class="nav-item nav-item-aesthetic">醫美專欄</a>
-                        <a href="#" class="nav-item nav-item-fittness">運動健身</a>
-                        <a href="#" class="nav-item nav-item-expert">潮健專家</a>
+                        <a href="#news" class="nav-item nav-item-news">最新文章</a>
+                        <a href="#fashion" class="nav-item nav-item-fashion">潮爆新資</a>
+                        <a href="#tech" class="nav-item nav-item-tech">科技潮品</a>
+                        <a href="#aesthetic" class="nav-item nav-item-aesthetic">醫美專欄</a>
+                        <a href="#fittness" class="nav-item nav-item-fittness">運動健身</a>
+                        <a href="#expert" class="nav-item nav-item-expert">潮健專家</a>
                     </nav>
                     <label class="search D(n,p)">
                         <input type="text">
@@ -65,18 +67,18 @@
                         <a href="#"><img src="src/images/cool-health/social/cool-health_material-11.svg"></a>
                     </div>
                 </div>
-                <div class="hover-icon D(n,t)">
+                <div class="hover-icon D(n,tm)">
                     <img src="src/images/cool-health/navigation/cool-health_material-04.svg">
                 </div>
             </div>
             <div class="logo-container">
                 <h1 class="logo">
                     <a href="#">
-                        <img class="D(n,t)" src="src/images/cool-health/logo/cool-health_material-01.svg">
+                        <img class="D(n,tm)" src="src/images/cool-health/logo/cool-health_material-01.svg">
                         <img class="D(n,p)" src="src/images/cool-health/logo/cool-health_material-02.svg">
                     </a>
                 </h1>
-                <label class="search D(n,t)">
+                <label class="search D(n,tm)">
                     <input type="text">
                 </label>
             </div>
@@ -86,20 +88,204 @@
         </div>
     </header>
     <main class="conatiner">
+        <section class="promote">
+            <div class="master-slider ms-skin-default jSlider" id="promoteSlider"
+                data-option='{ "autoHeight":"true", "fillMode": "fill", "fillwidth": "true", "width": "1200", "height": "680", "view": "basic", "bullletsname":"promoteSlideBullets"}'>
+                <div class="ms-slide promote-slide-item promote-slide-item-fashion img-mask">
+                    <img src="src/images/banner/1.jpg" data-src="src/images/banner/1.jpg" />
+                    <div class="promote-slide-title">
+                        <P>標題假字標題假字</P>
+                        <P>標題假字標題假字標題假</P>
+                    </div>
+                </div>
+                <div class="ms-slide promote-slide-item promote-slide-item-fittness img-mask">
+                    <img src="src/images/banner/2.jpg" data-src="src/images/banner/2.jpg" />
+                    <div class="promote-slide-title">
+                        <P>標題假字標題假字</P>
+                        <P>標題假字標題假字標題假</P>
+                    </div>
+                </div>
+                <div class="ms-slide promote-slide-item promote-slide-item-tech img-mask">
+                    <img src="src/images/banner/3.jpg" />
+                    <div class="promote-slide-title">
+                        <P>標題假字標題假字</P>
+                        <P>標題假字標題假字標題假</P>
+                    </div>
+                </div>
+                <div class="ms-slide promote-slide-item promote-slide-item-aesthetic img-mask">
+                    <img src="src/images/banner/4.jpg" data-src="src/images/banner/4.jpg" />
+                    <div class="promote-slide-title">
+                        <P>標題假字標題假字</P>
+                        <P>標題假字標題假字標題假</P>
+                    </div>
+                </div>
+                <div class="promote-slide-bullets" id="promoteSlideBullets">
+                </div>
+            </div>
+        </section>
         <section class="news">
+            <div class="news-title">
+                <h1>最新文章</h1>
+                <h3>NEW ARTICLES</h3>
+            </div>
+            <div class="news-container">
+                <div class="master-slider ms-skin-default new-slider jSlider" id="newsSlider"
+                    data-option='{ "loop": "true" ,"layout":"partialview", "width": "280", "height": "285", "view": "fadeWave", "bullletsname":"newsSlideBullets"}'>
+                    <!-- data-option='{ "fillMode": "fill", "fillwidth": "true", "width": "440", "height": "285", "view": "basic", "bullletsname":"newsSlideBullets"}' -->
+                    <!-- data-option='{ "loop": "true" ,"layout":"partialview", "width": "300", "height": "285", "view": "fadeWave", "bullletsname":"newsSlideBullets"}' -->
+                    <div class="ms-slide">
+                        <img src="src/images/banner/1.jpg" data-src="src/images/banner/1.jpg" />
+                    </div>
+                    <div class="ms-slide">
+                        <img src="src/images/banner/2.jpg" data-src="src/images/banner/2.jpg" />
+                    </div>
+                    <div class="ms-slide">
+                        <img src="src/images/banner/3.jpg" data-src="src/images/banner/3.jpg" />
+                    </div>
+                    <div class="ms-slide">
+                        <img src="src/images/banner/4.jpg" data-src="src/images/banner/4.jpg" />
+                    </div>
+                    <div class="ms-slide">
+                        <img src="src/images/banner/4.jpg" data-src="src/images/banner/4.jpg" />
+                    </div>
+                    <div class="news-slide-bullets" id="newsSlideBullets">
+                    </div>
+                </div>
+                <article class="new-article">
+                    <div class="news-article-date">2021.04.05</div>
+                    <div class="news-article-title">
+                        <p>無論幾歲總是吃不飽</p>
+                        <p>原來是「血糖」上下跑害你變大食怪？</p>
+                    </div>
+                    <div class="news-article-abstract">
+                        你總是吃不飽嗎？常常被親友揶揄胃有如宇宙蟲洞、無底深淵，有吃跟沒
+                        吃一樣？明明半小時前大夥兒才正在吃到飽餐廳大啖燒烤，現在你又要揪
+                        大家去居酒屋吃串燒，吃完到家竟然還要室友幫忙買鹹酥雞當宵夜。當站
+                        上體重計....
+                    </div>
+                    <a><img class="news-article-btn"
+                            src="src/images/cool-health/navigation/cool-health_material-07.svg"></a>
+                </article>
+            </div>
         </section>
-        <section class="cool-fashion">
-        </section>
+        <!-- <section class="category">
+            <div class="category-title category-title-fashion">
+                <div class="title">潮爆新資</div>
+                <div class="sub-title">COOL FASHION</div>
+            </div>
+            <div class="article-list">
+                <div class="article-item article-item-large">
+                    <a><img src="src/images/sample/1.jpg"></a>
+                    <div class="article-desc">
+                        <div class="article-date">2021.04.05</div>
+                        <div class="article-title">
+                            <p>標題假字標題假字</p>
+                            <p>標題假字標題假字標題假字假字</p>
+                            <p>標題假字標題假字</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-block">
+                    <div class="article-item article-item-small">
+                        <a><img src="src/images/sample/2.jpg"></a>
+                        <div class="article-desc">
+                            <div class="article-date">2021.04.05</div>
+                            <div class="article-title">
+                                <p>標題假字標題假字</p>
+                                <p>標題假字標題假字標題假</p>
+                                <p>標題假字標題假字</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-item article-item-small">
+                        <a><img src="src/images/sample/3.jpg"></a>
+                        <div class="article-desc">
+                            <div class="article-date">2021.04.05</div>
+                            <div class="article-title">
+                                <p>標題假字標題假字</p>
+                                <p>標題假字標題假字標題假</p>
+                                <p>標題假字標題假字</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-item article-item-small">
+                        <a><img src="src/images/sample/4.jpg"></a>
+                        <div class="article-desc">
+                            <div class="article-date">2021.04.05</div>
+                            <div class="article-title">
+                                <p>標題假字標題假字</p>
+                                <p>標題假字標題假字標題假</p>
+                                <p>標題假字標題假字</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-item article-item-small">
+                        <a><img src="src/images/sample/5.jpg"></a>
+                        <div class="article-desc">
+                            <div class="article-date">2021.04.05</div>
+                            <div class="article-title">
+                                <p>標題假字標題假字</p>
+                                <p>標題假字標題假字標題假</p>
+                                <p>標題假字標題假字</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div></div>
+        </section> -->
         <section class="hot-video"></section>
         <section class="cool-expert"></section>
     </main>
     <footer class="footer-container">
     </footer>
-    <div id="mask" class="bg-mask"></div>
+    <!-- <div id="mask" class="bg-mask"></div> -->
     <script>
         $(document).ready(function () {
+            initSlider();
             menuClick();
         });
+        async function initSlider() {
+            const sliderEleList = $(".jSlider");
+            sliderEleList.map(async (i, ele) => {
+                const slider = await new MasterSlider();
+                const option = $(ele).data('option');
+                slider.setup(ele.id, option);
+                setupSliderBullet(slider, option);
+            });
+        }
+        function setupSliderBullet(slider, option) {
+            if (!option?.bullletsname) { return; }
+            const slideBullets = $("#" + option.bullletsname);
+            const bullets = [];
+            let currentIndex = slider.api.index();
+            for (let i = 0; i < slider.api.count(); ++i) {
+                const bullet = $("<div></div>");
+                slideBullets.append(bullet);
+                bullet.addClass("slide-bullet");
+                if (i === 0) { bullet.addClass("active") }
+                bullet.index = i;
+                bullet.click(function () { changeSlide(i) });
+                bullets.push(bullet);
+            }
+
+            const update = function () {
+                const index = slider.api.index();
+                currentIndex !== index && (null != currentIndex && unselect(bullets[currentIndex]));
+                currentIndex = index;
+                select(bullets[currentIndex]);
+            }
+            const changeSlide = function (index) {
+                currentIndex !== index && slider.api.gotoSlide(index)
+            }
+            const select = function (ele) {
+                ele.addClass("active");
+            }
+            const unselect = function (ele) {
+                ele.removeClass("active");
+            }
+            slider.api.addEventListener(MSSliderEvent.CHANGE_START, update)
+        }
         function menuClick() {
             const menuBtn = $("#menuBtn");
             const menuList = $("#menuList");

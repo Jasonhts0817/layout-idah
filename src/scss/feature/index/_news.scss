@@ -1,0 +1,141 @@
+@mixin news {
+  .news {
+    margin: 0;
+    box-shadow: initial;
+    article {
+      margin: initial;
+      border-bottom: initial;
+    }
+  }
+}
+@mixin news-PC {
+  .news {
+    margin: 67px 0 115px 67px;
+  }
+  .news-title {
+    color: map-get($map: $color, $key: fashion);
+    h1 {
+      font-size: 30px;
+      letter-spacing: 4px;
+      margin-bottom: 10px;
+    }
+    h3 {
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 4px;
+      margin-bottom: 30px;
+    }
+  }
+  .news-container {
+    display: flex;
+  }
+  .new-slider {
+    width: 439px;
+  }
+
+  .news {
+    article {
+      margin-left: 40px;
+    }
+  }
+
+  .new-article {
+    width: 55%;
+    margin-left: 40px;
+    .news-article-date {
+      font-size: 10px;
+      letter-spacing: 1px;
+      color: map-get($map: $color, $key: fashion);
+      margin-bottom: 30px;
+    }
+    .news-article-title {
+      font-size: 35px;
+      font-weight: 700;
+      line-height: 37px;
+      color: map-get($map: $color, $key: fashion);
+      margin-bottom: 30px;
+    }
+    .news-article-abstract {
+      width: 459px;
+      font-size: 14px;
+      line-height: 23px;
+      margin-bottom: 30px;
+      color: map-get($map: $color, $key: dark-gray);
+    }
+    .news-article-btn {
+      width: 60px;
+    }
+  }
+
+  .news-slide-bullets {
+    display: flex;
+    margin-top: 21px;
+    .slide-bullet {
+      width: 10px;
+      height: 10px;
+      margin-right: 6px;
+      background-color: map-get($map: $color, $key: dark-gray);
+      &.active {
+        background-color: map-get($map: $color, $key: fashion);
+      }
+    }
+  }
+}
+@mixin news-PC-Tablet {
+}
+@mixin news-Tablet {
+}
+
+@mixin news-Tablet-Mobile {
+  .news-title {
+    color: map-get($map: $color, $key: fashion);
+    text-align: center;
+    margin: 35px 0;
+    h1 {
+      font-size: 30px;
+      font-weight: 300;
+      letter-spacing: 4px;
+      margin-bottom: 10px;
+    }
+    h3 {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 4px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .news {
+    article {
+      max-width: 280px;
+      margin: 35px auto 0 auto;
+    }
+  }
+  .new-article {
+    .news-article-date {
+      font-size: 10px;
+      letter-spacing: 1px;
+      color: map-get($map: $color, $key: fashion);
+      margin-bottom: 25px;
+    }
+    .news-article-title {
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 30px;
+      color: map-get($map: $color, $key: fashion);
+      margin-bottom: 25px;
+    }
+    .news-article-abstract {
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 1px;
+      margin-bottom: 25px;
+      color: map-get($map: $color, $key: dark-gray);
+    }
+    .news-article-btn {
+      width: 90px;
+    }
+  }
+}
+@mixin news-Mobile {
+}
