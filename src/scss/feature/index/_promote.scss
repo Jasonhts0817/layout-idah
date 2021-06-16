@@ -12,6 +12,8 @@
 }
 
 @mixin promote-PC {
+}
+@mixin promote-PC-Tablet {
   .promote-slide-item {
     &.promote-slide-item-fashion {
       border-left: map-get($map: $color, $key: fashion) solid 11px;
@@ -53,11 +55,11 @@
     }
   }
 }
-@mixin promote-PC-Tablet {
-}
 @mixin promote-Tablet {
 }
 @mixin promote-Tablet-Mobile {
+}
+@mixin promote-Mobile {
   .promote-slide-item {
     &.promote-slide-item-fashion {
       border-left: map-get($map: $color, $key: fashion) solid 11px;
@@ -88,6 +90,4 @@
       margin: 4px;
     }
   }
-}
-@mixin promote-Mobile {
 }

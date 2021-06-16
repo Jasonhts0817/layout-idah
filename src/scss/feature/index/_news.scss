@@ -9,8 +9,10 @@
   }
 }
 @mixin news-PC {
+}
+@mixin news-PC-Tablet {
   .news {
-    margin: 67px 0 115px 67px;
+    margin: 5.6% 0 9.1% 5.5%;
   }
   .news-title {
     color: map-get($map: $color, $key: fashion);
@@ -28,38 +30,42 @@
   }
   .news-container {
     display: flex;
+    width: 100%;
   }
   .new-slider {
-    width: 439px;
+    position: relative;
+    width: 39%;
   }
 
   .news {
     article {
-      margin-left: 40px;
+      margin-left: 2.1%;
     }
   }
 
   .new-article {
     width: 55%;
-    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     .news-article-date {
       font-size: 10px;
       letter-spacing: 1px;
       color: map-get($map: $color, $key: fashion);
-      margin-bottom: 30px;
     }
     .news-article-title {
-      font-size: 35px;
+      font-size: 1.82vmax;
       font-weight: 700;
-      line-height: 37px;
+      line-height: 2vmax;
       color: map-get($map: $color, $key: fashion);
-      margin-bottom: 30px;
     }
     .news-article-abstract {
-      width: 459px;
-      font-size: 14px;
-      line-height: 23px;
-      margin-bottom: 30px;
+      overflow: hidden;
+      max-width: 72%;
+      max-height: 33%;
+      font-size: 0.71vmax;
+      line-height: 1.2vmax;
       color: map-get($map: $color, $key: dark-gray);
     }
     .news-article-btn {
@@ -68,8 +74,10 @@
   }
 
   .news-slide-bullets {
+    position: absolute;
+    left: 0;
+    bottom: -30px;
     display: flex;
-    margin-top: 21px;
     .slide-bullet {
       width: 10px;
       height: 10px;
@@ -81,12 +89,12 @@
     }
   }
 }
-@mixin news-PC-Tablet {
-}
 @mixin news-Tablet {
 }
 
 @mixin news-Tablet-Mobile {
+}
+@mixin news-Mobile {
   .news-title {
     color: map-get($map: $color, $key: fashion);
     text-align: center;
@@ -104,7 +112,6 @@
       margin-bottom: 30px;
     }
   }
-
   .news {
     article {
       max-width: 280px;
@@ -136,6 +143,4 @@
       width: 90px;
     }
   }
-}
-@mixin news-Mobile {
 }

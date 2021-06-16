@@ -1,0 +1,19 @@
+@mixin hotvideo {
+}
+@mixin hotvideo-PC {
+}
+@mixin hotvideo-PC-Tablet {
+  .hot-video {
+    margin-bottom: 6.1%;
+  }
+  .hot-video-title {
+    margin: 0 0 3% 8.3%;
+    font-size: 2vmin;
+  }
+}
+@mixin hotvideo-Tablet {
+}
+@mixin hotvideo-Tablet-Mobile {
+}
+@mixin hotvideo-Mobile {
+}
