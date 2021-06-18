@@ -1,26 +1,84 @@
 @mixin expert {
+  .expert-list {
+    z-index: 0;
+  }
+
+  .expert-card {
+    .expert-info {
+      z-index: 1;
+      width: 100%;
+      background-color: map-get($map: $color, $key: expert);
+      color: map-get($map: $color, $key: white);
+      .expert-desc {
+        font-weight: 500;
+      }
+      .expert-name {
+        font-weight: 500;
+      }
+    }
+  }
 }
 @mixin expert-PC {
+  .expert-list {
+    margin-left: 66px;
+  }
+  .expert-card {
+    .expert-info {
+      padding: 17px 17px 15px 17px;
+      .expert-desc {
+        font-size: 22px;
+        margin-bottom: 14px;
+      }
+      .expert-name {
+        font-size: 25px;
+      }
+    }
+  }
 }
 @mixin expert-PC-Tablet {
   .expert {
-  }
-  .expert-img {
-    padding-bottom: 92px;
-  }
-  .expert-info {
-    z-index: 1;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 322px;
-    height: 92px;
-    background-color: map-get($map: $color, $key: expert);
+    overflow: hidden;
   }
 }
 @mixin expert-Tablet {
+  .expert-list {
+    margin-left: 5.5%;
+  }
+  .expert-card {
+    .expert-info {
+      padding: 1.3vmax 1.3vmax 1vmax 1.3vmax;
+      .expert-desc {
+        font-size: 1.6vmax;
+        margin-bottom: 1vmax;
+      }
+      .expert-name {
+        font-size: 1.85vmax;
+      }
+    }
+  }
 }
 @mixin expert-Tablet-Mobile {
 }
 @mixin expert-Mobile {
+  .expert {
+    margin-bottom: 32px;
+  }
+  .expert-list {
+    padding: 70px 0;
+  }
+  .expert-card {
+    .expert-img {
+      height: 95vmin;
+    }
+    .expert-info {
+      padding: 15px 19px;
+      .expert-desc {
+        font-size: 16px;
+        margin-bottom: 13px;
+      }
+      .expert-name {
+        font-size: 23px;
+      }
+    }
+  }
 }

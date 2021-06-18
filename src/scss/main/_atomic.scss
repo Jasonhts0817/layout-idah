@@ -1,53 +1,49 @@
-@mixin atomic {
-  .D\(n\) {
-    display: none;
-  }
-  .D\(b\) {
-    display: block;
-  }
-}
-
-@mixin atomic-PC {
-  .D\(n\,p\) {
-    display: none;
-  }
-  .D\(b\,p\) {
-    display: block;
-  }
-}
-
-@mixin atomic-PC-Tablet {
-  .D\(n\,pt\) {
-    display: none;
-  }
-  .D\(b\,pt\) {
-    display: block;
-  }
-}
-
-@mixin atomic-Tablet {
-  .D\(n\,t\) {
-    display: none;
-  }
-  .D\(b\,t\) {
-    display: block;
-  }
-}
-
-@mixin atomic-Tablet-Mobile {
-  .D\(n\,tm\) {
-    display: none;
-  }
-  .D\(b\,tm\) {
-    display: block;
-  }
-}
-
-@mixin atomic-Mobile {
-  .D\(n\,m\) {
-    display: none;
-  }
-  .D\(b\,m\) {
-    display: block;
+@each $key, $value in $rwd-breakpoint {
+  @if $key == "all" {
+    .D\(n\) {
+      display: none;
+    }
+    .D\(b\) {
+      display: block;
+    }
+    .img\(m\) {
+      &:after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0) 20%
+        );
+      }
+    }
+  } @else {
+    @include response($value) {
+      .D\(n\,#{$key}\) {
+        display: none;
+      }
+      .D\(b\,#{$key}\) {
+        display: block;
+      }
+      .img\(m\,#{$key}\) {
+        &:after {
+          content: " ";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0) 20%
+          );
+        }
+      }
+    }
   }
 }

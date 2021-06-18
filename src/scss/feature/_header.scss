@@ -5,6 +5,7 @@
     z-index: map-get($map: $z-index, $key: header);
     position: fixed;
     top: 0;
+    transition: top 0.3s;
   }
   .search {
     position: relative;
@@ -26,9 +27,20 @@
 @mixin header-PC {
   .hdr-container {
     max-width: $container;
-    min-height: $header-hegiht-pc;
+    min-height: $header-height-pc;
     margin: 0 auto;
     padding: 0px 65px;
+    .social-list {
+      display: flex;
+      justify-content: flex-end;
+      width: 20%;
+      img {
+        margin: 34px 0 30px 0;
+        width: 16px;
+        height: 16px;
+        margin-left: 17px;
+      }
+    }
   }
   .nav-section {
     .nav-container {
@@ -107,17 +119,6 @@
       }
     }
   }
-  .social-list {
-    display: flex;
-    justify-content: flex-end;
-    width: 20%;
-    img {
-      margin: 34px 0 30px 0;
-      width: 16px;
-      height: 16px;
-      margin-left: 17px;
-    }
-  }
   .hover-icon {
     width: 100%;
     display: flex;
@@ -150,11 +151,19 @@
 @mixin header-PC-Tablet {
 }
 @mixin header-Tablet {
+  .nav-section {
+    &.active {
+      width: 225px;
+    }
+  }
 }
 @mixin header-Tablet-Mobile {
+  .freezed {
+    overflow: hidden;
+  }
   .hdr-container {
     position: relative;
-    height: $header-hegiht-mobile;
+    height: $header-height-mobile;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,29 +180,29 @@
     padding: 0 18px;
     top: 0;
     right: 1px;
-    height: $header-hegiht-mobile;
+    height: $header-height-mobile;
     img {
       height: 35px;
     }
   }
 
   .nav-section {
-    position: absolute;
-    top: $header-hegiht-mobile;
+    position: fixed;
+    top: $header-height-mobile;
     right: 0;
-    overflow: hidden;
     width: 0;
-    min-height: 100vh;
+    height: 100vh;
     background-color: map-get($map: $color, $key: white);
     transition: all 0.3s;
     &.active {
-      width: 245px;
       .nav-container {
         display: block;
       }
     }
   }
   .nav-container {
+    height: 91%;
+    overflow-y: scroll;
     display: none;
     text-align: center;
   }
@@ -208,7 +217,7 @@
       font-weight: 700;
       letter-spacing: 4px;
       text-align: center;
-      padding: 32px 0;
+      padding: 13.2% 0;
       border-top: map-get($map: $color, $key: fashion) solid 1px;
       &:last-child {
         border-bottom: map-get($map: $color, $key: fashion) solid 1px;
@@ -237,7 +246,7 @@
     }
   }
   .search {
-    margin: 30px 30px 20px 30px;
+    margin: 12.4% 12.4% 8% 12.4%;
     input[type="text"] {
       border: map-get($map: $color, $key: fashion) solid 1px;
       min-height: 30px !important;
@@ -250,28 +259,30 @@
     a {
       font-size: 10px;
       width: 50%;
-      padding: 10px;
+      padding: 5.4%;
     }
   }
   .social-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px;
+    margin: 12.8%;
     img {
       width: 22px;
       height: 22px;
     }
   }
   .bg-mask {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: map-get($map: $color, $key: opacity-0);
     transition: 0.3s;
+    display: none;
     &.active {
+      display: block;
       z-index: map-get($map: $z-index, $key: mask);
       pointer-events: none;
       background-color: map-get($map: $color, $key: opacity-5);
@@ -279,4 +290,9 @@
   }
 }
 @mixin header-Mobile {
+  .nav-section {
+    &.active {
+      width: 28vmax;
+    }
+  }
 }

@@ -1,7 +1,7 @@
 @import "./features";
+@import "./main/_atomic.scss";
 
 @include response(PC) {
-  @include atomic-PC;
   @include header-PC;
   @include footer-PC;
   @include index-PC;
@@ -13,7 +13,6 @@
 }
 
 @include response(PC-Tablet) {
-  @include atomic-PC-Tablet;
   @include header-PC-Tablet;
   @include footer-PC-Tablet;
   @include index-PC-Tablet;
@@ -25,7 +24,6 @@
 }
 
 @include response(Tablet) {
-  @include atomic-Tablet;
   @include header-Tablet;
   @include footer-Tablet;
   @include index-Tablet;
@@ -37,7 +35,6 @@
 }
 
 @include response(Tablet-Mobile) {
-  @include atomic-Tablet-Mobile;
   @include header-Tablet-Mobile;
   @include footer-Tablet-Mobile;
   @include index-Tablet-Mobile;
@@ -49,7 +46,6 @@
 }
 
 @include response(Mobile) {
-  @include atomic-Mobile;
   @include header-Mobile;
   @include footer-Mobile;
   @include index-Mobile;

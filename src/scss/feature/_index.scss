@@ -1,14 +1,11 @@
 @mixin index {
-  .slide-bullet {
-    border-radius: 50%;
-  }
 }
 @mixin index-PC {
   .conatiner {
     background-color: map-get($map: $color, $key: ghost-white);
     max-width: $container;
     margin: 0 auto;
-    padding-top: $header-hegiht-pc;
+    padding-top: $header-height-pc;
   }
 }
 @mixin index-PC-Tablet {
@@ -18,7 +15,7 @@
     background-color: map-get($map: $color, $key: ghost-white);
     max-width: $container;
     margin: 0 auto;
-    padding-top: $header-hegiht-mobile;
+    padding-top: $header-height-mobile;
   }
 }
 @mixin index-Tablet-Mobile {
@@ -27,6 +24,6 @@
   .conatiner {
     background-color: map-get($map: $color, $key: ghost-white);
     margin: 0 auto;
-    padding-top: $header-hegiht-mobile;
+    padding-top: $header-height-mobile;
   }
 }

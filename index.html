@@ -13,8 +13,6 @@
     </link>
     <link href="css/cutomer-theme.css?t=20200405" rel="stylesheet" type="text/css">
     </link>
-    <link href="css/msslider.css?t=20200405" rel="stylesheet" type="text/css">
-    </link>
     <link href="css/theme-color.css?t=20200405" rel="preload" as="style">
     </link>
     <link href="css/theme-color.css?t=20200405" rel="stylesheet" type="text/css">
@@ -27,7 +25,9 @@
     </link>
     <link href="css/theme.css?t=20200405" rel="stylesheet" type="text/css">
     </link>
-    <link href="css/skins/default/style.css" rel="stylesheet" type="text/css">
+    <link href="css/owl.carousel.css?t=20200405" rel="stylesheet" type="text/css">
+    </link>
+    <link href="css/owl.theme.default.css?t=20200405" rel="stylesheet" type="text/css">
     </link>
     <script>
         var MYAPP = {
@@ -35,15 +35,15 @@
         };
     </script>
     <script type="text/javascript" src="js/jq-core.js"></script>
-    <script type="text/javascript" src="js/theme.js"></script>
+    <script type="text/javascript" src="js/_vendor/owl.carousel.js"></script>
 </head>
 
-<body data-is-lazy="false">
-    <header class="hdr">
+<body data-is-lazy="false" id="body">
+    <header class="hdr" id="hdr">
         <div class="hdr-container">
             <div id="menuList" class="nav-section">
                 <div class="nav-container">
-                    <nav class="nav-list">
+                    <nav class="nav nav-list">
                         <a href="#news" class="nav-item nav-item-news">最新文章</a>
                         <a href="#fashion" class="nav-item nav-item-fashion">潮爆新資</a>
                         <a href="#tech" class="nav-item nav-item-tech">科技潮品</a>
@@ -61,21 +61,21 @@
                         <a>外部連結</a>
                     </div>
                     <div class="social-list">
-                        <a href="#"><img src="src/images/cool-health/social/cool-health_material-08.svg"></a>
-                        <a href="#"><img src="src/images/cool-health/social/cool-health_material-09.svg"></a>
-                        <a href="#"><img src="src/images/cool-health/social/cool-health_material-10.svg"></a>
-                        <a href="#"><img src="src/images/cool-health/social/cool-health_material-11.svg"></a>
+                        <a><img src="images/cool-health/social/cool-health_material-08.svg"></a>
+                        <a><img src="images/cool-health/social/cool-health_material-09.svg"></a>
+                        <a><img src="images/cool-health/social/cool-health_material-10.svg"></a>
+                        <a><img src="images/cool-health/social/cool-health_material-11.svg"></a>
                     </div>
                 </div>
                 <div class="hover-icon D(n,tm)">
-                    <img src="src/images/cool-health/navigation/cool-health_material-04.svg">
+                    <img src="images/cool-health/navigation/cool-health_material-04.svg">
                 </div>
             </div>
             <div class="logo-container">
                 <h1 class="logo">
-                    <a href="#">
-                        <img class="D(n,tm)" src="src/images/cool-health/logo/cool-health_material-01.svg">
-                        <img class="D(n,p)" src="src/images/cool-health/logo/cool-health_material-02.svg">
+                    <a>
+                        <img class="D(n,tm)" src="images/cool-health/logo/cool-health_material-01.svg">
+                        <img class="D(n,p)" src="images/cool-health/logo/cool-health_material-02.svg">
                     </a>
                 </h1>
                 <label class="search D(n,tm)">
@@ -83,102 +83,183 @@
                 </label>
             </div>
             <button id="menuBtn" class="menu D(n,p)">
-                <img src="src/images/cool-health/navigation/cool-health_material-03.svg">
+                <img src="images/cool-health/navigation/cool-health_material-03.svg">
             </button>
         </div>
     </header>
     <main class="conatiner">
         <section class="promote">
-            <div class="master-slider ms-skin-default jSlider" id="promoteSlider"
-                data-option='{ "fillMode": "fill", "fillwidth": "true", "width": "1200", "height": "680", "view": "basic", "bullletsname":"promoteSlideBullets"}'>
-                <div class="ms-slide promote-slide-item promote-slide-item-fashion img-mask">
-                    <img src="src/images/banner/1.jpg" data-src="src/images/banner/1.jpg" />
-                    <div class="promote-slide-title">
-                        <P>標題假字標題假字</P>
-                        <P>標題假字標題假字標題假</P>
+            <div class="owl-carousel promote-list">
+                <div class="item">
+                    <div class="promote-slide-item promote-slide-item-fashion img(m)">
+                        <img src="images/banner/1.jpg" />
+                        <div class="promote-slide-title">
+                            <P>標題假字標題假字</P>
+                            <P>標題假字標題假字標題假</P>
+                        </div>
                     </div>
                 </div>
-                <div class="ms-slide promote-slide-item promote-slide-item-fittness img-mask">
-                    <img src="src/images/banner/2.jpg" data-src="src/images/banner/2.jpg" />
-                    <div class="promote-slide-title">
-                        <P>標題假字標題假字</P>
-                        <P>標題假字標題假字標題假</P>
+                <div class="item">
+                    <div class="promote-slide-item promote-slide-item-fittness img(m)">
+                        <img src="images/banner/2.jpg" />
+                        <div class="promote-slide-title">
+                            <P>標題假字標題假字</P>
+                            <P>標題假字標題假字標題假</P>
+                        </div>
                     </div>
                 </div>
-                <div class="ms-slide promote-slide-item promote-slide-item-tech img-mask">
-                    <img src="src/images/banner/3.jpg" />
-                    <div class="promote-slide-title">
-                        <P>標題假字標題假字</P>
-                        <P>標題假字標題假字標題假</P>
+                <div class="item">
+                    <div class="promote-slide-item promote-slide-item-tech img(m)">
+                        <img src="images/banner/3.jpg" />
+                        <div class="promote-slide-title">
+                            <P>標題假字標題假字</P>
+                            <P>標題假字標題假字標題假</P>
+                        </div>
                     </div>
                 </div>
-                <div class="ms-slide promote-slide-item promote-slide-item-aesthetic img-mask">
-                    <img src="src/images/banner/4.jpg" data-src="src/images/banner/4.jpg" />
-                    <div class="promote-slide-title">
-                        <P>標題假字標題假字</P>
-                        <P>標題假字標題假字標題假</P>
+                <div class="item">
+                    <div class="promote-slide-item promote-slide-item-aesthetic img(m)">
+                        <img src="images/banner/4.jpg" />
+                        <div class="promote-slide-title">
+                            <P>標題假字標題假字</P>
+                            <P>標題假字標題假字標題假</P>
+                        </div>
                     </div>
                 </div>
-                <div class="promote-slide-bullets" id="promoteSlideBullets">
+                <div class="item">
+                    <div class="promote-slide-item promote-slide-item-aesthetic img(m)">
+                        <img src="images/banner/4.jpg" />
+                        <div class="promote-slide-title">
+                            <P>標題假字標題假字</P>
+                            <P>標題假字標題假字標題假</P>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="news">
+        <!-- 最新文章 -->
+        <section id="news" class="news">
             <div class="news-title">
                 <h1>最新文章</h1>
                 <h3>NEW ARTICLES</h3>
             </div>
             <div class="news-container">
-                <div class="master-slider ms-skin-default new-slider jSlider" id="newsSlider"
-                    data-option='{ "fillMode": "fill", "fillwidth": "true", "width": "440", "height": "285", "view": "basic", "bullletsname":"newsSlideBullets"}'>
-                    <!-- data-option='{ "fillMode": "fill", "fillwidth": "true", "width": "440", "height": "285", "view": "basic", "bullletsname":"newsSlideBullets"}' -->
-                    <!-- data-option='{ "loop": "true" ,"layout":"partialview", "width": "300", "height": "285", "view": "fadeWave", "bullletsname":"newsSlideBullets"}' -->
-                    <div class="ms-slide">
-                        <img src="src/images/banner/1.jpg" data-src="src/images/banner/1.jpg" />
+                <div class="owl-carousel news-list">
+                    <div class="item news-item">
+                        <div class="new-img">
+                            <img src="images/banner/1.jpg" />
+                        </div>
+                        <article class="new-article">
+                            <div class="news-article-date">2021.04.05</div>
+                            <div class="news-article-title">
+                                <p>無論幾歲總是吃不飽</p>
+                                <p>原來是「血糖」上下跑害你變大食怪？</p>
+                            </div>
+                            <div class="news-article-abstract">
+                                你總是吃不飽嗎？常常被親友揶揄胃有如宇宙蟲洞、無底深淵，有吃跟沒
+                                吃一樣？明明半小時前大夥兒才正在吃到飽餐廳大啖燒烤，現在你又要揪
+                                大家去居酒屋吃串燒，吃完到家竟然還要室友幫忙買鹹酥雞當宵夜。當站
+                                上體重計....
+                            </div>
+                            <a><img class="news-article-btn"
+                                    src="images/cool-health/navigation/cool-health_material-07.svg"></a>
+                        </article>
                     </div>
-                    <div class="ms-slide">
-                        <img src="src/images/banner/2.jpg" data-src="src/images/banner/2.jpg" />
+                    <div class="item news-item">
+                        <div class="new-img">
+                            <img src="images/banner/1.jpg" />
+                        </div>
+                        <article class="new-article">
+                            <div class="news-article-date">2021.04.05</div>
+                            <div class="news-article-title">
+                                <p>無論幾歲總是吃不飽</p>
+                                <p>原來是「血糖」上下跑害你變大食怪？</p>
+                            </div>
+                            <div class="news-article-abstract">
+                                你總是吃不飽嗎？常常被親友揶揄胃有如宇宙蟲洞、無底深淵，有吃跟沒
+                                吃一樣？明明半小時前大夥兒才正在吃到飽餐廳大啖燒烤，現在你又要揪
+                                大家去居酒屋吃串燒，吃完到家竟然還要室友幫忙買鹹酥雞當宵夜。當站
+                                上體重計....
+                            </div>
+                            <a><img class="news-article-btn"
+                                    src="images/cool-health/navigation/cool-health_material-07.svg"></a>
+                        </article>
                     </div>
-                    <div class="ms-slide">
-                        <img src="src/images/banner/3.jpg" data-src="src/images/banner/3.jpg" />
+                    <div class="item news-item">
+                        <div class="new-img">
+                            <img src="images/banner/1.jpg" />
+                        </div>
+                        <article class="new-article">
+                            <div class="news-article-date">2021.04.05</div>
+                            <div class="news-article-title">
+                                <p>無論幾歲總是吃不飽</p>
+                                <p>原來是「血糖」上下跑害你變大食怪？</p>
+                            </div>
+                            <div class="news-article-abstract">
+                                你總是吃不飽嗎？常常被親友揶揄胃有如宇宙蟲洞、無底深淵，有吃跟沒
+                                吃一樣？明明半小時前大夥兒才正在吃到飽餐廳大啖燒烤，現在你又要揪
+                                大家去居酒屋吃串燒，吃完到家竟然還要室友幫忙買鹹酥雞當宵夜。當站
+                                上體重計....
+                            </div>
+                            <a><img class="news-article-btn"
+                                    src="images/cool-health/navigation/cool-health_material-07.svg"></a>
+                        </article>
                     </div>
-                    <div class="ms-slide">
-                        <img src="src/images/banner/4.jpg" data-src="src/images/banner/4.jpg" />
+                    <div class="item news-item">
+                        <div class="new-img">
+                            <img src="images/banner/2.jpg" />
+                        </div>
+                        <article class="new-article">
+                            <div class="news-article-date">2021.04.05</div>
+                            <div class="news-article-title">
+                                <p>無論幾歲總是吃不飽</p>
+                                <p>原來是「血糖」上下跑害你變大食怪？</p>
+                            </div>
+                            <div class="news-article-abstract">
+                                你總是吃不飽嗎？常常被親友揶揄胃有如宇宙蟲洞、無底深淵，有吃跟沒
+                                吃一樣？明明半小時前大夥兒才正在吃到飽餐廳大啖燒烤，現在你又要揪
+                                大家去居酒屋吃串燒，吃完到家竟然還要室友幫忙買鹹酥雞當宵夜。當站
+                                上體重計....
+                            </div>
+                            <a><img class="news-article-btn"
+                                    src="images/cool-health/navigation/cool-health_material-07.svg"></a>
+                        </article>
                     </div>
-                    <div class="ms-slide">
-                        <img src="src/images/banner/4.jpg" data-src="src/images/banner/4.jpg" />
-                    </div>
-                    <div class="news-slide-bullets" id="newsSlideBullets">
+                    <div class="item news-item">
+                        <div class="new-img">
+                            <img src="images/banner/3.jpg" />
+                        </div>
+                        <article class="new-article">
+                            <div class="news-article-date">2021.04.05</div>
+                            <div class="news-article-title">
+                                <p>無論幾歲總是吃不飽</p>
+                                <p>原來是「血糖」上下跑害你變大食怪？</p>
+                            </div>
+                            <div class="news-article-abstract">
+                                你總是吃不飽嗎？常常被親友揶揄胃有如宇宙蟲洞、無底深淵，有吃跟沒
+                                吃一樣？明明半小時前大夥兒才正在吃到飽餐廳大啖燒烤，現在你又要揪
+                                大家去居酒屋吃串燒，吃完到家竟然還要室友幫忙買鹹酥雞當宵夜。當站
+                                上體重計....
+                            </div>
+                            <a><img class="news-article-btn"
+                                    src="images/cool-health/navigation/cool-health_material-07.svg"></a>
+                        </article>
                     </div>
                 </div>
-                <article class="new-article">
-                    <div class="news-article-date">2021.04.05</div>
-                    <div class="news-article-title">
-                        <p>無論幾歲總是吃不飽</p>
-                        <p>原來是「血糖」上下跑害你變大食怪？</p>
-                    </div>
-                    <div class="news-article-abstract">
-                        你總是吃不飽嗎？常常被親友揶揄胃有如宇宙蟲洞、無底深淵，有吃跟沒
-                        吃一樣？明明半小時前大夥兒才正在吃到飽餐廳大啖燒烤，現在你又要揪
-                        大家去居酒屋吃串燒，吃完到家竟然還要室友幫忙買鹹酥雞當宵夜。當站
-                        上體重計....
-                    </div>
-                    <a><img class="news-article-btn"
-                            src="src/images/cool-health/navigation/cool-health_material-07.svg"></a>
-                </article>
             </div>
         </section>
+        <!-- 潮爆新資 -->
         <section class="category">
             <div class="category-title-container">
-                <div class="category-title category-title-fashion">
+                <div id="fashion" class="category-title category-title-fashion">
                     <div class="title">潮爆新資</div>
                     <div class="sub-title">COOL FASHION</div>
                 </div>
             </div>
             <div class="article-container">
                 <div class="article-list">
-                    <div class="article-item article-item-large img-mask">
-                        <a><img src="src/images/sample/1.jpg"></a>
+                    <div class="article-item article-item-large img(m,pt)">
+                        <a><img src="images/sample/1.jpg"></a>
                         <div class="article-desc">
                             <div class="article-date">2021.04.05</div>
                             <div class="article-title">
@@ -189,8 +270,8 @@
                         </div>
                     </div>
                     <div class="article-block">
-                        <div class="article-item article-item-small img-mask">
-                            <a><img src="src/images/sample/2.jpg"></a>
+                        <div class="article-item article-item-small img(m,pt)">
+                            <a><img src="images/sample/2.jpg"></a>
                             <div class="article-desc">
                                 <div class="article-date">2021.04.05</div>
                                 <div class="article-title">
@@ -200,8 +281,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="article-item article-item-small img-mask">
-                            <a><img src="src/images/sample/3.jpg"></a>
+                        <div class="article-item article-item-small img(m,pt)">
+                            <a><img src="images/sample/3.jpg"></a>
                             <div class="article-desc">
                                 <div class="article-date">2021.04.05</div>
                                 <div class="article-title">
@@ -211,8 +292,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="article-item article-item-small img-mask">
-                            <a><img src="src/images/sample/4.jpg"></a>
+                        <div class="article-item article-item-small img(m,pt)">
+                            <a><img src="images/sample/4.jpg"></a>
                             <div class="article-desc">
                                 <div class="article-date">2021.04.05</div>
                                 <div class="article-title">
@@ -222,8 +303,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="article-item article-item-small img-mask">
-                            <a><img src="src/images/sample/5.jpg"></a>
+                        <div class="article-item article-item-small img(m,pt)">
+                            <a><img src="images/sample/5.jpg"></a>
                             <div class="article-desc">
                                 <div class="article-date">2021.04.05</div>
                                 <div class="article-title">
@@ -236,13 +317,17 @@
                     </div>
                 </div>
                 <div class="ad-banner">
-                    <img src="src/images/sample/2.jpg">
+                    <img src="images/sample/2.jpg">
+                </div>
+                <div class="btn-more D(n,pt)">
+                    <a>看更多</a>
                 </div>
             </div>
         </section>
+        <!-- 運動健身 -->
         <section class="category">
             <div class="category-title-container">
-                <div class="category-title category-title-fittness">
+                <div id="fittness" class="category-title category-title-fittness">
                     <div class="title">運動健身</div>
                     <div class="sub-title">COOL FITTNESS</div>
                 </div>
@@ -250,8 +335,8 @@
             <div class="article-container">
                 <div class="article-list">
                     <div class="article-block">
-                        <div class="article-item article-item-small img-mask">
-                            <a><img src="src/images/sample/2.jpg"></a>
+                        <div class="article-item article-item-small img(m,pt)">
+                            <a><img src="images/sample/2.jpg"></a>
                             <div class="article-desc">
                                 <div class="article-date">2021.04.05</div>
                                 <div class="article-title">
@@ -261,8 +346,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="article-item article-item-small img-mask">
-                            <a><img src="src/images/sample/3.jpg"></a>
+                        <div class="article-item article-item-small img(m,pt)">
+                            <a><img src="images/sample/3.jpg"></a>
                             <div class="article-desc">
                                 <div class="article-date">2021.04.05</div>
                                 <div class="article-title">
@@ -272,8 +357,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="article-item article-item-small img-mask">
-                            <a><img src="src/images/sample/4.jpg"></a>
+                        <div class="article-item article-item-small img(m,pt)">
+                            <a><img src="images/sample/4.jpg"></a>
                             <div class="article-desc">
                                 <div class="article-date">2021.04.05</div>
                                 <div class="article-title">
@@ -283,8 +368,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="article-item article-item-small img-mask">
-                            <a><img src="src/images/sample/5.jpg"></a>
+                        <div class="article-item article-item-small img(m,pt)">
+                            <a><img src="images/sample/5.jpg"></a>
                             <div class="article-desc">
                                 <div class="article-date">2021.04.05</div>
                                 <div class="article-title">
@@ -295,8 +380,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="article-item article-item-large img-mask">
-                        <a><img src="src/images/sample/1.jpg"></a>
+                    <div class="article-item article-item-large img(m,pt)">
+                        <a><img src="images/sample/1.jpg"></a>
                         <div class="article-desc">
                             <div class="article-date">2021.04.05</div>
                             <div class="article-title">
@@ -308,49 +393,51 @@
                     </div>
                 </div>
                 <div class="ad-banner">
-                    <img src="src/images/sample/2.jpg">
+                    <img src="images/sample/2.jpg">
+                </div>
+                <div class="btn-more D(n,pt)">
+                    <a>看更多</a>
                 </div>
             </div>
         </section>
+        <!-- Hot Video -->
         <section class="hot-video">
-            <div class="hot-video-title"><img src="src/images/cool-health/navigation/hot-video.svg"></div>
-            <div class="master-slider ms-skin-default jSlider" id="hotVideoSlider"
-                data-option='{ "width": "300", "height": "200", "view": "basic", "layout":"partialview", "loop":"true", "space":42}'>
-                <div class="ms-slide">
-                    <img src="src/images/banner/1.jpg" data-src="src/images/banner/1.jpg" />
-                    <a href="https://www.youtube.com/embed/uSf4X3Uo3Cg?controls=0" data-type="video"></a>
+            <div class="hot-video-title"><img src="images/cool-health/navigation/hot-video.svg"></div>
+            <div class="owl-carousel owl-theme hot-video-list">
+                <div class="item hot-video-item">
+                    <iframe src="https://www.youtube.com/embed/Z6Gok1bHlNs?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
-                <div class="ms-slide">
-                    <img src="src/images/banner/2.jpg" data-src="src/images/banner/2.jpg" />
-                    <a href="https://www.youtube.com/embed/uSf4X3Uo3Cg?controls=0" data-type="video"></a>
+                <div class="item hot-video-item">
+                    <iframe src="https://www.youtube.com/embed/Z6Gok1bHlNs?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
-                <div class="ms-slide">
-                    <img src="src/images/banner/3.jpg" data-src="src/images/banner/3.jpg" />
-                    <a href="https://www.youtube.com/embed/uSf4X3Uo3Cg?controls=0" data-type="video"></a>
+                <div class="item hot-video-item">
+                    <iframe src="https://www.youtube.com/embed/Z6Gok1bHlNs?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
-                <div class="ms-slide">
-                    <img src="src/images/banner/4.jpg" data-src="src/images/banner/4.jpg" />
-                    <a href="https://www.youtube.com/embed/uSf4X3Uo3Cg?controls=0" data-type="video"></a>
-                </div>
-                <div class="ms-slide">
-                    <img src="src/images/banner/4.jpg" data-src="src/images/banner/2.jpg" />
-                    <a href="https://www.youtube.com/embed/uSf4X3Uo3Cg?controls=0" data-type="video"></a>
+                <div class="item hot-video-item">
+                    <iframe src="https://www.youtube.com/embed/Z6Gok1bHlNs?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
             </div>
         </section>
-
         <!-- 科技潮品 -->
         <section class="category">
             <div class="category-title-container">
-                <div class="category-title category-title-tech">
+                <div id="tech" class="category-title category-title-tech">
                     <div class="title">科技潮品</div>
                     <div class="sub-title">COOL TECH</div>
                 </div>
             </div>
             <div class="article-container">
                 <div class="article-list">
-                    <div class="article-item article-item-large img-mask">
-                        <a><img src="src/images/sample/1.jpg"></a>
+                    <div class="article-item article-item-large img(m,pt)">
+                        <a><img src="images/sample/1.jpg"></a>
                         <div class="article-desc">
                             <div class="article-date">2021.04.05</div>
                             <div class="article-title">
@@ -361,8 +448,8 @@
                         </div>
                     </div>
                     <div class="article-block">
-                        <div class="article-item article-item-small img-mask">
-                            <a><img src="src/images/sample/2.jpg"></a>
+                        <div class="article-item article-item-small img(m,pt)">
+                            <a><img src="images/sample/2.jpg"></a>
                             <div class="article-desc">
                                 <div class="article-date">2021.04.05</div>
                                 <div class="article-title">
@@ -372,8 +459,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="article-item article-item-small img-mask">
-                            <a><img src="src/images/sample/3.jpg"></a>
+                        <div class="article-item article-item-small img(m,pt)">
+                            <a><img src="images/sample/3.jpg"></a>
                             <div class="article-desc">
                                 <div class="article-date">2021.04.05</div>
                                 <div class="article-title">
@@ -383,8 +470,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="article-item article-item-small img-mask">
-                            <a><img src="src/images/sample/4.jpg"></a>
+                        <div class="article-item article-item-small img(m,pt)">
+                            <a><img src="images/sample/4.jpg"></a>
                             <div class="article-desc">
                                 <div class="article-date">2021.04.05</div>
                                 <div class="article-title">
@@ -394,8 +481,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="article-item article-item-small img-mask">
-                            <a><img src="src/images/sample/5.jpg"></a>
+                        <div class="article-item article-item-small img(m,pt)">
+                            <a><img src="images/sample/5.jpg"></a>
                             <div class="article-desc">
                                 <div class="article-date">2021.04.05</div>
                                 <div class="article-title">
@@ -408,14 +495,17 @@
                     </div>
                 </div>
                 <div class="ad-banner">
-                    <img src="src/images/sample/2.jpg">
+                    <img src="images/sample/2.jpg">
+                </div>
+                <div class="btn-more D(n,pt)">
+                    <a>看更多</a>
                 </div>
             </div>
         </section>
         <!-- 醫美專欄 -->
         <section class="category">
             <div class="category-title-container">
-                <div class="category-title category-title-aesthetic">
+                <div id="aesthetic" class="category-title category-title-aesthetic">
                     <div class="title">醫美專欄</div>
                     <div class="sub-title">AESTHETIC MED</div>
                 </div>
@@ -423,8 +513,8 @@
             <div class="article-container">
                 <div class="article-list">
                     <div class="article-block">
-                        <div class="article-item article-item-small img-mask">
-                            <a><img src="src/images/sample/2.jpg"></a>
+                        <div class="article-item article-item-small img(m,pt)">
+                            <a><img src="images/sample/2.jpg"></a>
                             <div class="article-desc">
                                 <div class="article-date">2021.04.05</div>
                                 <div class="article-title">
@@ -434,8 +524,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="article-item article-item-small img-mask">
-                            <a><img src="src/images/sample/3.jpg"></a>
+                        <div class="article-item article-item-small img(m,pt)">
+                            <a><img src="images/sample/3.jpg"></a>
                             <div class="article-desc">
                                 <div class="article-date">2021.04.05</div>
                                 <div class="article-title">
@@ -445,8 +535,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="article-item article-item-small img-mask">
-                            <a><img src="src/images/sample/4.jpg"></a>
+                        <div class="article-item article-item-small img(m,pt)">
+                            <a><img src="images/sample/4.jpg"></a>
                             <div class="article-desc">
                                 <div class="article-date">2021.04.05</div>
                                 <div class="article-title">
@@ -456,8 +546,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="article-item article-item-small img-mask">
-                            <a><img src="src/images/sample/5.jpg"></a>
+                        <div class="article-item article-item-small img(m,pt)">
+                            <a><img src="images/sample/5.jpg"></a>
                             <div class="article-desc">
                                 <div class="article-date">2021.04.05</div>
                                 <div class="article-title">
@@ -468,8 +558,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="article-item article-item-large img-mask">
-                        <a><img src="src/images/sample/1.jpg"></a>
+                    <div class="article-item article-item-large img(m,pt)">
+                        <a><img src="images/sample/1.jpg"></a>
                         <div class="article-desc">
                             <div class="article-date">2021.04.05</div>
                             <div class="article-title">
@@ -481,101 +571,217 @@
                     </div>
                 </div>
                 <div class="ad-banner">
-                    <img src="src/images/sample/2.jpg">
+                    <img src="images/sample/2.jpg">
+                </div>
+                <div class="btn-more D(n,pt)">
+                    <a>看更多</a>
                 </div>
             </div>
         </section>
         <!-- 潮健專家 -->
         <section class="category expert">
             <div class="category-title-container">
-                <div class="category-title category-title-expert">
+                <div id="expert" class="category-title category-title-expert">
                     <div class="title">潮健專家</div>
                     <div class="sub-title">COOLEXPERT</div>
                 </div>
             </div>
-            <div class="master-slider ms-skin-default jSlider" id="expertSlider"
-                data-option='{"autoHeight":"true", "start": "2", "width": "322", "height": "520", "view": "basic", "layout":"partialview", "space":15}'>
-                <div class="ms-slide">
-                    <div class="ms-layer ms-caption" data-type="text">
-                        <img class="expert-img" src="src/images/banner/1.jpg" data-src="src/images/banner/1.jpg" />
+            <div class="owl-carousel owl-theme expert-list">
+                <div class="item">
+                    <div class="expert-card">
+                        <img class="expert-img" src="images/sample/person1.png">
                         <div class="expert-info">
                             <div class="expert-desc">名人介紹名人介紹名人</div>
-                            <div class="expert-name">陳 大文 教練</div>
+                            <div class="expert-name">陳 大文 醫師</div>
                         </div>
                     </div>
                 </div>
-                <div class="ms-slide">
-                    <img src="src/images/banner/2.jpg" data-src="src/images/banner/2.jpg" />
+                <div class="item">
+                    <div class="expert-card">
+                        <img class="expert-img" src="images/sample/person1.png">
+                        <div class="expert-info">
+                            <div class="expert-desc">名人介紹名人介紹名人</div>
+                            <div class="expert-name">陳 大文 醫師</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="ms-slide">
-                    <img src="src/images/banner/3.jpg" data-src="src/images/banner/3.jpg" />
+                <div class="item">
+                    <div class="expert-card">
+                        <img class="expert-img" src="images/sample/person1.png">
+                        <div class="expert-info">
+                            <div class="expert-desc">名人介紹名人介紹名人</div>
+                            <div class="expert-name">陳 大文 醫師</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="ms-slide">
-                    <img src="src/images/banner/4.jpg" data-src="src/images/banner/4.jpg" />
-                </div>
-                <div class="ms-slide">
-                    <img src="src/images/banner/4.jpg" data-src="src/images/banner/2.jpg" />
+                <div class="item">
+                    <div class="expert-card">
+                        <img class="expert-img" src="images/sample/person1.png">
+                        <div class="expert-info">
+                            <div class="expert-desc">名人介紹名人介紹名人</div>
+                            <div class="expert-name">陳 大文 醫師</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="footer-container">
+    <footer class="ftr">
+        <div class="ftr-container">
+            <div class="ftr-item">
+                <a href="#body" class="btn-scroll-top">TOP</a>
+                <div class="footer-info">
+                    <div class="footer-link D(n,tm)">
+                        <a><span>關於我們</span></a>
+                        <a><span>連絡我們</span></a>
+                        <a><span>媒體查詢</span></a>
+                        <a><span>外部連結</span></a>
+                    </div>
+                    <div class="copyright">
+                        COPYRIGHT © 2021 <span class="copyright-name">COOL HEALTH 潮健康新媒體</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-social-list D(n,tm)">
+                <a><img src="images/cool-health/social/cool-health_material-08.svg"></a>
+                <a><img src="images/cool-health/social/cool-health_material-09.svg"></a>
+                <a><img src="images/cool-health/social/cool-health_material-10.svg"></a>
+                <a><img src="images/cool-health/social/cool-health_material-11.svg"></a>
+            </div>
+        </div>
     </footer>
-    <!-- <div id="mask" class="bg-mask"></div> -->
+    <div id="mask" class="bg-mask"></div>
     <script>
         $(document).ready(function () {
-            initSlider();
+            initOwlSlider();
             menuClick();
+            headerScroll();
+            scrollToHash();
         });
-        async function initSlider() {
-            const sliderEleList = $(".jSlider");
-            sliderEleList.map(async (i, ele) => {
-                const slider = await new MasterSlider();
-                const option = $(ele).data('option');
-                slider.setup(ele.id, option);
-                setupSliderBullet(slider, option);
+        function initOwlSlider() {
+            $('.promote-list').owlCarousel({
+                loop: true,
+                nav: false,
+                dots: true,
+                items: 1,
+                responsiveRefreshRate: 0,
+                responsive: {
+                    0: {
+                    },
+                    767: {
+                    }
+                }
             });
-        }
-        function setupSliderBullet(slider, option) {
-            if (!option?.bullletsname) { return; }
-            const slideBullets = $("#" + option.bullletsname);
-            const bullets = [];
-            let currentIndex = slider.api.index();
-            for (let i = 0; i < slider.api.count(); ++i) {
-                const bullet = $("<div></div>");
-                slideBullets.append(bullet);
-                bullet.addClass("slide-bullet");
-                if (i === 0) { bullet.addClass("active") }
-                bullet.index = i;
-                bullet.click(function () { changeSlide(i) });
-                bullets.push(bullet);
-            }
-
-            const update = function () {
-                const index = slider.api.index();
-                currentIndex !== index && (null != currentIndex && unselect(bullets[currentIndex]));
-                currentIndex = index;
-                select(bullets[currentIndex]);
-            }
-            const changeSlide = function (index) {
-                currentIndex !== index && slider.api.gotoSlide(index)
-            }
-            const select = function (ele) {
-                ele.addClass("active");
-            }
-            const unselect = function (ele) {
-                ele.removeClass("active");
-            }
-            slider.api.addEventListener(MSSliderEvent.CHANGE_START, update)
+            $('.news-list').owlCarousel({
+                loop: true,
+                nav: false,
+                dots: true,
+                responsiveRefreshRate: 0,
+                responsive: {
+                    0: {
+                        center: true,
+                        margin: 31,
+                        items: 1.3
+                    },
+                    767: {
+                        items: 1
+                    }
+                }
+            });
+            $('.expert-list').owlCarousel({
+                loop: true,
+                nav: false,
+                dots: false,
+                responsiveRefreshRate: 0,
+                responsive: {
+                    0: {
+                        center: true,
+                        margin: 31,
+                        items: 1.35
+                    },
+                    767: {
+                        margin: 17,
+                        items: 3.6
+                    }
+                }
+            });
+            $('.hot-video-list').owlCarousel({
+                nav: false,
+                dots: false,
+                loop: true,
+                responsiveRefreshRate: 0,
+                responsive: {
+                    0: {
+                        center: true,
+                        margin: 31,
+                        items: 1.35,
+                    },
+                    767: {
+                        margin: 20,
+                        items: 3.6,
+                    },
+                    1366: {
+                        margin: 40,
+                        items: 3.6,
+                    }
+                }
+            })
         }
         function menuClick() {
+            const body = $(document.body);
+            const hdr = $('#hdr');
+            const mask = $("#mask");
             const menuBtn = $("#menuBtn");
             const menuList = $("#menuList");
-            const mask = $("#mask");
-            menuBtn.click(function () {
+            const menuToggle = function () {
                 menuList.toggleClass("active");
                 mask.toggleClass("active");
+                body.toggleClass("freezed");
+            };
+            const hideHeader = function () {
+                hdr.attr('style', `top:${hdr.height() * -1}`);
+            }
+            menuBtn.click(function () {
+                menuToggle();
             });
+
+            $(body).click(function (e) {
+                if (menuList.width() > 0 && mask.hasClass('active')) {
+                    headerFreeze();
+                    menuToggle();
+                    hideHeader();
+                }
+            });
+        }
+        function headerScroll() {
+            const win = $(window);
+            const hdr = $('#hdr');
+            var prevScrollpos = win.scrollTop();
+            win.scroll(function () {
+                if (hdr.data("freeze") == true ||
+                    win.scrollTop() <= hdr.height()) { return; }
+                var currentScrollPos = win.scrollTop();
+                if (prevScrollpos > currentScrollPos) {
+                    hdr.attr('style', 'top:0');
+                } else {
+                    hdr.attr('style', `top:${hdr.height() * -1}`);
+                }
+                prevScrollpos = currentScrollPos;
+            });
+        }
+        function scrollToHash() {
+            $('a[href^="#"]').click(function (e) {
+                const hash = $(e.target).attr('href');
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500);
+            });
+        }
+        function headerFreeze() {
+            const hdr = $('#hdr');
+            hdr.data("freeze", true);
+            setTimeout(() => { hdr.data("freeze", false); }, 1000);
         }
     </script>
 </body>

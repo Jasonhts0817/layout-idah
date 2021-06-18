@@ -4,7 +4,6 @@
 @import "./main/_reset.scss";
 @import "./main/common.scss";
 
-@include atomic;
 @include header;
 @include footer;
 @include index;

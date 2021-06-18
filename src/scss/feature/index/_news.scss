@@ -9,10 +9,30 @@
   }
 }
 @mixin news-PC {
+  .new-article {
+    .news-article-title {
+      font-size: 35px;
+      line-height: 37px;
+    }
+    .news-article-abstract {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+  .new-list {
+    height: 285px;
+  }
+  .news-item {
+    height: 285px;
+  }
 }
 @mixin news-PC-Tablet {
   .news {
     margin: 5.6% 0 9.1% 5.5%;
+  }
+  .news-container {
+    display: flex;
+    width: 100%;
   }
   .news-title {
     color: map-get($map: $color, $key: fashion);
@@ -28,23 +48,22 @@
       margin-bottom: 30px;
     }
   }
-  .news-container {
-    display: flex;
-    width: 100%;
+  .new-img {
+    img {
+      height: 100%;
+      max-width: 440px !important;
+    }
   }
-  .new-slider {
-    position: relative;
-    width: 39%;
-  }
-
   .news {
     article {
       margin-left: 2.1%;
     }
   }
-
+  .news-item {
+    display: flex;
+  }
   .new-article {
-    width: 55%;
+    width: 670px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -55,41 +74,57 @@
       color: map-get($map: $color, $key: fashion);
     }
     .news-article-title {
-      font-size: 1.82vmax;
       font-weight: 700;
-      line-height: 2vmax;
       color: map-get($map: $color, $key: fashion);
     }
     .news-article-abstract {
       overflow: hidden;
       max-width: 72%;
       max-height: 33%;
-      font-size: 0.71vmax;
-      line-height: 1.2vmax;
       color: map-get($map: $color, $key: dark-gray);
     }
     .news-article-btn {
-      width: 60px;
+      width: 60px !important;
     }
   }
 
-  .news-slide-bullets {
-    position: absolute;
-    left: 0;
-    bottom: -30px;
-    display: flex;
-    .slide-bullet {
-      width: 10px;
-      height: 10px;
-      margin-right: 6px;
-      background-color: map-get($map: $color, $key: dark-gray);
-      &.active {
-        background-color: map-get($map: $color, $key: fashion);
+  .news-list {
+    .owl-dots {
+      position: absolute;
+      left: 0;
+      bottom: -30px;
+      display: flex;
+      .owl-dot {
+        width: 10px;
+        height: 10px;
+        margin-right: 6px;
+        border-radius: 50%;
+        background-color: map-get($map: $color, $key: dark-gray);
+        &.active {
+          background-color: map-get($map: $color, $key: fashion);
+        }
       }
     }
   }
 }
 @mixin news-Tablet {
+  .new-article {
+    .news-article-title {
+      font-size: 2.62vmax;
+      line-height: 2.8vmax;
+    }
+    .news-article-abstract {
+      font-size: 1vmax;
+      line-height: 1.55vmax;
+    }
+  }
+  .new-list {
+    height: 21.1vmax;
+  }
+  .news-item {
+    height: 21.1vmax;
+    display: flex;
+  }
 }
 
 @mixin news-Tablet-Mobile {
@@ -118,6 +153,13 @@
       margin: 35px auto 0 auto;
     }
   }
+  .new-img {
+    img {
+      margin: 0 auto;
+      height: 255px;
+      max-width: 280px !important;
+    }
+  }
   .new-article {
     .news-article-date {
       font-size: 10px;
@@ -140,7 +182,7 @@
       color: map-get($map: $color, $key: dark-gray);
     }
     .news-article-btn {
-      width: 90px;
+      width: 90px !important;
     }
   }
 }

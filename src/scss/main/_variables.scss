@@ -1,11 +1,20 @@
 $desktop-min-width: 1366px;
 $tablet-min-width: 767px;
 
-$header-hegiht-pc: 130px;
-$header-hegiht-mobile: 70px;
-$header-footer-pc: 140px;
-$header-footer-mobile: 50px;
+$header-height-pc: 130px;
+$header-height-mobile: 70px;
+$footer-height-pc: 140px;
+$footer-height-mobile: 50px;
 $container: 1200px;
+
+$rwd-breakpoint: (
+  all: "all",
+  p: PC,
+  pt: PC-Tablet,
+  t: Tablet,
+  tm: Tablet-Mobile,
+  m: Mobile,
+);
 
 $color-gdt: (
   dark-gray-gdt: linear-gradient(-90deg, #919191, #c1c3c4),

@@ -1,0 +1,262 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.hdr {
+  width: 100%;
+  background-color: #eaeaea;
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
+}
+
+.search {
+  position: relative;
+}
+.search input[type=text] {
+  width: 100%;
+  border: none;
+}
+.search::before {
+  content: url("../images/cool-health/navigation/cool-health_material-05.svg");
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+.btn-scroll-top {
+  display: inline-block;
+  text-align: center;
+  line-height: 30px;
+  background-color: #002bc1;
+  width: 65px;
+  height: 30px;
+  letter-spacing: 1px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.copyright {
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+.copyright .copyright-name {
+  color: #002bc1;
+}
+
+.ftr-item a:hover, .ftr-item a:active, .ftr-item a:focus {
+  color: #fff;
+}
+
+.promote-slide-bullets {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.promote-slide-title {
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+}
+
+.news {
+  margin: 0;
+  -webkit-box-shadow: initial;
+          box-shadow: initial;
+}
+.news article {
+  margin: initial;
+  border-bottom: initial;
+}
+
+.article-desc {
+  z-index: 1;
+}
+
+.category-title {
+  z-index: 1;
+}
+.category-title.category-title-fashion {
+  background-color: #002bc1;
+}
+.category-title.category-title-fittness {
+  background-color: #ff8200;
+}
+.category-title.category-title-tech {
+  background-color: #0081c1;
+}
+.category-title.category-title-aesthetic {
+  background-color: #ff82a2;
+}
+.category-title.category-title-expert {
+  background-color: #002bc1;
+}
+
+.hot-video-item {
+  position: relative;
+}
+.hot-video-item iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.expert-list {
+  z-index: 0;
+}
+
+.expert-card .expert-info {
+  z-index: 1;
+  width: 100%;
+  background-color: #002bc1;
+  color: #fff;
+}
+.expert-card .expert-info .expert-desc {
+  font-weight: 500;
+}
+.expert-card .expert-info .expert-name {
+  font-weight: 500;
+}

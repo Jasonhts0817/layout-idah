@@ -40,17 +40,22 @@
     line-height: 49px;
     text-shadow: map-get($map: $color, $key: black) 2px 2px 10px;
   }
-  .promote-slide-bullets {
-    right: 16px;
-    bottom: 16px;
 
-    .slide-bullet {
-      width: 10px;
-      height: 10px;
-      margin: 4px;
-      background-color: map-get($map: $color, $key: fashion);
-      &.active {
-        background-color: map-get($map: $color, $key: white);
+  .promote-list {
+    .owl-dots {
+      position: absolute;
+      display: flex;
+      right: 16px;
+      bottom: 16px;
+      .owl-dot {
+        width: 10px;
+        height: 10px;
+        margin: 4px;
+        border-radius: 50%;
+        background-color: map-get($map: $color, $key: fashion);
+        &.active {
+          background-color: map-get($map: $color, $key: white);
+        }
       }
     }
   }
@@ -61,33 +66,47 @@
 }
 @mixin promote-Mobile {
   .promote-slide-item {
+    height: 61.5vmax;
+    img {
+      height: 100%;
+    }
     &.promote-slide-item-fashion {
-      border-left: map-get($map: $color, $key: fashion) solid 11px;
+      border-left: map-get($map: $color, $key: fashion) solid 7px;
     }
     &.promote-slide-item-fittness {
-      border-left: map-get($map: $color, $key: fittness) solid 11px;
+      border-left: map-get($map: $color, $key: fittness) solid 7px;
     }
     &.promote-slide-item-tech {
-      border-left: map-get($map: $color, $key: tech) solid 11px;
+      border-left: map-get($map: $color, $key: tech) solid 7px;
     }
     &.promote-slide-item-aesthetic {
-      border-left: map-get($map: $color, $key: aesthetic) solid 11px;
+      border-left: map-get($map: $color, $key: aesthetic) solid 7px;
     }
   }
   .promote-slide-title {
-    bottom: 48px;
-    left: 55px;
-    font-size: 22px;
+    bottom: 55px;
+    left: 35px;
+    font-size: 23px;
     font-weight: 700;
     line-height: 32px;
   }
-  .promote-slide-bullets {
-    right: 16px;
-    bottom: 16px;
-    .slide-bullet {
-      width: 10px;
-      height: 10px;
-      margin: 4px;
+
+  .promote-list {
+    .owl-dots {
+      position: absolute;
+      display: flex;
+      left: 35px;
+      bottom: 25px;
+      .owl-dot {
+        width: 9px;
+        height: 9px;
+        margin-right: 5px;
+        border-radius: 50%;
+        background-color: map-get($map: $color, $key: fashion);
+        &.active {
+          background-color: map-get($map: $color, $key: white);
+        }
+      }
     }
   }
 }

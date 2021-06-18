@@ -1,10 +1,25 @@
 @mixin hotvideo {
+  .hot-video-item {
+    position: relative;
+    iframe {
+      height: 100%;
+      width: 100%;
+    }
+  }
 }
 @mixin hotvideo-PC {
+  .hot-video {
+    margin-bottom: 77px;
+  }
+  .hot-video-item {
+    width: 100%;
+    height: 210px;
+  }
 }
 @mixin hotvideo-PC-Tablet {
-  .hot-video {
-    margin-bottom: 6.1%;
+  .hot-video-item {
+    overflow: hidden;
+    border-radius: 25px;
   }
   .hot-video-title {
     margin: 0 0 3% 8.3%;
@@ -12,8 +27,33 @@
   }
 }
 @mixin hotvideo-Tablet {
+  .hot-video {
+    margin-bottom: 6.1%;
+  }
+  .hot-video-item {
+    width: 100%;
+    height: 15.5vmax;
+  }
 }
 @mixin hotvideo-Tablet-Mobile {
 }
 @mixin hotvideo-Mobile {
+  .hot-video {
+    margin: 70px 0 10px 0;
+  }
+  .hot-video-item {
+    width: 100%;
+    height: 188px;
+  }
+  .hot-video-title {
+    width: 265px;
+    margin: 0 auto 32px auto;
+    img {
+      width: 100%;
+    }
+  }
+  .hot-video-list {
+    padding: 40px 0;
+    background-color: map-get($map: $color, $key: gray);
+  }
 }
