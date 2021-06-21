@@ -827,7 +827,7 @@
     top: 70px;
     right: 0;
     width: 0;
-    height: 100vh;
+    height: 100%;
     background-color: #fff;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -837,8 +837,8 @@
   }
 
   .nav-container {
-    height: 91%;
-    overflow-y: scroll;
+    max-height: 85%;
+    overflow-y: auto;
     display: none;
     text-align: center;
   }
@@ -903,7 +903,7 @@
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 0 30px;
+    margin: 0 12.4%;
   }
   .link-list a {
     font-size: 10px;
