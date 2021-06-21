@@ -180,27 +180,27 @@
     padding: 30px 0;
     border-top: rgba(0, 0, 0, 0) solid 4px;
   }
-  .nav-list .nav-item.nav-item-news:hover, .nav-list .nav-item.nav-item-news:active, .nav-list .nav-item.nav-item-news:focus {
+  .nav-list .nav-item.nav-item-news:hover, .nav-list .nav-item.nav-item-news:active, .nav-list .nav-item.nav-item-news:focus, .nav-list .nav-item.nav-item-news.active {
     border-top: #b1b3b6 solid 4px;
     color: #b1b3b6;
   }
-  .nav-list .nav-item.nav-item-fashion:hover, .nav-list .nav-item.nav-item-fashion:active, .nav-list .nav-item.nav-item-fashion:focus {
+  .nav-list .nav-item.nav-item-fashion:hover, .nav-list .nav-item.nav-item-fashion:active, .nav-list .nav-item.nav-item-fashion:focus, .nav-list .nav-item.nav-item-fashion.active {
     border-top: #002bc1 solid 4px;
     color: #002bc1;
   }
-  .nav-list .nav-item.nav-item-tech:hover, .nav-list .nav-item.nav-item-tech:active, .nav-list .nav-item.nav-item-tech:focus {
+  .nav-list .nav-item.nav-item-tech:hover, .nav-list .nav-item.nav-item-tech:active, .nav-list .nav-item.nav-item-tech:focus, .nav-list .nav-item.nav-item-tech.active {
     border-top: #0081c1 solid 4px;
     color: #0081c1;
   }
-  .nav-list .nav-item.nav-item-aesthetic:hover, .nav-list .nav-item.nav-item-aesthetic:active, .nav-list .nav-item.nav-item-aesthetic:focus {
+  .nav-list .nav-item.nav-item-aesthetic:hover, .nav-list .nav-item.nav-item-aesthetic:active, .nav-list .nav-item.nav-item-aesthetic:focus, .nav-list .nav-item.nav-item-aesthetic.active {
     border-top: #ff82a2 solid 4px;
     color: #ff82a2;
   }
-  .nav-list .nav-item.nav-item-fittness:hover, .nav-list .nav-item.nav-item-fittness:active, .nav-list .nav-item.nav-item-fittness:focus {
+  .nav-list .nav-item.nav-item-fittness:hover, .nav-list .nav-item.nav-item-fittness:active, .nav-list .nav-item.nav-item-fittness:focus, .nav-list .nav-item.nav-item-fittness.active {
     border-top: #ff8200 solid 4px;
     color: #ff8200;
   }
-  .nav-list .nav-item.nav-item-expert:hover, .nav-list .nav-item.nav-item-expert:active, .nav-list .nav-item.nav-item-expert:focus {
+  .nav-list .nav-item.nav-item-expert:hover, .nav-list .nav-item.nav-item-expert:active, .nav-list .nav-item.nav-item-expert:focus, .nav-list .nav-item.nav-item-expert.active {
     border-top: #002bc1 solid 4px;
     color: #002bc1;
   }
