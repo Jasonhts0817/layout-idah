@@ -109,13 +109,16 @@ button {
   background-color: #ff8200;
 }
 .category-title.category-title-tech {
-  background-color: #0081c1;
+  background-color: #0082c3;
 }
 .category-title.category-title-aesthetic {
-  background-color: #ff82a2;
+  background-color: #00afaf;
 }
 .category-title.category-title-expert {
   background-color: #002bc1;
+}
+.category-title.category-title-gender {
+  background-color: #ff82a0;
 }
 
 .hot-video-item {

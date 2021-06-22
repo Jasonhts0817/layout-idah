@@ -189,12 +189,12 @@
     color: #002bc1;
   }
   .nav-list .nav-item.nav-item-tech:hover, .nav-list .nav-item.nav-item-tech:active, .nav-list .nav-item.nav-item-tech:focus, .nav-list .nav-item.nav-item-tech.active {
-    border-top: #0081c1 solid 4px;
-    color: #0081c1;
+    border-top: #0082c3 solid 4px;
+    color: #0082c3;
   }
   .nav-list .nav-item.nav-item-aesthetic:hover, .nav-list .nav-item.nav-item-aesthetic:active, .nav-list .nav-item.nav-item-aesthetic:focus, .nav-list .nav-item.nav-item-aesthetic.active {
-    border-top: #ff82a2 solid 4px;
-    color: #ff82a2;
+    border-top: #00afaf solid 4px;
+    color: #00afaf;
   }
   .nav-list .nav-item.nav-item-fittness:hover, .nav-list .nav-item.nav-item-fittness:active, .nav-list .nav-item.nav-item-fittness:focus, .nav-list .nav-item.nav-item-fittness.active {
     border-top: #ff8200 solid 4px;
@@ -203,6 +203,10 @@
   .nav-list .nav-item.nav-item-expert:hover, .nav-list .nav-item.nav-item-expert:active, .nav-list .nav-item.nav-item-expert:focus, .nav-list .nav-item.nav-item-expert.active {
     border-top: #002bc1 solid 4px;
     color: #002bc1;
+  }
+  .nav-list .nav-item.nav-item-gender:hover, .nav-list .nav-item.nav-item-gender:active, .nav-list .nav-item.nav-item-gender:focus, .nav-list .nav-item.nav-item-gender.active {
+    border-top: #ff82a0 solid 4px;
+    color: #ff82a0;
   }
 
   .hover-icon {
@@ -447,10 +451,13 @@
     border-left: #ff8200 solid 11px;
   }
   .promote-slide-item.promote-slide-item-tech {
-    border-left: #0081c1 solid 11px;
+    border-left: #0082c3 solid 11px;
   }
   .promote-slide-item.promote-slide-item-aesthetic {
-    border-left: #ff82a2 solid 11px;
+    border-left: #00afaf solid 11px;
+  }
+  .promote-slide-item.promote-slide-item-gender {
+    border-left: #ff82a0 solid 11px;
   }
   .promote-slide-item img {
     width: 1200px;
@@ -874,16 +881,19 @@
     border-right: #002bc1 solid 15px;
   }
   .nav-list .nav-item.nav-item-tech {
-    border-right: #0081c1 solid 15px;
+    border-right: #0082c3 solid 15px;
   }
   .nav-list .nav-item.nav-item-aesthetic {
-    border-right: #ff82a2 solid 15px;
+    border-right: #00afaf solid 15px;
   }
   .nav-list .nav-item.nav-item-fittness {
     border-right: #ff8200 solid 15px;
   }
   .nav-list .nav-item.nav-item-expert {
     border-right: #002bc1 solid 15px;
+  }
+  .nav-list .nav-item.nav-item-gender {
+    border-right: #ff82a0 solid 15px;
   }
   .nav-list .nav-item:hover {
     color: #000;
@@ -989,10 +999,10 @@
     border-left: #ff8200 solid 7px;
   }
   .promote-slide-item.promote-slide-item-tech {
-    border-left: #0081c1 solid 7px;
+    border-left: #0082c3 solid 7px;
   }
   .promote-slide-item.promote-slide-item-aesthetic {
-    border-left: #ff82a2 solid 7px;
+    border-left: #00afaf solid 7px;
   }
 
   .promote-slide-title {

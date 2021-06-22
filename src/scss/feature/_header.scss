@@ -123,6 +123,15 @@
           color: map-get($map: $color, $key: fashion);
         }
       }
+      &.nav-item-gender {
+        &:hover,
+        &:active,
+        &:focus,
+        &.active {
+          border-top: map-get($map: $color, $key: gender) solid 4px;
+          color: map-get($map: $color, $key: gender);
+        }
+      }
     }
   }
   .hover-icon {
@@ -245,6 +254,9 @@
       }
       &.nav-item-expert {
         border-right: map-get($map: $color, $key: fashion) solid 15px;
+      }
+      &.nav-item-gender {
+        border-right: map-get($map: $color, $key: gender) solid 15px;
       }
       &:hover {
         color: map-get($map: $color, $key: black);

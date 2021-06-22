@@ -19,6 +19,9 @@
     &.category-title-expert {
       background-color: map-get($map: $color, $key: expert);
     }
+    &.category-title-gender {
+      background-color: map-get($map: $color, $key: gender);
+    }
   }
 }
 @mixin category-PC {
