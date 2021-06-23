@@ -337,6 +337,8 @@
   }
 
   .new-img img {
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 100%;
     width: 440px !important;
   }
@@ -449,6 +451,8 @@
     border-left: #ff82a0 solid 11px;
   }
   .promote-slide-item img {
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 1200px;
     height: 680px;
   }
@@ -508,6 +512,8 @@
   }
 
   .new-img img {
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 100%;
     max-width: 440px !important;
   }
@@ -971,6 +977,8 @@
     height: 61.5vmax;
   }
   .promote-slide-item img {
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 100%;
   }
   .promote-slide-item.promote-slide-item-fashion {
@@ -1044,6 +1052,8 @@
   }
 
   .new-img img {
+    -o-object-fit: cover;
+       object-fit: cover;
     margin: 0 auto;
     height: 255px;
     max-width: 280px !important;
@@ -1216,6 +1226,8 @@
   }
 
   .expert-card .expert-img {
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 95vmin;
   }
   .expert-card .expert-info {

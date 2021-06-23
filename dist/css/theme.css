@@ -137,6 +137,10 @@ button {
   background-color: #002bc1;
   color: #fff;
 }
+.expert-card .expert-info .expert-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .expert-card .expert-info .expert-desc {
   font-weight: 500;
 }

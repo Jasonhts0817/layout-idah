@@ -9,6 +9,9 @@
       width: 100%;
       background-color: map-get($map: $color, $key: expert);
       color: map-get($map: $color, $key: white);
+      .expert-img {
+        object-fit: cover;
+      }
       .expert-desc {
         font-weight: 500;
       }
@@ -68,6 +71,7 @@
   }
   .expert-card {
     .expert-img {
+      object-fit: cover;
       height: 95vmin;
     }
     .expert-info {

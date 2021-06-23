@@ -19,6 +19,7 @@
   }
   .new-img {
     img {
+      object-fit: cover;
       height: 100%;
       width: 440px !important;
     }
@@ -54,6 +55,7 @@
   }
   .new-img {
     img {
+      object-fit: cover;
       height: 100%;
       max-width: 440px !important;
     }
@@ -165,6 +167,7 @@
   }
   .new-img {
     img {
+      object-fit: cover;
       margin: 0 auto;
       height: 255px;
       max-width: 280px !important;

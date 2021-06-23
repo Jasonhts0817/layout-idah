@@ -31,6 +31,7 @@
       border-left: map-get($map: $color, $key: gender) solid 11px;
     }
     img {
+      object-fit: cover;
       width: 1200px;
       height: 680px;
     }
@@ -71,6 +72,7 @@
   .promote-slide-item {
     height: 61.5vmax;
     img {
+      object-fit: cover;
       height: 100%;
     }
     &.promote-slide-item-fashion {
