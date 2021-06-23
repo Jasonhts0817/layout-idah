@@ -86,12 +86,10 @@ button {
 }
 
 .news {
-  margin: 0;
   -webkit-box-shadow: initial;
           box-shadow: initial;
 }
 .news article {
-  margin: initial;
   border-bottom: initial;
 }
 

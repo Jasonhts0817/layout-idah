@@ -321,7 +321,7 @@
     z-index: 1;
   }
 
-  .conatiner {
+  .cool-container {
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 130px;
@@ -334,6 +334,11 @@
   .new-article .news-article-abstract {
     font-size: 14px;
     line-height: 21px;
+  }
+
+  .new-img img {
+    height: 100%;
+    width: 440px !important;
   }
 
   .new-list {
@@ -365,25 +370,17 @@
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .article-item.article-item-large {
-    max-width: 440px;
-    max-height: 605px;
-  }
   .article-item.article-item-large img {
-    width: 100%;
-    height: 100%;
+    width: 440px;
+    height: 605px;
   }
   .article-item.article-item-large .article-desc {
     bottom: 22px;
     left: 22px;
   }
-  .article-item.article-item-small {
-    max-width: 320px;
-    max-height: 290px;
-  }
   .article-item.article-item-small img {
-    width: 100%;
-    height: 100%;
+    width: 320px;
+    height: 290px;
   }
   .article-item.article-item-small .article-desc {
     bottom: 16px;
@@ -516,7 +513,7 @@
   }
 
   .news article {
-    margin-left: 2.1%;
+    margin-left: 2.4%;
   }
 
   .news-item {
@@ -623,10 +620,10 @@
             justify-content: space-between;
   }
   .article-block:first-child {
-    margin-right: 2.1%;
+    margin-right: 2.4%;
   }
   .article-block:last-child {
-    margin-left: 2.1%;
+    margin-left: 2.4%;
   }
 
   .ad-banner {
@@ -656,7 +653,7 @@
     width: 225px;
   }
 
-  .conatiner {
+  .cool-container {
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 70px;
@@ -704,8 +701,8 @@
        object-fit: cover;
   }
   .article-item.article-item-large {
-    max-width: 38.9%;
-    max-height: 50.2vw;
+    width: 38.9%;
+    height: 50.2vw;
   }
   .article-item.article-item-large img {
     width: 100%;
@@ -965,7 +962,7 @@
     width: 28vmax;
   }
 
-  .conatiner {
+  .cool-container {
     margin: 0 auto;
     padding-top: 70px;
   }
@@ -1014,6 +1011,13 @@
   }
   .promote-list .owl-dots .owl-dot.active {
     background-color: #fff;
+  }
+
+  .news {
+    margin: 0;
+  }
+  .news article {
+    margin: initial;
   }
 
   .news-title {

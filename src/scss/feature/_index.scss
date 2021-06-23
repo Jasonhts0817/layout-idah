@@ -1,7 +1,7 @@
 @mixin index {
 }
 @mixin index-PC {
-  .conatiner {
+  .cool-container {
     background-color: map-get($map: $color, $key: ghost-white);
     max-width: $container;
     margin: 0 auto;
@@ -11,7 +11,7 @@
 @mixin index-PC-Tablet {
 }
 @mixin index-Tablet {
-  .conatiner {
+  .cool-container {
     background-color: map-get($map: $color, $key: ghost-white);
     max-width: $container;
     margin: 0 auto;
@@ -21,7 +21,7 @@
 @mixin index-Tablet-Mobile {
 }
 @mixin index-Mobile {
-  .conatiner {
+  .cool-container {
     background-color: map-get($map: $color, $key: ghost-white);
     margin: 0 auto;
     padding-top: $header-height-mobile;

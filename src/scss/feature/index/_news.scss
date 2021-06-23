@@ -1,9 +1,7 @@
 @mixin news {
   .news {
-    margin: 0;
     box-shadow: initial;
     article {
-      margin: initial;
       border-bottom: initial;
     }
   }
@@ -17,6 +15,12 @@
     .news-article-abstract {
       font-size: 14px;
       line-height: 21px;
+    }
+  }
+  .new-img {
+    img {
+      height: 100%;
+      width: 440px !important;
     }
   }
   .new-list {
@@ -56,7 +60,7 @@
   }
   .news {
     article {
-      margin-left: 2.1%;
+      margin-left: 2.4%;
     }
   }
   .news-item {
@@ -130,6 +134,12 @@
 @mixin news-Tablet-Mobile {
 }
 @mixin news-Mobile {
+  .news {
+    margin: 0;
+    article {
+      margin: initial;
+    }
+  }
   .news-title {
     color: map-get($map: $color, $key: fashion);
     text-align: center;
