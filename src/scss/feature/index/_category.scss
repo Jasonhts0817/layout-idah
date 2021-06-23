@@ -38,6 +38,9 @@
       letter-spacing: 5px;
     }
   }
+  .article-list {
+    height: 605px;
+  }
   .article-item {
     position: relative;
     img {
@@ -120,7 +123,7 @@
     &:last-child {
       margin-left: 2.4%;
     }
-    width: 61.1%;
+    width: 58.9%;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
@@ -148,6 +151,9 @@
       font-size: 0.6vw;
       letter-spacing: 0.45vw;
     }
+  }
+  .article-list {
+    height: 50.2vw;
   }
   .article-item {
     position: relative;

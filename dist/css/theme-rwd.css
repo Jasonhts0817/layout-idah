@@ -365,6 +365,10 @@
     letter-spacing: 5px;
   }
 
+  .article-list {
+    height: 605px;
+  }
+
   .article-item {
     position: relative;
   }
@@ -613,7 +617,7 @@
   }
 
   .article-block {
-    width: 61.1%;
+    width: 58.9%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -697,6 +701,10 @@
   .category-title .sub-title {
     font-size: 0.6vw;
     letter-spacing: 0.45vw;
+  }
+
+  .article-list {
+    height: 50.2vw;
   }
 
   .article-item {
