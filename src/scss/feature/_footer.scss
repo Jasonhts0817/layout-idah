@@ -27,6 +27,12 @@
 }
 
 @mixin footer-PC {
+  .ftr-container {
+    padding: 0 66px;
+  }
+}
+
+@mixin footer-PC-Tablet {
   .ftr {
     background-color: map-get($map: $color, $key: gray);
   }
@@ -37,53 +43,66 @@
     max-width: $container;
     min-height: $footer-height-pc;
     margin: 0 auto;
-    padding: 0 60px 0 66px;
     .footer-social-list {
+      flex-grow: 1;
       display: flex;
       justify-content: flex-end;
       width: 20%;
       img {
-        margin: 34px 0 30px 0;
+        margin: 34px 0 30px 1.2vmax;
         width: 21px;
         height: 21px;
-        margin-left: 22px;
       }
     }
   }
   .ftr-item {
     display: flex;
+    flex-grow: 1;
   }
   .footer-info {
-    padding-left: 85px;
+    flex-grow: 1;
+  }
+  .btn-scroll-top {
+    margin-right: 4.4vmax;
   }
   .footer-link {
-    width: 500px;
+    position: relative;
+    max-width: 500px;
     display: flex;
     justify-content: space-between;
     font-size: 16px;
     margin-bottom: 17px;
+    text-align: left;
     a {
-      position: relative;
-      &:not(:last-child)::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        right: -75px;
-        height: 0.5em;
-        width: 65px;
-        border-top: 1px solid map-get($map: $color, $key: fashion);
-        z-index: 1;
+      z-index: 2;
+      padding: 0 5px;
+      background-color: map-get($map: $color, $key: gray);
+      &:first-child {
+        padding: 0 5px 0 0;
       }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 0.5em;
+      width: 100%;
+      border-top: 1px solid map-get($map: $color, $key: fashion);
+      z-index: 1;
     }
   }
 }
 
-@mixin footer-PC-Tablet {
-}
-
 @mixin footer-Tablet {
+  .ftr-container {
+    padding: 0 5.5%;
+  }
 }
 @mixin footer-Tablet-Mobile {
+}
+
+@mixin footer-Mobile {
   .ftr-item {
     text-align: center;
   }
@@ -100,7 +119,4 @@
       color: map-get($map: $color, $key: fashion);
     }
   }
-}
-
-@mixin footer-Mobile {
 }

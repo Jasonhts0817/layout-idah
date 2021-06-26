@@ -22,8 +22,7 @@ const config = {
     path: path.resolve(__dirname, "dist")
   },
   devServer: {
-    open: true,
-    host: "localhost",
+    host: "localhost"
   },
   plugins: [
     new HtmlWebpackPlugin({ template: "index.html", minify: false, inject: !isProduction }),

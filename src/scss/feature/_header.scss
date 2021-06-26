@@ -18,10 +18,21 @@
 
 @mixin header-PC {
   .hdr-container {
+    padding: 0 0 0 65px;
+  }
+
+  .search {
+    .input-group {
+      background-color: map-get($map: $color, $key: white);
+      width: 320px;
+    }
+  }
+}
+@mixin header-PC-Tablet {
+  .hdr-container {
     max-width: $container;
     min-height: $header-height-pc;
     margin: 0 auto;
-    padding: 0px 65px;
     .social-list {
       display: flex;
       justify-content: flex-end;
@@ -149,22 +160,40 @@
     }
   }
   .search {
-    width: 21.2%;
+    .input-group {
+      background-color: map-get($map: $color, $key: white);
+    }
+    .input-group-btn {
+      text-align: right;
+    }
     input[type="text"] {
-      min-height: 30px !important;
+      min-height: 41px !important;
+    }
+    .btn-search {
+      min-height: 41px;
+      img {
+        width: 16px;
+      }
     }
   }
 }
-@mixin header-PC-Tablet {
-}
 @mixin header-Tablet {
-  .nav-section {
-    &.active {
-      width: 225px;
+  .hdr-container {
+    padding: 0 0 0 5.5%;
+  }
+
+  .search {
+    flex-grow: 1;
+    width: 31%;
+    .input-group {
+      width: 100%;
+      background-color: map-get($map: $color, $key: white);
     }
   }
 }
 @mixin header-Tablet-Mobile {
+}
+@mixin header-Mobile {
   .freezed {
     overflow: hidden;
   }
@@ -192,7 +221,6 @@
       height: 35px;
     }
   }
-
   .nav-section {
     position: fixed;
     top: $header-height-mobile;
@@ -202,6 +230,7 @@
     background-color: map-get($map: $color, $key: white);
     transition: all 0.3s;
     &.active {
+      width: 28vmax;
       .nav-container {
         display: block;
       }
@@ -296,13 +325,6 @@
       z-index: map-get($map: $z-index, $key: mask);
       pointer-events: none;
       background-color: map-get($map: $color, $key: opacity-5);
-    }
-  }
-}
-@mixin header-Mobile {
-  .nav-section {
-    &.active {
-      width: 28vmax;
     }
   }
 }

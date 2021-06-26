@@ -43,7 +43,7 @@
     color: map-get($map: $color, $key: fashion);
     h1 {
       font-size: 30px;
-      letter-spacing: 4px;
+      letter-spacing: 5px;
       margin-bottom: 10px;
     }
     h3 {
@@ -75,7 +75,7 @@
     justify-content: space-between;
 
     .news-article-date {
-      font-size: 10px;
+      font-size: 12px;
       letter-spacing: 1px;
       color: map-get($map: $color, $key: fashion);
     }
@@ -161,7 +161,7 @@
   }
   .news {
     article {
-      max-width: 280px;
+      max-width: 75vw;
       margin: 35px auto 0 auto;
     }
   }
@@ -179,8 +179,8 @@
     img {
       object-fit: cover;
       margin: 0 auto;
-      height: 255px;
-      max-width: 280px !important;
+      height: 68vw;
+      max-width: 75vw !important;
     }
   }
   .new-article {

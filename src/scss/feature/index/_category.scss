@@ -29,9 +29,10 @@
     height: 195px;
     width: 135px;
     .title {
+      height: 100%;
       font-size: 40px;
       letter-spacing: 7px;
-      margin: auto 10px;
+      margin: 3px 10px;
     }
     .sub-title {
       font-size: 10px;
@@ -52,8 +53,9 @@
         height: 605px;
       }
       .article-desc {
-        bottom: 22px;
-        left: 22px;
+        bottom: 0;
+        left: 0;
+        padding: 22px;
       }
     }
     &.article-item-small {
@@ -62,8 +64,9 @@
         height: 290px;
       }
       .article-desc {
-        bottom: 16px;
-        left: 16px;
+        bottom: 0;
+        left: 0;
+        padding: 16px;
       }
     }
   }
@@ -72,9 +75,10 @@
     text-shadow: map-get($map: $color, $key: black) 2px 2px 10px;
     color: map-get($map: $color, $key: white);
     .article-date {
-      font-size: 10px;
-      font-weight: 100;
+      font-size: 12px;
+      font-weight: 500;
       margin-bottom: 13px;
+      letter-spacing: 2px;
     }
     .article-title {
       font-size: 24px;
@@ -116,11 +120,11 @@
   }
 
   .article-block {
-    &:first-child {
+    &:nth-child(1) {
       margin-right: 2.4%;
     }
 
-    &:last-child {
+    &:nth-child(2) {
       margin-left: 2.4%;
     }
     width: 58.9%;
@@ -143,9 +147,10 @@
     height: 14.3vw;
     width: 9.9vw;
     .title {
+      height: 100%;
       font-size: 3.05vw;
       letter-spacing: 0.5vw;
-      margin: auto 0.8vw;
+      margin: 0.2vw 0.8vw;
     }
     .sub-title {
       font-size: 0.6vw;
@@ -168,20 +173,22 @@
         height: 100%;
       }
       .article-desc {
-        bottom: 22px;
-        left: 22px;
+        bottom: 0;
+        left: 0;
+        padding: 22px;
       }
     }
     &.article-item-small {
-      max-width: 48.1%;
-      max-height: 24.1vw;
+      width: 48.1%;
+      height: 24.1vw;
       img {
         width: 100%;
         height: 100%;
       }
       .article-desc {
-        bottom: 16px;
-        left: 16px;
+        bottom: 0;
+        left: 0;
+        padding: 16px;
       }
     }
   }
@@ -190,8 +197,9 @@
     text-shadow: map-get($map: $color, $key: black) 2px 2px 10px;
     color: map-get($map: $color, $key: white);
     .article-date {
-      font-size: 0.6vw;
-      font-weight: 100;
+      font-size: 1.5vw;
+      font-weight: 500;
+      letter-spacing: 1px;
       margin-bottom: 0.9vw;
     }
     .article-title {
@@ -260,16 +268,16 @@
     }
     .article-desc {
       width: 50%;
-      border-top: 20px solid map-get($map: $color, $key: white);
-      border-right: 20px solid map-get($map: $color, $key: white);
-      border-bottom: 20px solid map-get($map: $color, $key: white);
-      border-left: 17px solid map-get($map: $color, $key: white);
+      border-top: 5vmin solid map-get($map: $color, $key: white);
+      border-right: 5vmin solid map-get($map: $color, $key: white);
+      border-bottom: 5vmin solid map-get($map: $color, $key: white);
+      border-left: 4.6vmin solid map-get($map: $color, $key: white);
       background-color: map-get($map: $color, $key: white);
       overflow: hidden;
       .article-date {
-        font-size: 8px;
+        font-size: 3.2vmin;
         font-weight: 500;
-        margin-bottom: 7px;
+        margin-bottom: 1.8vmin;
       }
       .article-title {
         font-size: 4.4vmin;
