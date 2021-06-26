@@ -165,6 +165,16 @@
       margin: 35px auto 0 auto;
     }
   }
+  .news-item {
+    transition: transform 0.3s;
+  }
+  .owl-item {
+    &:not(.active.center) {
+      .news-item {
+        transform: scale(0.83) translateY(-6%);
+      }
+    }
+  }
   .new-img {
     img {
       object-fit: cover;

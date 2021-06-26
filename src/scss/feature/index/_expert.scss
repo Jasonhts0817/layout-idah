@@ -70,6 +70,16 @@
     padding: 70px 0;
   }
   .expert-card {
+    transition: transform 0.3s;
+  }
+  .owl-item {
+    &:not(.active.center) {
+      .expert-card {
+        transform: scale(0.83);
+      }
+    }
+  }
+  .expert-card {
     .expert-img {
       object-fit: cover;
       height: 95vmin;
