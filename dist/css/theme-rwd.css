@@ -881,9 +881,17 @@
     top: 0;
     right: 1px;
     height: 70px;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+    transition: transform 0.3s, -webkit-transform 0.3s;
   }
   .menu img {
     height: 35px;
+  }
+  .menu.active {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
 
   .nav-section {
@@ -1250,8 +1258,8 @@
   }
   .article-item .article-desc .article-title {
     font-size: 4.4vmin;
-    line-height: 6.1vmin;
-    font-weight: 700;
+    line-height: 6.2vmin;
+    font-weight: 500;
   }
 
   .ad-banner {

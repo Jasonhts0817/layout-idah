@@ -109,6 +109,7 @@ function menuClick() {
     const menuList = $("#menuList");
     const menuToggle = function () {
         menuList.toggleClass("active");
+        menuBtn.toggleClass("active");
         mask.toggleClass("active");
         body.toggleClass("freezed");
     };

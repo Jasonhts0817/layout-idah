@@ -217,8 +217,12 @@
     top: 0;
     right: 1px;
     height: $header-height-mobile;
+    transition: transform 0.3s;
     img {
       height: 35px;
+    }
+    &.active {
+      transform: rotate(90deg);
     }
   }
   .nav-section {
