@@ -14,7 +14,7 @@ function iframeVideo() {
     var hotVideoModelCloseBtn = $('.hot-video-close-btn');
     videoList.each(function (i, iframe) {
         var currentIframe = $(iframe);
-        var iframe_src = currentIframe.attr('src');
+        var iframe_src = currentIframe.data('url');
 
         var youtube_video_id = iframe_src.match(/youtube\.com.*(\?v=|\/embed\/)(.{11})/).pop();
 
@@ -23,6 +23,7 @@ function iframeVideo() {
             currentIframe.parent().append(video_thumbnail);
             currentIframe.appendTo(hotVideoModelContainer);
             video_thumbnail.click(function () {
+                currentIframe.attr('src', iframe_src);
                 hotVideoModel.fadeIn('400').css('display', 'flex');
                 currentIframe.fadeIn('400');
                 body.addClass("freezed");
@@ -94,7 +95,7 @@ function initOwlSlider() {
 
     var $hotVideoList = $('.hot-video-list');
     $hotVideoList.owlCarousel({
-        nav: true,
+        nav: false,
         dots: false,
         loop: true,
         navText: ["<i class='glyphicon glyphicon-menu-left nav-prev'></i>", "<i class='glyphicon glyphicon-menu-right nav-next'></i>"],
