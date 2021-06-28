@@ -41,6 +41,10 @@ button {
   border: none;
 }
 
+.freezed {
+  overflow: hidden;
+}
+
 .btn-scroll-top {
   display: inline-block;
   text-align: center;
@@ -112,12 +116,61 @@ button {
   background-color: #ff82a0;
 }
 
-.hot-video-item {
-  position: relative;
-}
 .hot-video-item iframe {
+  display: none;
+}
+.hot-video-item img {
+  float: left;
   height: 100%;
   width: 100%;
+  cursor: pointer;
+}
+
+.hot-video iframe {
+  display: none;
+}
+
+.hot-video-model {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 3;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.hot-video-model .hot-video-model-container {
+  position: relative;
+  margin: auto 0;
+  padding: 5vmin;
+}
+.hot-video-model .hot-video-close-btn {
+  cursor: pointer;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #002bc1;
+  border-radius: 50%;
+  border: 2px solid #002bc1;
+  background-color: #fff;
+}
+.hot-video-model iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .expert-list {

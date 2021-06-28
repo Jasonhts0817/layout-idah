@@ -3,7 +3,40 @@ $(document).ready(function () {
     menuClick();
     headerScroll();
     scrollToHash();
+    iframeVideo();
 });
+
+function iframeVideo() {
+    var body = $(document.body);
+    var videoList = $('.hot-video-item iframe');
+    var hotVideoModel = $('.hot-video-model');
+    var hotVideoModelContainer = $('.hot-video-model-container');
+    var hotVideoModelCloseBtn = $('.hot-video-close-btn');
+    videoList.each(function (i, iframe) {
+        var currentIframe = $(iframe);
+        var iframe_src = currentIframe.attr('src');
+
+        var youtube_video_id = iframe_src.match(/youtube\.com.*(\?v=|\/embed\/)(.{11})/).pop();
+
+        if (youtube_video_id.length == 11) {
+            var video_thumbnail = $('<img src="//img.youtube.com/vi/' + youtube_video_id + '/0.jpg">');
+            currentIframe.parent().append(video_thumbnail);
+            currentIframe.appendTo(hotVideoModelContainer);
+            video_thumbnail.click(function () {
+                hotVideoModel.fadeIn('400').css('display', 'flex');
+                currentIframe.fadeIn('400');
+                body.addClass("freezed");
+            });
+            hotVideoModelCloseBtn.click(function () {
+                if (currentIframe.is(":visible") == true) { currentIframe.attr('src', iframe_src); }
+                hotVideoModel.fadeOut('400');
+                currentIframe.fadeOut('400');
+                body.removeClass("freezed");
+            });
+        }
+    });
+}
+
 
 function initOwlSlider() {
 
@@ -61,9 +94,10 @@ function initOwlSlider() {
 
     var $hotVideoList = $('.hot-video-list');
     $hotVideoList.owlCarousel({
-        nav: false,
+        nav: true,
         dots: false,
         loop: true,
+        navText: ["<i class='glyphicon glyphicon-menu-left nav-prev'></i>", "<i class='glyphicon glyphicon-menu-right nav-next'></i>"],
         responsiveRefreshRate: 0,
         responsive: {
             0: {

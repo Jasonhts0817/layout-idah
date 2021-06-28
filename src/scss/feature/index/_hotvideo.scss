@@ -1,9 +1,50 @@
 @mixin hotvideo {
   .hot-video-item {
-    position: relative;
     iframe {
+      display: none;
+    }
+    img {
+      float: left;
       height: 100%;
       width: 100%;
+      cursor: pointer;
+    }
+  }
+  .hot-video {
+    iframe {
+      display: none;
+    }
+  }
+  .hot-video-model {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: map-get($map: $color, $key: opacity-5);
+    .hot-video-model-container {
+      position: relative;
+      margin: auto 0;
+      padding: 5vmin;
+    }
+    .hot-video-close-btn {
+      cursor: pointer;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: map-get($map: $color, $key: fashion);
+      border-radius: 50%;
+      border: 2px solid map-get($map: $color, $key: fashion);
+      background-color: map-get($map: $color, $key: white);
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
     }
   }
 }
@@ -15,8 +56,41 @@
     width: 100%;
     height: 210px;
   }
+  .hot-video-model {
+    .hot-video-model-container {
+      height: 100%;
+      width: 100%;
+    }
+    .hot-video-close-btn {
+      right: 1.5vmin;
+      top: 1.5vmin;
+      padding: 5px;
+      width: 4vmin;
+      height: 4vmin;
+      font-size: 2vmin;
+    }
+  }
 }
 @mixin hotvideo-PC-Tablet {
+  .hot-video {
+    color: map-get($map: $color, $key: fashion);
+    .nav-prev {
+      position: absolute;
+      top: 37%;
+      left: 0;
+      font-size: 30px;
+      padding: 10px 0;
+      background-color: map-get($map: $color, $key: gray);
+    }
+    .nav-next {
+      position: absolute;
+      top: 37%;
+      right: 0;
+      font-size: 30px;
+      padding: 10px 0;
+      background-color: map-get($map: $color, $key: gray);
+    }
+  }
   .hot-video-item {
     overflow: hidden;
     border-radius: 25px;
@@ -34,12 +108,33 @@
     width: 100%;
     height: 15.5vmax;
   }
+  .hot-video-model {
+    .hot-video-model-container {
+      height: 100vmin;
+      width: 100vmin;
+    }
+    .hot-video-close-btn {
+      right: 3vmin;
+      top: 3vmin;
+      padding: 5px;
+      width: 4vmin;
+      height: 4vmin;
+      font-size: 2vmin;
+    }
+  }
 }
 @mixin hotvideo-Tablet-Mobile {
 }
 @mixin hotvideo-Mobile {
   .hot-video {
     margin: 70px 0 10px 0;
+    color: map-get($map: $color, $key: fashion);
+    .nav-prev {
+      font-size: 20px;
+    }
+    .nav-next {
+      font-size: 20px;
+    }
   }
   .hot-video-item {
     width: 100%;
@@ -55,5 +150,20 @@
   .hot-video-list {
     padding: 40px 0;
     background-color: map-get($map: $color, $key: gray);
+  }
+
+  .hot-video-model {
+    .hot-video-model-container {
+      height: 100vmin;
+      width: 100vmin;
+    }
+    .hot-video-close-btn {
+      right: 3vmin;
+      top: 3vmin;
+      padding: 5px;
+      width: 8vmin;
+      height: 8vmin;
+      font-size: 4vmin;
+    }
   }
 }

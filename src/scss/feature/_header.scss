@@ -14,6 +14,9 @@
       border: none;
     }
   }
+  .freezed {
+    overflow: hidden;
+  }
 }
 
 @mixin header-PC {
@@ -194,9 +197,6 @@
 @mixin header-Tablet-Mobile {
 }
 @mixin header-Mobile {
-  .freezed {
-    overflow: hidden;
-  }
   .hdr-container {
     position: relative;
     height: $header-height-mobile;
