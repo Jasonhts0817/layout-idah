@@ -1,0 +1,69 @@
+@mixin sidebar {
+}
+@mixin sidebar-PC {
+}
+@mixin sidebar-PC-Tablet {
+}
+@mixin sidebar-Tablet {
+}
+@mixin sidebar-Tablet-Mobile {
+}
+@mixin sidebar-Mobile {
+  .sidebar-widget {
+    background-color: map-get($map: $color, $key: gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h4 {
+      font-size: 8.6vw;
+      letter-spacing: 1vw;
+      font-weight: 300;
+      margin: 8.8vw auto;
+    }
+    .list-unstyled > li > a {
+      padding: 0;
+    }
+  }
+  .recent-post {
+    li {
+      display: flex;
+      width: 100%;
+      height: 33.4vw;
+      margin-bottom: 3vw;
+      padding-bottom: 0;
+    }
+  }
+  .post-cover {
+    width: 50%;
+    height: 100%;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .post-content {
+    width: 50%;
+    border-width: 5vmin 5vmin 5vmin 4.6vmin;
+    border-style: solid;
+    border-color: map-get($map: $color, $key: white);
+    background-color: map-get($map: $color, $key: white);
+    overflow: hidden;
+    span {
+      color: map-get($map: $color, $key: black) !important;
+      font-size: 3.2vmin;
+      font-weight: 500 !important;
+      letter-spacing: 1px;
+      margin-bottom: 1.8vmin;
+    }
+    h5 {
+      a {
+        color: map-get($map: $color, $key: black) !important;
+      }
+      font-size: 4.4vmin;
+      line-height: 6.1vmin;
+      font-weight: 700 !important;
+    }
+  }
+}

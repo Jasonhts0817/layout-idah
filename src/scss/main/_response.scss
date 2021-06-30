@@ -21,3 +21,27 @@
     }
   }
 }
+
+@mixin boostrap-response($res) {
+  @if ($res == PC) {
+    @media screen and (min-width: ($boostrap-desktop-min-width)) {
+      @content;
+    }
+  } @else if ($res == PC-Tablet) {
+    @media screen and (min-width: ($boostrap-tablet-min-width + 1)) {
+      @content;
+    }
+  } @else if ($res == Tablet) {
+    @media screen and (max-width: ($boostrap-desktop-min-width - 1)) and (min-width: ($boostrap-tablet-min-width + 1)) {
+      @content;
+    }
+  } @else if ($res == Tablet-Mobile) {
+    @media screen and (max-width: ($boostrap-desktop-min-width - 1)) {
+      @content;
+    }
+  } @else if ($res == Mobile) {
+    @media screen and (max-width: $boostrap-tablet-min-width) {
+      @content;
+    }
+  }
+}
