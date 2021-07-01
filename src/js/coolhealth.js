@@ -149,7 +149,7 @@ function menuClick() {
         body.toggleClass("freezed");
     };
     const hideHeader = function () {
-        hdr.attr('style', `top:${hdr.height() * -1}`);
+        hdr.attr('style', 'top:' + (hdr.height() * -1));
     }
     menuBtn.click(function () {
         menuToggle();
@@ -177,7 +177,7 @@ function headerScroll() {
         if (prevScrollpos > currentScrollPos) {
             hdr.attr('style', 'top:0');
         } else {
-            hdr.attr('style', `top:${hdr.height() * -1}`);
+            hdr.attr('style', 'top:' + (hdr.height() * -1));
         }
         prevScrollpos = currentScrollPos;
     });
@@ -195,7 +195,7 @@ function scrollToHash() {
 function headerFreeze() {
     const hdr = $('#hdr');
     hdr.data("freeze", true);
-    setTimeout(() => {
+    setTimeout(function () {
         hdr.data("freeze", false);
     }, 1000);
 }
