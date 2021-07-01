@@ -87,7 +87,7 @@
       overflow: hidden;
       max-width: 72%;
       max-height: 33%;
-      color: map-get($map: $color, $key: dark-gray);
+      color: map-get($map: $color, $key: black);
     }
     .news-article-btn {
       width: 60px !important;
@@ -202,7 +202,7 @@
       line-height: 20px;
       letter-spacing: 1px;
       margin-bottom: 25px;
-      color: map-get($map: $color, $key: dark-gray);
+      color: map-get($map: $color, $key: black);
     }
     .news-article-btn {
       width: 90px !important;
