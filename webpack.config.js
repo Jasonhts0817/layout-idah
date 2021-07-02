@@ -11,8 +11,11 @@ const isProduction = process.env.NODE_ENV == "production";
 const config = {
   entry: {
     main: "./src/index.js",
-    theme: "./src/scss/theme.scss",
-    'theme-rwd': "./src/scss/theme-rwd.scss",
+    idah: "./src/scss/idah.scss",
+    'idah-rwd': "./src/scss/idah-rwd.scss",
+    'idah-service': "./src/scss/idah-rwd.scss",
+    'idah-solution': "./src/scss/idah-rwd.scss",
+    'search-dialogs': "./src/scss/idah-rwd.scss",
   },
   optimization: {
     removeEmptyChunks: true,

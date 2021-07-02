@@ -6,19 +6,19 @@ $tablet-min-width: 767px;
 $boostrap-desktop-min-width: 992px;
 $boostrap-tablet-min-width: 767px;
 
-$header-height-pc: 80px;
-$header-height-mobile: 70px;
+$header-height-pc: 107px;
+$header-height-mobile: 50px;
 $footer-height-pc: 140px;
 $footer-height-mobile: 50px;
 $container: 1200px;
 
 $rwd-breakpoint: (
   all: "all",
-  p: PC,
-  pt: PC-Tablet,
-  t: Tablet,
-  tm: Tablet-Mobile,
-  m: Mobile,
+  pc: PC,
+  pc-tablet: PC-Tablet,
+  tablet: Tablet,
+  tablet-mobile: Tablet-Mobile,
+  mobile: Mobile,
 );
 
 $color-gdt: (
@@ -28,15 +28,9 @@ $color-gdt: (
 $color: (
   opacity-0: rgba(0, 0, 0, 0),
   opacity-5: rgba(0, 0, 0, 0.3),
-  news: #b1b3b6,
-  fashion: #002bc1,
-  fittness: #ff8200,
-  tech: #0082c3,
-  aesthetic: #00afaf,
-  expert: #002bc1,
-  gender: #ff82a0,
   gray: #eaeaea,
-  dark-gray: #999a9a,
+  dark-gray: #57585e,
+  orange: EA5432,
   white: #fff,
   black: #000,
 );

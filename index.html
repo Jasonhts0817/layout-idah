@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>潮健康 COOL HEALTH</title>
+    <title>IDAH</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,13 +17,25 @@
     </link>
     <link href="css/theme-color.css?t=20200405" rel="stylesheet" type="text/css">
     </link>
-    <link href="css/theme-rwd.css?t=20200405" rel="preload" as="style">
+    <link href="css/idah-rwd.css?t=20200405" rel="preload" as="style">
     </link>
-    <link href="css/theme-rwd.css?t=20200405" rel="stylesheet" type="text/css">
+    <link href="css/idah-rwd.css?t=20200405" rel="stylesheet" type="text/css">
     </link>
-    <link href="css/theme.css?t=20200405" rel="preload" as="style">
+    <link href="css/idah.css?t=20200405" rel="preload" as="style">
     </link>
-    <link href="css/theme.css?t=20200405" rel="stylesheet" type="text/css">
+    <link href="css/idah.css?t=20200405" rel="stylesheet" type="text/css">
+    </link>
+    <link href="css/idah-solution.css?t=20200405" rel="preload" as="style">
+    </link>
+    <link href="css/idah-solution.css?t=20200405" rel="stylesheet" type="text/css">
+    </link>
+    <link href="css/idah-service.css?t=20200405" rel="preload" as="style">
+    </link>
+    <link href="css/idah-service.css?t=20200405" rel="stylesheet" type="text/css">
+    </link>
+    <link href="css/search-dialogs.css?t=20200405" rel="preload" as="style">
+    </link>
+    <link href="css/search-dialogs.css?t=20200405" rel="stylesheet" type="text/css">
     </link>
     <link href="css/owl.carousel.css?t=20200405" rel="stylesheet" type="text/css">
     </link>
@@ -36,58 +48,78 @@
     </script>
     <script type="text/javascript" src="js/jq-core.js"></script>
     <script type="text/javascript" src="js/_vendor/owl.carousel.js"></script>
-    <script type="text/javascript" src="js/theme.js"></script>
+    <script type="text/javascript" src="js/_vendor/search-dialog.js"></script>
+    <script type="text/javascript" src="js/idah.js"></script>
 </head>
 
 <body data-is-lazy="false" id="body">
     <header class="hdr" id="hdr">
         <div class="hdr-container">
             <h1 class="logo">
-                <a>
-                    <img class="D(n,m)" src="images/logo/logo.svg">
-                    <img class="D(n,pt)" src="images/logo/logo.svg">
-                </a>
+                <a href="#"><img src="images/logo/IDAH-web-01.png"></a>
             </h1>
             <div id="menuList" class="nav-section">
                 <div class="nav-container">
                     <nav class="nav nav-list">
-                        <a href="#" class="nav-item">link</a>
-                        <a href="#" class="nav-item">link</a>
-                        <a href="#" class="nav-item">link</a>
+                        <a href="#" class="nav-item">25 Solution</a>
+                        <a href="#" class="nav-item">Innovation</a>
+                        <a href="#" class="nav-item">Product</a>
+                        <a href="#" class="nav-item">Service</a>
+                        <a href="#" class="nav-item">IDAH</a>
+                        <a href="#" class="nav-item">Blog</a>
                     </nav>
                 </div>
             </div>
-            <form class="search D(n,pt)" ng-submit="search(keyword)">
-                <div class="input-group">
-                    <input name="q" ng-model="keyword" type="text" placeholder="輸入關鍵字">
-                    <div class="input-group-btn">
-                        <button type="submit" class="btn btn-search">
-                            <img src="" />
-                        </button>
-                    </div>
-                </div>
-            </form>
-            <button id="menuBtn" class="menu D(n,pt)">
-                <img src="images/navigation/cool-health_material-03.svg">
-            </button>
+            <div class="feature-list">
+                <a class="feature-item btn-search"><img src="images/navigation/IDAH-web-02.png"></a>
+                <a class="feature-item btn-lang display-none-mobile">EN 24</a>
+                <a class="feature-item btn-lang display-none-pc-tablet">
+                    <img src="images/flags/taiwan.png">
+                </a>
+                <a id="menuBtn" class="feature-item btn-lang display-none-pc-tablet">
+                    <img src="images/navigation/menu-btn.png">
+                </a>
+            </div>
         </div>
+        <a class="btn-contact-us">
+            Contact Us
+        </a>
     </header>
     <main>
         <section class="banner">
             <div class="owl-carousel banner-list">
                 <div class="item">
                     <div class="banner-slide-item">
-                        <img src="https://coolhealth.sharkcdn.io/blog/965a08a75e1d32ca939605b49ea9251b92e11746.jpg" />
+                        <img src="images/sample/IDAH-web-04.jpg" />
                     </div>
                 </div>
                 <div class="item">
                     <div class="banner-slide-item">
-                        <img src="https://coolhealth.sharkcdn.io/blog/965a08a75e1d32ca939605b49ea9251b92e11746.jpg" />
+                        <img src="images/sample/IDAH-web-04.jpg" />
                     </div>
                 </div>
                 <div class="item">
                     <div class="banner-slide-item">
-                        <img src="https://coolhealth.sharkcdn.io/blog/965a08a75e1d32ca939605b49ea9251b92e11746.jpg" />
+                        <img src="images/sample/IDAH-web-04.jpg" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="banner">
+            <div class="owl-carousel banner-list">
+                <div class="item">
+                    <div class="banner-slide-item">
+                        <img src="images/sample/IDAH-web-04.jpg" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="banner-slide-item">
+                        <img src="images/sample/IDAH-web-04.jpg" />
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="banner-slide-item">
+                        <img src="images/sample/IDAH-web-04.jpg" />
                     </div>
                 </div>
             </div>
@@ -95,7 +127,20 @@
     </main>
     <footer class="ftr">
     </footer>
-    <div id="mask" class="bg-mask"></div>
+    <div id="searchDiolog" class="search-diolog">
+        <div class="search-container">
+            <form class="search display-none-pc-tablet" ng-submit="search(keyword)">
+                <div class="input-group">
+                    <input name="q" ng-model="keyword" type="text" placeholder="輸入關鍵字">
+                    <div class="input-group-btn">
+                        <button type="submit" class="btn btn-search">
+                            <img src="IDAH-web-02.png" />
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>

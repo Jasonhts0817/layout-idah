@@ -1,18 +1,11 @@
 @mixin header {
   .hdr {
     width: 100%;
-    background-color: map-get($map: $color, $key: gray);
     z-index: map-get($map: $z-index, $key: header);
     position: fixed;
     top: 0;
     transition: top 0.3s;
-  }
-  .search {
-    position: relative;
-    input[type="text"] {
-      width: 100%;
-      border: none;
-    }
+    background-color: map-get($map: $color, $key: white);
   }
   .freezed {
     overflow: hidden;
@@ -21,177 +14,93 @@
 
 @mixin header-PC {
   .hdr-container {
-    padding: 0 0 0 65px;
-  }
-
-  .search {
-    .input-group {
-      background-color: map-get($map: $color, $key: white);
-      width: 320px;
-    }
   }
 }
 @mixin header-PC-Tablet {
   .hdr-container {
-    max-width: $container;
+    max-width: 1600px;
     min-height: $header-height-pc;
     margin: 0 auto;
-    .social-list {
-      display: flex;
-      justify-content: flex-end;
-      width: 20%;
-      img {
-        margin: 34px 0 30px 0;
-        width: 16px;
-        height: 16px;
-        margin-left: 17px;
-      }
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .logo {
+    width: 15%;
+    img {
+      max-width: 225px;
     }
   }
   .nav-section {
+    margin-left: 8.5%;
     .nav-container {
-      overflow: hidden;
-      height: 0px;
-      transition: height 0.3s;
       display: flex;
       align-items: center;
       justify-content: space-between;
-    }
-    &:hover {
-      .nav-container {
-        transition: height 0.3s;
-        height: 80px;
-      }
     }
   }
   .nav-list {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 80%;
     .nav-item {
-      font-size: 16px;
-      font-weight: 700;
-      letter-spacing: 4px;
-      padding: 30px 0;
-      border-top: map-get($map: $color, $key: opacity-0) solid 4px;
-      &.nav-item-news {
-        &:hover,
-        &:active,
-        &:focus,
-        &.active {
-          border-top: map-get($map: $color, $key: news) solid 4px;
-          color: map-get($map: $color, $key: news);
-        }
-      }
-      &.nav-item-fashion {
-        &:hover,
-        &:active,
-        &:focus,
-        &.active {
-          border-top: map-get($map: $color, $key: fashion) solid 4px;
-          color: map-get($map: $color, $key: fashion);
-        }
-      }
-      &.nav-item-tech {
-        &:hover,
-        &:active,
-        &:focus,
-        &.active {
-          border-top: map-get($map: $color, $key: tech) solid 4px;
-          color: map-get($map: $color, $key: tech);
-        }
-      }
-      &.nav-item-aesthetic {
-        &:hover,
-        &:active,
-        &:focus,
-        &.active {
-          border-top: map-get($map: $color, $key: aesthetic) solid 4px;
-          color: map-get($map: $color, $key: aesthetic);
-        }
-      }
-      &.nav-item-fittness {
-        &:hover,
-        &:active,
-        &:focus,
-        &.active {
-          border-top: map-get($map: $color, $key: fittness) solid 4px;
-          color: map-get($map: $color, $key: fittness);
-        }
-      }
-      &.nav-item-expert {
-        &:hover,
-        &:active,
-        &:focus,
-        &.active {
-          border-top: map-get($map: $color, $key: fashion) solid 4px;
-          color: map-get($map: $color, $key: fashion);
-        }
-      }
-      &.nav-item-gender {
-        &:hover,
-        &:active,
-        &:focus,
-        &.active {
-          border-top: map-get($map: $color, $key: gender) solid 4px;
-          color: map-get($map: $color, $key: gender);
-        }
+      color: map-get($map: $color, $key: dark-gray);
+      font-size: 24px;
+      font-weight: 400;
+      padding: 0 26px;
+      &:hover,
+      &:active,
+      &:focus,
+      &.active {
+        color: map-get($map: $color, $key: gray);
       }
     }
   }
-  .hover-icon {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    img {
-      width: 30px;
-      height: 30px;
-      margin: 4px 0 17px 0;
-    }
-  }
-  .logo-container {
+
+  .feature-list {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-  }
-  .logo {
-    width: 78.8%;
-    padding-right: 20px;
-    img {
-      max-width: 560px;
-    }
-  }
-  .search {
-    .input-group {
-      background-color: map-get($map: $color, $key: white);
-    }
-    .input-group-btn {
-      text-align: right;
-    }
-    input[type="text"] {
-      min-height: 41px !important;
-    }
-    .btn-search {
-      min-height: 41px;
-      img {
-        width: 16px;
+    justify-content: flex-start;
+    margin-left: 2.3%;
+    .feature-item {
+      color: map-get($map: $color, $key: dark-gray);
+      font-size: 24px;
+      font-weight: 400;
+      padding: 0 26px;
+      &:hover,
+      &:active,
+      &:focus,
+      &.active {
+        color: map-get($map: $color, $key: gray);
       }
+      &:first-child {
+        border-right: 1px solid map-get($map: $color, $key: dark-gray);
+      }
+    }
+  }
+  .btn-contact-us {
+    position: fixed;
+    top: 0;
+    right: 155px;
+    color: map-get($map: $color, $key: white);
+    font-size: 22px;
+    padding: 10px 15px;
+    font-weight: 300;
+    text-align: center;
+    background-color: map-get($map: $color, $key: orange);
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 10px map-get($map: $color, $key: dark-gray);
+    &:hover,
+    &:active,
+    &:focus,
+    &.active {
+      color: map-get($map: $color, $key: gray);
     }
   }
 }
 @mixin header-Tablet {
   .hdr-container {
     padding: 0 0 0 5.5%;
-  }
-
-  .search {
-    flex-grow: 1;
-    width: 31%;
-    .input-group {
-      width: 100%;
-      background-color: map-get($map: $color, $key: white);
-    }
   }
 }
 @mixin header-Tablet-Mobile {
@@ -201,12 +110,33 @@
     position: relative;
     height: $header-height-mobile;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 4vmin;
   }
   .logo {
     img {
-      max-width: 109px;
+      max-width: 146px;
+    }
+  }
+
+  .feature-list {
+    display: flex;
+    align-items: center;
+    .feature-item {
+      color: map-get($map: $color, $key: dark-gray);
+      font-size: 24px;
+      font-weight: 400;
+      padding: 0 2vmin;
+      &:hover,
+      &:active,
+      &:focus,
+      &.active {
+        color: map-get($map: $color, $key: gray);
+      }
+      img {
+        height: 22px;
+      }
     }
   }
   .menu {
@@ -227,21 +157,22 @@
   }
   .nav-section {
     position: fixed;
+    overflow: hidden;
     top: $header-height-mobile;
     right: 0;
-    width: 0;
-    height: 100%;
+    width: 100%;
+    height: 0;
     background-color: map-get($map: $color, $key: white);
     transition: all 0.3s;
     &.active {
-      width: 28vmax;
+      height: 100%;
       .nav-container {
         display: block;
       }
     }
   }
   .nav-container {
-    max-height: 85%;
+    max-height: 100vh;
     overflow-y: auto;
     display: none;
     text-align: center;
@@ -262,73 +193,30 @@
       &:last-child {
         border-bottom: map-get($map: $color, $key: fashion) solid 1px;
       }
-      &.nav-item-news {
-        border-right: map-get($map: $color, $key: news) solid 15px;
-      }
-      &.nav-item-fashion {
-        border-right: map-get($map: $color, $key: fashion) solid 15px;
-      }
-      &.nav-item-tech {
-        border-right: map-get($map: $color, $key: tech) solid 15px;
-      }
-      &.nav-item-aesthetic {
-        border-right: map-get($map: $color, $key: aesthetic) solid 15px;
-      }
-      &.nav-item-fittness {
-        border-right: map-get($map: $color, $key: fittness) solid 15px;
-      }
-      &.nav-item-expert {
-        border-right: map-get($map: $color, $key: fashion) solid 15px;
-      }
-      &.nav-item-gender {
-        border-right: map-get($map: $color, $key: gender) solid 15px;
-      }
       &:hover {
         color: map-get($map: $color, $key: black);
       }
     }
   }
-  .search {
-    margin: 12.4% 12.4% 8% 12.4%;
-    input[type="text"] {
-      border: map-get($map: $color, $key: fashion) solid 1px;
-      min-height: 30px !important;
-    }
-  }
-  .link-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 12.4%;
-    a {
-      font-size: 10px;
-      width: 50%;
-      padding: 5.4%;
-    }
-  }
-  .social-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 12.8%;
-    img {
-      width: 22px;
-      height: 22px;
-    }
-  }
-  .bg-mask {
+  .btn-contact-us {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: map-get($map: $color, $key: opacity-0);
-    transition: 0.3s;
-    display: none;
+    top: 77px;
+    right: 0;
+    color: map-get($map: $color, $key: white);
+    font-size: 0.8vw;
+    letter-spacing: 1px;
+    padding: 2.5vw 2vw;
+    font-weight: 100;
+    text-align: center;
+    background-color: map-get($map: $color, $key: orange);
+    border-radius: 10px 0 0 10px;
+    writing-mode: vertical-rl;
+    box-shadow: 0 0 10px map-get($map: $color, $key: dark-gray);
+    &:hover,
+    &:active,
+    &:focus,
     &.active {
-      display: block;
-      z-index: map-get($map: $z-index, $key: mask);
-      pointer-events: none;
-      background-color: map-get($map: $color, $key: opacity-5);
+      color: map-get($map: $color, $key: gray);
     }
   }
 }

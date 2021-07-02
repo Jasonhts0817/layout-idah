@@ -1,12 +1,12 @@
 @each $key, $value in $rwd-breakpoint {
   @if $key == "all" {
-    .D\(n\) {
+    .display-none {
       display: none;
     }
-    .D\(b\) {
+    .display-block {
       display: block;
     }
-    .img\(m\) {
+    .img-mask {
       &:after {
         content: " ";
         position: absolute;
@@ -23,13 +23,13 @@
     }
   } @else {
     @include response($value) {
-      .D\(n\,#{$key}\) {
+      .display-none-#{$key} {
         display: none;
       }
-      .D\(b\,#{$key}\) {
+      .display-block-#{$key} {
         display: block;
       }
-      .img\(m\,#{$key}\) {
+      .img-mask-#{$key} {
         &:after {
           content: " ";
           position: absolute;
