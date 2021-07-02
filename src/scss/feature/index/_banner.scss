@@ -1,0 +1,95 @@
+@mixin banner {
+  .banner-slide-bullets {
+    position: absolute;
+    display: flex;
+  }
+
+  .banner-slide-title {
+    position: absolute;
+    z-index: 1;
+    color: map-get($map: $color, $key: white);
+  }
+}
+
+@mixin banner-PC {
+}
+@mixin banner-PC-Tablet {
+  .banner {
+    padding-top: $header-height-pc;
+  }
+  .banner-slide-item {
+    img {
+      object-fit: cover;
+      height: calc(100vh - #{$header-height-pc});
+    }
+  }
+  .banner-slide-title {
+    bottom: 48px;
+    left: 55px;
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 49px;
+    text-shadow: map-get($map: $color, $key: black) 2px 2px 10px;
+  }
+
+  .banner-list {
+    .owl-dots {
+      position: absolute;
+      display: flex;
+      right: 16px;
+      bottom: 16px;
+      .owl-dot {
+        width: 10px;
+        height: 10px;
+        margin: 4px;
+        border-radius: 50%;
+        background-color: map-get($map: $color, $key: black);
+        &.active {
+          background-color: map-get($map: $color, $key: white);
+        }
+      }
+    }
+  }
+}
+@mixin banner-Tablet {
+}
+@mixin banner-Tablet-Mobile {
+}
+@mixin banner-Mobile {
+  .banner {
+    padding-top: $header-height-mobile;
+  }
+  .banner-slide-item {
+    height: 61.5vmax;
+    img {
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+  .banner-slide-title {
+    bottom: 55px;
+    left: 35px;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+
+  .banner-list {
+    .owl-dots {
+      position: absolute;
+      display: flex;
+      left: 35px;
+      bottom: 25px;
+      .owl-dot {
+        width: 9px;
+        height: 9px;
+        margin-right: 5px;
+        border-radius: 50%;
+        background-color: map-get($map: $color, $key: black);
+        &.active {
+          background-color: map-get($map: $color, $key: white);
+        }
+      }
+    }
+  }
+}

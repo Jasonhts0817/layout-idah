@@ -1,122 +1,12 @@
 @mixin footer {
-  .btn-scroll-top {
-    display: inline-block;
-    text-align: center;
-    line-height: 30px;
-    background-color: map-get($map: $color, $key: fashion);
-    width: 65px;
-    height: 30px;
-    letter-spacing: 1px;
-    color: map-get($map: $color, $key: white);
-    border-radius: 5px;
-  }
-  .copyright {
-    font-size: 10px;
-    letter-spacing: 2px;
-    .copyright-name {
-      color: map-get($map: $color, $key: fashion);
-    }
-  }
-  .ftr-item a {
-    &:hover,
-    &:active,
-    &:focus {
-      color: map-get($map: $color, $key: white);
-    }
-  }
 }
-
 @mixin footer-PC {
-  .ftr-container {
-    padding: 0 66px;
-  }
 }
-
 @mixin footer-PC-Tablet {
-  .ftr {
-    background-color: map-get($map: $color, $key: gray);
-  }
-  .ftr-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: $container;
-    min-height: $footer-height-pc;
-    margin: 0 auto;
-    .footer-social-list {
-      flex-grow: 1;
-      display: flex;
-      justify-content: flex-end;
-      width: 20%;
-      img {
-        margin: 34px 0 30px 1.2vmax;
-        width: 21px;
-        height: 21px;
-      }
-    }
-  }
-  .ftr-item {
-    display: flex;
-    flex-grow: 1;
-  }
-  .footer-info {
-    flex-grow: 1;
-  }
-  .btn-scroll-top {
-    margin-right: 4.4vmax;
-  }
-  .footer-link {
-    position: relative;
-    max-width: 500px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 16px;
-    margin-bottom: 17px;
-    text-align: left;
-    a {
-      z-index: 2;
-      padding: 0 5px;
-      background-color: map-get($map: $color, $key: gray);
-      &:first-child {
-        padding: 0 5px 0 0;
-      }
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      height: 0.5em;
-      width: 100%;
-      border-top: 1px solid map-get($map: $color, $key: fashion);
-      z-index: 1;
-    }
-  }
 }
-
 @mixin footer-Tablet {
-  .ftr-container {
-    padding: 0 5.5%;
-  }
 }
 @mixin footer-Tablet-Mobile {
 }
-
 @mixin footer-Mobile {
-  .ftr-item {
-    text-align: center;
-  }
-  .footer-info {
-    margin: 16px 0 27px 0;
-    width: 100%;
-  }
-  .copyright {
-    font-size: 10px;
-    letter-spacing: 3px;
-    transform: scale(0.75);
-    width: 100%;
-    .copyright-name {
-      color: map-get($map: $color, $key: fashion);
-    }
-  }
 }

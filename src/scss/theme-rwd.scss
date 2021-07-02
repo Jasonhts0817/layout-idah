@@ -5,73 +5,48 @@
   @include header-PC;
   @include footer-PC;
   @include index-PC;
-  @include promote-PC;
-  @include news-PC;
-  @include category-PC;
-  @include hotvideo-PC;
-  @include expert-PC;
+  @include banner-PC;
 }
 
 @include response(PC-Tablet) {
   @include header-PC-Tablet;
   @include footer-PC-Tablet;
   @include index-PC-Tablet;
-  @include promote-PC-Tablet;
-  @include news-PC-Tablet;
-  @include category-PC-Tablet;
-  @include hotvideo-PC-Tablet;
-  @include expert-PC-Tablet;
+  @include banner-PC-Tablet;
 }
 
 @include response(Tablet) {
   @include header-Tablet;
   @include footer-Tablet;
   @include index-Tablet;
-  @include promote-Tablet;
-  @include news-Tablet;
-  @include category-Tablet;
-  @include hotvideo-Tablet;
-  @include expert-Tablet;
+  @include banner-Tablet;
 }
 
 @include response(Tablet-Mobile) {
   @include header-Tablet-Mobile;
   @include footer-Tablet-Mobile;
   @include index-Tablet-Mobile;
-  @include promote-Tablet-Mobile;
-  @include news-Tablet-Mobile;
-  @include category-Tablet-Mobile;
-  @include hotvideo-Tablet-Mobile;
-  @include expert-Tablet-Mobile;
+  @include banner-Tablet-Mobile;
 }
 
 @include response(Mobile) {
   @include header-Mobile;
   @include footer-Mobile;
   @include index-Mobile;
-  @include promote-Mobile;
-  @include news-Mobile;
-  @include category-Mobile;
-  @include hotvideo-Mobile;
-  @include expert-Mobile;
+  @include banner-Mobile;
 }
 
 @include boostrap-response(PC) {
-  @include sidebar-PC;
 }
 
 @include boostrap-response(PC-Tablet) {
-  @include sidebar-PC-Tablet;
 }
 
 @include boostrap-response(Tablet) {
-  @include sidebar-Tablet;
 }
 
 @include boostrap-response(Tablet-Mobile) {
-  @include sidebar-Tablet-Mobile;
 }
 
 @include boostrap-response(Mobile) {
-  @include sidebar-Mobile;
 }
