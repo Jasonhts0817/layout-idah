@@ -1,0 +1,7 @@
+@function color($value) {
+  @return map-get($map: $color, $key: $value);
+}
+
+@function z-index($value) {
+  @return map-get($map: $z-index, $key: $value);
+}

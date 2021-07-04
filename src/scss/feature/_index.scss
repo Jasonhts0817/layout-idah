@@ -2,7 +2,6 @@
 }
 @mixin index-PC {
   .cool-container {
-    background-color: map-get($map: $color, $key: ghost-white);
     max-width: $container;
     margin: 0 auto;
   }
@@ -11,7 +10,6 @@
 }
 @mixin index-Tablet {
   .cool-container {
-    background-color: map-get($map: $color, $key: ghost-white);
     max-width: $container;
     margin: 0 auto;
   }
@@ -20,7 +18,6 @@
 }
 @mixin index-Mobile {
   .cool-container {
-    background-color: map-get($map: $color, $key: ghost-white);
     margin: 0 auto;
   }
 }

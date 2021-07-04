@@ -6,7 +6,7 @@ $tablet-min-width: 767px;
 $boostrap-desktop-min-width: 992px;
 $boostrap-tablet-min-width: 767px;
 
-$header-height-pc: 107px;
+$header-height-pc: 5.6vw;
 $header-height-mobile: 50px;
 $footer-height-pc: 140px;
 $footer-height-mobile: 50px;
@@ -27,15 +27,21 @@ $color-gdt: (
 
 $color: (
   opacity-0: rgba(0, 0, 0, 0),
-  opacity-5: rgba(0, 0, 0, 0.3),
+  opacity-3: rgba(0, 0, 0, 0.3),
+  opacity-75: rgba(0, 0, 0, 0.75),
+  opacity-w-15: rgba(255, 255, 255, 0.15),
   gray: #eaeaea,
+  nobel: #9f9f9f,
   dark-gray: #57585e,
-  orange: EA5432,
+  orange: #ea5432,
+  suger-cane: #e9e9e7,
   white: #fff,
+  thunder: #231f20,
   black: #000,
 );
 
 $z-index: (
+  diolog: 5,
   header: 3,
   mask: 1,
 );

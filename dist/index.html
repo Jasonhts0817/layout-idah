@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>潮健康 COOL HEALTH</title>
+    <title>IDAH</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,13 +17,25 @@
     </link>
     <link href="css/theme-color.css?t=20200405" rel="stylesheet" type="text/css">
     </link>
-    <link href="css/theme-rwd.css?t=20200405" rel="preload" as="style">
+    <link href="css/idah-rwd.css?t=20200405" rel="preload" as="style">
     </link>
-    <link href="css/theme-rwd.css?t=20200405" rel="stylesheet" type="text/css">
+    <link href="css/idah-rwd.css?t=20200405" rel="stylesheet" type="text/css">
     </link>
-    <link href="css/theme.css?t=20200405" rel="preload" as="style">
+    <link href="css/idah.css?t=20200405" rel="preload" as="style">
     </link>
-    <link href="css/theme.css?t=20200405" rel="stylesheet" type="text/css">
+    <link href="css/idah.css?t=20200405" rel="stylesheet" type="text/css">
+    </link>
+    <link href="css/idah-solution.css?t=20200405" rel="preload" as="style">
+    </link>
+    <link href="css/idah-solution.css?t=20200405" rel="stylesheet" type="text/css">
+    </link>
+    <link href="css/idah-service.css?t=20200405" rel="preload" as="style">
+    </link>
+    <link href="css/idah-service.css?t=20200405" rel="stylesheet" type="text/css">
+    </link>
+    <link href="css/search-dialogs.css?t=20200405" rel="preload" as="style">
+    </link>
+    <link href="css/search-dialogs.css?t=20200405" rel="stylesheet" type="text/css">
     </link>
     <link href="css/owl.carousel.css?t=20200405" rel="stylesheet" type="text/css">
     </link>
@@ -36,768 +48,335 @@
     </script>
     <script type="text/javascript" src="js/jq-core.js"></script>
     <script type="text/javascript" src="js/_vendor/owl.carousel.js"></script>
-    <script type="text/javascript" src="js/coolhealth.js"></script>
-<script defer src="main.js"></script><link href="css/theme.css" rel="stylesheet"><link href="css/theme-rwd.css" rel="stylesheet"></head>
+    <script type="text/javascript" src="js/_vendor/search-dialog.js"></script>
+    <script type="text/javascript" src="js/idah.js"></script>
+<script defer src="main.js"></script><link href="css/idah.css" rel="stylesheet"><link href="css/idah-rwd.css" rel="stylesheet"><link href="css/search-dialogs.css" rel="stylesheet"></head>
 
 <body data-is-lazy="false" id="body">
     <header class="hdr" id="hdr">
         <div class="hdr-container">
+            <h1 class="logo">
+                <a href="#"><img src="images/logo/IDAH-web-01.png"></a>
+            </h1>
             <div id="menuList" class="nav-section">
                 <div class="nav-container">
-                    <nav class="nav nav-list">
-                        <a href="#gender" class="nav-item nav-item-gender">兩性生活</a>
-                        <a href="#fashion" class="nav-item nav-item-fashion">潮爆新資</a>
-                        <a href="#tech" class="nav-item nav-item-tech">科技潮品</a>
-                        <a href="#aesthetic" class="nav-item nav-item-aesthetic">醫美專欄</a>
-                        <a href="#fittness" class="nav-item nav-item-fittness">運動健身</a>
-                        <a href="#expert" class="nav-item nav-item-expert">潮健專家</a>
-                    </nav>
-                    <label class="search D(n,pt)">
-                        <input type="text">
-                    </label>
-                    <div class="link-list D(n,pt)">
-                        <a>關於我們</a>
-                        <a>媒體查詢</a>
-                        <a>連絡我們</a>
-                        <a>外部連結</a>
-                    </div>
-                    <div class="social-list">
-                        <a><img src="images/cool-health/social/cool-health_material-08.svg"></a>
-                        <a><img src="images/cool-health/social/cool-health_material-09.svg"></a>
-                        <a><img src="images/cool-health/social/cool-health_material-10.svg"></a>
-                        <a><img src="images/cool-health/social/cool-health_material-11.svg"></a>
-                    </div>
-                </div>
-                <div class="hover-icon D(n,m)">
-                    <img src="images/cool-health/navigation/cool-health_material-04.svg">
-                </div>
-            </div>
-            <div class="logo-container">
-                <h1 class="logo">
-                    <a>
-                        <img class="D(n,m)" src="images/cool-health/logo/cool-health_material-01.svg">
-                        <img class="D(n,pt)" src="images/cool-health/logo/cool-health_material-02.svg">
-                    </a>
-                </h1>
-                <label class="search D(n,m)">
-                    <form class="form-inline">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="輸入關鍵字" required>
-                            <div class="input-group-btn">
-                                <button type="submit" class="btn btn-search">
-                                    <img src="images/cool-health/navigation/cool-health_material-05.svg" />
-                                </button>
+                    <img id="btnMenuClose" class="btn-menu-close" src="images/icon/icon-times-gray.svg"></img>
+                    <nav class="nav nav-list jCollapse" data-reject-device="['p','t']">
+                        <div class="nav-group">
+                            <a href="#" class="nav-topic jCollapseTopic"><span>Solution</span>
+                                <img class="icon-plus" src="images/icon/icon-plus-gray.svg">
+                                <img class="icon-minus" src="images/icon/icon-minus-gray.svg"></a>
+                            <div class="nav-item-list jCollapseContent">
+                                <a class="nav-item">Aqua Feed</a>
+                                <a class="nav-item">Animal Feed</a>
+                                <a class="nav-item">Pet Food</a>
+                                <a class="nav-item">Food</a>
+                                <a class="nav-item">Wood & Biomass</a>
+                                <a class="nav-item">Premix & Concentrates</a>
                             </div>
                         </div>
-                    </form>
-                </label>
+                        <div class="nav-group">
+                            <a href="#" class="nav-topic jCollapseTopic"><span>Innovation</span>
+                                <img class="icon-plus" src="images/icon/icon-plus-gray.svg">
+                                <img class="icon-minus" src="images/icon/icon-minus-gray.svg"></a>
+                            <div class="nav-item-list jCollapseContent">
+                                <a class="nav-item">Pelleting</a>
+                                <a class="nav-item">Extrusion</a>
+                                <a class="nav-item">Drying</a>
+                                <a class="nav-item">Grinding</a>
+                                <a class="nav-item">Mixing</a>
+                            </div>
+                        </div>
+                        <div class="nav-group">
+                            <a href="#" class="nav-topic jCollapseTopic"><span>Product</span>
+                                <img class="icon-plus" src="images/icon/icon-plus-gray.svg">
+                                <img class="icon-minus" src="images/icon/icon-minus-gray.svg"></a>
+                            <div class="nav-item-list jCollapseContent">
+                                <a class="nav-item">Grinding, Pulverizing, Crumbling</a>
+                                <a class="nav-item">Sieving and Cleaning</a>
+                                <a class="nav-item">Extrusion and Expander</a>
+                                <a class="nav-item">Mixing and Coating</a>
+                                <a class="nav-item">Drying and Cooling</a>
+                                <a class="nav-item">Pelleting</a>
+                                <a class="nav-item">Conditioning</a>
+                                <a class="nav-item">Conveying</a>
+                                <a class="nav-item">Weighing</a>
+                                <a class="nav-item">Control and Automation</a>
+                                <a class="nav-item">Auxilary</a>
+                                <a class="nav-item">Parts</a>
+                            </div>
+                        </div>
+                        <div class="nav-group">
+                            <a href="#" class="nav-topic jCollapseTopic"> <span>Service</span>
+                                <img class="icon-plus" src="images/icon/icon-plus-gray.svg">
+                                <img class="icon-minus" src="images/icon/icon-minus-gray.svg"></a>
+                            <div class="nav-item-list jCollapseContent">
+                                <a class="nav-item">Turn-key</a>
+                                <a class="nav-item">Sales Service</a>
+                                <a class="nav-item">Innovation Center</a>
+                                <a class="nav-item">Reapir Maintanance</a>
+                                <a class="nav-item">Technical Support</a>
+                            </div>
+                        </div>
+                        <div class="nav-group">
+                            <a href="#" class="nav-topic jCollapseTopic"><span>IDAH</span>
+                                <img class="icon-plus" src="images/icon/icon-plus-gray.svg">
+                                <img class="icon-minus" src="images/icon/icon-minus-gray.svg"></a>
+                            <div class="nav-item-list jCollapseContent">
+                                <a class="nav-item">About Us</a>
+                                <a class="nav-item">IDAH Innovation</a>
+                                <a class="nav-item">Competitive Advantage</a>
+                                <a class="nav-item">Certication</a>
+                                <a class="nav-item">IDAH Customer</a>
+                                <a class="nav-item">Successful story</a>
+                                <a class="nav-item">News & Events</a>
+                            </div>
+                        </div>
+                        <div class="nav-group">
+                            <a href="#" class="nav-topic jCollapseTopic"> <span>Blog</span>
+                                <img class="icon-plus" src="images/icon/icon-plus-gray.svg">
+                                <img class="icon-minus" src="images/icon/icon-minus-gray.svg"></a>
+                            <div class="nav-item-list jCollapseContent">
+                                <a class="nav-item">News</a>
+                                <a class="nav-item">Event and Fairs (Exhibition)</a>
+                                <a class="nav-item">White Paper (Technical Article)</a>
+                                <a class="nav-item">Successful Story</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
             </div>
-            <button id="menuBtn" class="menu D(n,pt)">
-                <img src="images/cool-health/navigation/cool-health_material-03.svg">
-            </button>
+            <div class="feature-list">
+                <button id="btnSearchOpen" class="feature-item btn-search"><img
+                        src="images/navigation/IDAH-web-02.png"></button>
+                <div class="feature-item hdr-sel-lang">
+                    <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="lang-txt"><span>EN</span></span>
+                        <img class="lang-img" src="images/flags/usa.png">
+                    </a>
+                    <ul class="sel-lang-option-list">
+                        <li class="sel-lang-option">
+                            <a href="#">
+                                <span class="lang-txt">EN</span>
+                                <img class="lang-img" src="images/flags/usa.png">
+                            </a>
+                        </li>
+                        <li class="sel-lang-option">
+                            <a href="#">
+                                <span class="lang-txt">Zh-TW</span>
+                                <img class="lang-img" src="images/flags/taiwan.png">
+                            </a>
+                        </li>
+                        <li class="sel-lang-option">
+                            <a href="#">
+                                <span class="lang-txt">CN</span>
+                                <img class="lang-img" src="images/flags/chinese.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a id="menuBtn" class="feature-item display-none-pc-tablet">
+                    <img src="images/navigation/menu-btn.png">
+                </a>
+            </div>
         </div>
+        <a class="btn-contact-us">
+            Contact Us
+        </a>
     </header>
     <main>
-        <section class="promote">
-            <div class="owl-carousel promote-list">
+        <section class="banner">
+            <div class="owl-carousel banner-list">
                 <div class="item">
-                    <div class="promote-slide-item promote-slide-item-gender img(m)">
-                        <img src="https://coolhealth.sharkcdn.io/blog/965a08a75e1d32ca939605b49ea9251b92e11746.jpg" />
-                        <div class="promote-slide-title">
-                            <P>標題假字標題假字</P>
-                            <P>標題假字標題假字標題假</P>
-                        </div>
+                    <div class="banner-slide-item">
+                        <img src="images/sample/IDAH-web-04.jpg" />
                     </div>
                 </div>
                 <div class="item">
-                    <div class="promote-slide-item promote-slide-item-fashion img(m)">
-                        <img src="https://coolhealth.sharkcdn.io/blog/965a08a75e1d32ca939605b49ea9251b92e11746.jpg" />
-                        <div class="promote-slide-title">
-                            <P>標題假字標題假字</P>
-                            <P>標題假字標題假字標題假</P>
-                        </div>
+                    <div class="banner-slide-item">
+                        <img src="images/sample/IDAH-web-04.jpg" />
                     </div>
                 </div>
                 <div class="item">
-                    <div class="promote-slide-item promote-slide-item-fittness img(m)">
-                        <img src="https://coolhealth.sharkcdn.io/blog/965a08a75e1d32ca939605b49ea9251b92e11746.jpg" />
-                        <div class="promote-slide-title">
-                            <P>標題假字標題假字</P>
-                            <P>標題假字標題假字標題假</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="promote-slide-item promote-slide-item-tech img(m)">
-                        <img src="https://coolhealth.sharkcdn.io/blog/965a08a75e1d32ca939605b49ea9251b92e11746.jpg" />
-                        <div class="promote-slide-title">
-                            <P>標題假字標題假字</P>
-                            <P>標題假字標題假字標題假</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="promote-slide-item promote-slide-item-aesthetic img(m)">
-                        <img src="https://coolhealth.sharkcdn.io/blog/965a08a75e1d32ca939605b49ea9251b92e11746.jpg" />
-                        <div class="promote-slide-title">
-                            <P>標題假字標題假字</P>
-                            <P>標題假字標題假字標題假</P>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="promote-slide-item promote-slide-item-aesthetic img(m)">
-                        <img src="https://coolhealth.sharkcdn.io/blog/965a08a75e1d32ca939605b49ea9251b92e11746.jpg" />
-                        <div class="promote-slide-title">
-                            <P>標題假字標題假字</P>
-                            <P>標題假字標題假字標題假</P>
-                        </div>
+                    <div class="banner-slide-item">
+                        <img src="images/sample/IDAH-web-04.jpg" />
                     </div>
                 </div>
             </div>
         </section>
-        <div class="cool-container">
-            <!-- 最新文章 -->
-            <section id="news" class="news">
-                <div class="news-title">
-                    <h1>最新文章</h1>
-                    <h3>NEW ARTICLES</h3>
-                </div>
-                <div class="news-container">
-                    <div class="owl-carousel news-list">
-                        <div class="item news-item">
-                            <div class="new-img">
-                                <img src="images/banner/1.jpg" />
-                            </div>
-                            <article class="new-article">
-                                <div class="news-article-date">2021.04.05</div>
-                                <div class="news-article-title">
-                                    <p>無論幾歲總是吃不飽</p>
-                                    <p>原來是「血糖」上下跑害你變大食怪？</p>
-                                </div>
-                                <div class="news-article-abstract">
-                                    你總是吃不飽嗎？常常被親友揶揄胃有如宇宙蟲洞、無底深淵，有吃跟沒
-                                    吃一樣？明明半小時前大夥兒才正在吃到飽餐廳大啖燒烤，現在你又要揪
-                                    大家去居酒屋吃串燒，吃完到家竟然還要室友幫忙買鹹酥雞當宵夜。當站
-                                    上體重計....
-                                </div>
-                                <a><img class="news-article-btn"
-                                        src="images/cool-health/navigation/cool-health_material-07.svg"></a>
-                            </article>
-                        </div>
-                        <div class="item news-item">
-                            <div class="new-img">
-                                <img src="images/banner/1.jpg" />
-                            </div>
-                            <article class="new-article">
-                                <div class="news-article-date">2021.04.05</div>
-                                <div class="news-article-title">
-                                    <p>無論幾歲總是吃不飽</p>
-                                    <p>原來是「血糖」上下跑害你變大食怪？</p>
-                                </div>
-                                <div class="news-article-abstract">
-                                    你總是吃不飽嗎？常常被親友揶揄胃有如宇宙蟲洞、無底深淵，有吃跟沒
-                                    吃一樣？明明半小時前大夥兒才正在吃到飽餐廳大啖燒烤，現在你又要揪
-                                    大家去居酒屋吃串燒，吃完到家竟然還要室友幫忙買鹹酥雞當宵夜。當站
-                                    上體重計....
-                                </div>
-                                <a><img class="news-article-btn"
-                                        src="images/cool-health/navigation/cool-health_material-07.svg"></a>
-                            </article>
-                        </div>
-                        <div class="item news-item">
-                            <div class="new-img">
-                                <img src="images/banner/1.jpg" />
-                            </div>
-                            <article class="new-article">
-                                <div class="news-article-date">2021.04.05</div>
-                                <div class="news-article-title">
-                                    <p>無論幾歲總是吃不飽</p>
-                                    <p>原來是「血糖」上下跑害你變大食怪？</p>
-                                </div>
-                                <div class="news-article-abstract">
-                                    你總是吃不飽嗎？常常被親友揶揄胃有如宇宙蟲洞、無底深淵，有吃跟沒
-                                    吃一樣？明明半小時前大夥兒才正在吃到飽餐廳大啖燒烤，現在你又要揪
-                                    大家去居酒屋吃串燒，吃完到家竟然還要室友幫忙買鹹酥雞當宵夜。當站
-                                    上體重計....
-                                </div>
-                                <a><img class="news-article-btn"
-                                        src="images/cool-health/navigation/cool-health_material-07.svg"></a>
-                            </article>
-                        </div>
-                        <div class="item news-item">
-                            <div class="new-img">
-                                <img src="images/banner/2.jpg" />
-                            </div>
-                            <article class="new-article">
-                                <div class="news-article-date">2021.04.05</div>
-                                <div class="news-article-title">
-                                    <p>無論幾歲總是吃不飽</p>
-                                    <p>原來是「血糖」上下跑害你變大食怪？</p>
-                                </div>
-                                <div class="news-article-abstract">
-                                    你總是吃不飽嗎？常常被親友揶揄胃有如宇宙蟲洞、無底深淵，有吃跟沒
-                                    吃一樣？明明半小時前大夥兒才正在吃到飽餐廳大啖燒烤，現在你又要揪
-                                    大家去居酒屋吃串燒，吃完到家竟然還要室友幫忙買鹹酥雞當宵夜。當站
-                                    上體重計....
-                                </div>
-                                <a><img class="news-article-btn"
-                                        src="images/cool-health/navigation/cool-health_material-07.svg"></a>
-                            </article>
-                        </div>
-                        <div class="item news-item">
-                            <div class="new-img">
-                                <img src="images/banner/3.jpg" />
-                            </div>
-                            <article class="new-article">
-                                <div class="news-article-date">2021.04.05</div>
-                                <div class="news-article-title">
-                                    <p>無論幾歲總是吃不飽</p>
-                                    <p>原來是「血糖」上下跑害你變大食怪？</p>
-                                </div>
-                                <div class="news-article-abstract">
-                                    你總是吃不飽嗎？常常被親友揶揄胃有如宇宙蟲洞、無底深淵，有吃跟沒
-                                    吃一樣？明明半小時前大夥兒才正在吃到飽餐廳大啖燒烤，現在你又要揪
-                                    大家去居酒屋吃串燒，吃完到家竟然還要室友幫忙買鹹酥雞當宵夜。當站
-                                    上體重計....
-                                </div>
-                                <a><img class="news-article-btn"
-                                        src="images/cool-health/navigation/cool-health_material-07.svg"></a>
-                            </article>
-                        </div>
+        <section class="banner">
+            <div class="owl-carousel banner-list">
+                <div class="item">
+                    <div class="banner-slide-item">
+                        <img src="images/sample/IDAH-web-04.jpg" />
                     </div>
                 </div>
-            </section>
-            <!-- 潮爆新資 -->
-            <section class="category">
-                <div class="category-title-container">
-                    <div id="fashion" class="category-title category-title-fashion">
-                        <div class="title">潮爆新資</div>
-                        <div class="sub-title">COOL FASHION</div>
+                <div class="item">
+                    <div class="banner-slide-item">
+                        <img src="images/sample/IDAH-web-04.jpg" />
                     </div>
                 </div>
-                <div class="article-container">
-                    <div class="article-list">
-                        <a class="article-item article-item-large">
-                            <div class="article-img">
-                                <img
-                                    src="https://coolhealth.sharkcdn.io/blog/4f600af3fbe65811cf4029966a6f5f586e307707.jpg">
-                            </div>
-                            <div class="article-desc">
-                                <div class="article-date">2021.04.05</div>
-                                <div class="article-title">
-                                    潮流咖變掰咖！穿喬丹也會足底筋膜炎？哈佛：愈會「翹
-                                </div>
-                                <div class="article-content">
-                                    你總是吃不飽嗎？常常被親友噎餘位有咒蟲洞、無底深淵，有兒財政再吃到飽參考你總是吃不飽嗎？常常被親友噎餘位有咒蟲洞、無底深淵，有兒財政再吃到飽參考你總是吃不飽嗎？常常被親友噎餘位有咒蟲洞、無底深淵，有兒財政再吃到飽參考你總是吃不飽嗎？常常被親友噎餘位有咒蟲洞、無底深淵，有兒財政再吃到飽參考你總是吃不飽嗎？常常被親友噎餘位有咒蟲洞、無底深淵，有兒財政再吃到飽參考你總是吃不飽嗎？常常被親友噎餘位有咒蟲洞、無底深淵，有兒財政再吃到飽參考你總是吃不飽嗎？常常被親友噎餘位有咒蟲洞、無底深淵，有兒財政再吃到飽參考你總是吃不飽嗎？常常被親友噎餘位有咒蟲洞、無底深淵，有兒財政再吃到飽參考
-                                </div>
-                            </div>
-                        </a>
-                        <div class="article-block">
-                            <a class="article-item article-item-small">
-                                <div class="article-img">
-                                    <img
-                                        src="https://coolhealth.sharkcdn.io/blog/c7c2bc72d9c029988c561a44f4f50624a9dcd5fa.jpg">
-                                </div>
-                                <div class="article-desc">
-                                    <div class="article-date">2021.04.05</div>
-                                    <div class="article-title">
-                                        電子菸比較健康？別傻了 只要是菸都會讓你「硬不起來」！
-                                        電子菸比較健康？別傻了 只要是菸都會讓你「硬不起來」！
-                                    </div>
-                                </div>
-                                <div class="article-content">
-                                    你總是吃不飽嗎？常常被親友噎餘位有咒蟲洞、無底深淵，有兒財政再吃到飽參考你總是吃不飽嗎？常常被親友噎餘位有咒蟲洞、無底深淵，有兒財政再吃到飽參考你總是吃不飽嗎？常常被親友噎餘位有咒蟲洞、無底深淵，有兒財政再吃到飽參考你總是吃不飽嗎？常常被親友噎餘位有咒蟲洞、無底深淵，有兒財政再吃到飽參考你總是吃不飽嗎？常常被親友噎餘位有咒蟲洞、無底深淵，有兒財政再吃到飽參考你總是吃不飽嗎？常常被親友噎餘位有咒蟲洞、無底深淵，有兒財政再吃到飽參考你總是吃不飽嗎？常常被親友噎餘位有咒蟲洞、無底深淵，有兒財政再吃到飽參考你總是吃不飽嗎？常常被親友噎餘位有咒蟲洞、無底深淵，有兒財政再吃到飽參考
-                                </div>
-                            </a>
-                            <a class="article-item article-item-small">
-                                <div class="article-img">
-                                    <img
-                                        src="https://coolhealth.sharkcdn.io/blog/7ec952621a27c0464774aeca098d3941bcf26142.jpg">
-                                </div>
-                                <div class="article-desc">
-                                    <div class="article-date">2021.04.05</div>
-                                    <div class="article-title">
-                                        電子菸比較健康？別傻了 只要是菸都會讓你「硬不起來」！
-                                    </div>
-                                </div>
-                            </a>
-                            <a class="article-item article-item-small">
-                                <div class="article-img">
-                                    <img
-                                        src="https://coolhealth.sharkcdn.io/blog/6e471e57884928b6ba2e1054a22ee5ab3cf361ef.jpg">
-                                </div>
-                                <div class="article-desc">
-                                    <div class="article-date">2021.04.05</div>
-                                    <div class="article-title">
-                                        借酒澆愁早就退流行？美研究：最好的解酒藥是愛情！
-                                    </div>
-                                </div>
-                            </a>
-                            <a class="article-item article-item-small">
-                                <div class="article-img">
-                                    <img
-                                        src="https://coolhealth.sharkcdn.io/blog/0a2d7b391aa7bee60ee73a60ec8f4d9d8ee53946.jpg">
-                                </div>
-                                <div class="article-desc">
-                                    <div class="article-date">2021.04.05</div>
-                                    <div class="article-title">
-                                        <p>標題假字標題假字</p>
-                                        <p>標題假字標題假字標題假</p>
-                                        <p>標題假字標題假字</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="ad-banner">
-                        <img src="images/sample/2.jpg">
-                    </div>
-                    <div class="btn-more D(n,pt)">
-                        <a>看更多</a>
-                    </div>
-                </div>
-            </section>
-            <!-- 運動健身 -->
-            <section class="category">
-                <div class="category-title-container">
-                    <div id="fittness" class="category-title category-title-fittness">
-                        <div class="title">運動健身</div>
-                        <div class="sub-title">COOL FITTNESS</div>
-                    </div>
-                </div>
-                <div class="article-container">
-                    <div class="article-list">
-                        <div class="article-block">
-                            <a class="article-item article-item-small">
-                                <div class="article-img">
-                                    <img src="images/sample/2.jpg">
-                                </div>
-                                <div class="article-desc">
-                                    <div class="article-date">2021.04.05</div>
-                                    <div class="article-title">
-                                        <p>標題假字標題假字</p>
-                                        <p>標題假字標題假字標題假</p>
-                                        <p>標題假字標題假字</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a class="article-item article-item-small">
-                                <div class="article-img">
-                                    <img src="images/sample/3.jpg">
-                                </div>
-                                <div class="article-desc">
-                                    <div class="article-date">2021.04.05</div>
-                                    <div class="article-title">
-                                        <p>標題假字標題假字</p>
-                                        <p>標題假字標題假字標題假</p>
-                                        <p>標題假字標題假字</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <a class="article-item article-item-small">
-                                <div class="article-img">
-                                    <img src="images/sample/4.jpg">
-                                </div>
-                                <div class="article-desc">
-                                    <div class="article-date">2021.04.05</div>
-                                    <div class="article-title">
-                                        <p>標題假字標題假字</p>
-                                        <p>標題假字標題假字標題假</p>
-                                        <p>標題假字標題假字</p>
-                                    </div>
-                                </div>
-                            </a>
-                            <div class="article-item article-item-small">
-                                <div class="article-img">
-                                    <img src="images/sample/5.jpg">
-                                </div>
-                                <div class="article-desc">
-                                    <div class="article-date">2021.04.05</div>
-                                    <div class="article-title">
-                                        <p>標題假字標題假字</p>
-                                        <p>標題假字標題假字標題假</p>
-                                        <p>標題假字標題假字</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ad-banner">
-                        <img src="images/sample/2.jpg">
-                    </div>
-                    <div class="btn-more D(n,pt)">
-                        <a>看更多</a>
-                    </div>
-                </div>
-            </section>
-            <!-- Hot Video -->
-            <section class="hot-video">
-                <div class="hot-video-title"><img src="images/cool-health/navigation/hot-video.svg"></div>
-                <div class="owl-carousel owl-theme hot-video-list">
-                    <div class="item hot-video-item">
-                        <iframe data-url="https://www.youtube.com/embed/0hNOvYOR9C0?controls=0" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <div class="item hot-video-item">
-                        <iframe data-url="https://www.youtube.com/embed/IwrRqRYClBs?controls=0" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <div class="item hot-video-item">
-                        <iframe data-url="https://www.youtube.com/embed/ypJRqX_1dXk?controls=0" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <div class="item hot-video-item">
-                        <iframe data-url="https://www.youtube.com/embed/0hNOvYOR9C0?controls=0" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="hot-video-model">
-                    <div class="hot-video-model-container">
-                        <span class="hot-video-close-btn"><span class="glyphicon glyphicon-remove"></span></span>
-                    </div>
-                </div>
-            </section>
-            <!-- 科技潮品 -->
-            <section class="category">
-                <div class="category-title-container">
-                    <div id="tech" class="category-title category-title-tech">
-                        <div class="title">科技潮品</div>
-                        <div class="sub-title">COOL TECH</div>
-                    </div>
-                </div>
-                <div class="article-container">
-                    <div class="article-list">
-                        <div class="article-item article-item-large">
-                            <div class="article-img">
-                                <img
-                                    src="https://coolhealth.sharkcdn.io/blog/52b5069c9164e19a1299449aaaf0bfbd6afdd7cc.jpg">
-                            </div>
-                            <div class="article-desc">
-                                <div class="article-date">2021.04.05</div>
-                                <div class="article-title">
-                                    <p>標題假字標題假字</p>
-                                    <p>標題假字標題假字標題假字假字</p>
-                                    <p>標題假字標題假字</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="article-block">
-                            <div class="article-item article-item-small">
-                                <div class="article-img">
-                                    <img src="images/sample/2.jpg">
-                                </div>
-                                <div class="article-desc">
-                                    <div class="article-date">2021.04.05</div>
-                                    <div class="article-title">
-                                        <p>標題假字標題假字</p>
-                                        <p>標題假字標題假字標題假</p>
-                                        <p>標題假字標題假字</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="article-item article-item-small">
-                                <div class="article-img">
-                                    <img src="images/sample/3.jpg">
-                                </div>
-                                <div class="article-desc">
-                                    <div class="article-date">2021.04.05</div>
-                                    <div class="article-title">
-                                        <p>標題假字標題假字</p>
-                                        <p>標題假字標題假字標題假</p>
-                                        <p>標題假字標題假字</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="article-item article-item-small">
-                                <div class="article-img">
-                                    <img src="images/sample/4.jpg">
-                                </div>
-                                <div class="article-desc">
-                                    <div class="article-date">2021.04.05</div>
-                                    <div class="article-title">
-                                        <p>標題假字標題假字</p>
-                                        <p>標題假字標題假字標題假</p>
-                                        <p>標題假字標題假字</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="article-item article-item-small">
-                                <div class="article-img">
-                                    <img src="images/sample/5.jpg">
-                                </div>
-                                <div class="article-desc">
-                                    <div class="article-date">2021.04.05</div>
-                                    <div class="article-title">
-                                        <p>標題假字標題假字</p>
-                                        <p>標題假字標題假字標題假</p>
-                                        <p>標題假字標題假字</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ad-banner">
-                        <img src="images/sample/2.jpg">
-                    </div>
-                    <div class="btn-more D(n,pt)">
-                        <a>看更多</a>
-                    </div>
-                </div>
-            </section>
-            <!-- 醫美專欄 -->
-            <section class="category">
-                <div class="category-title-container">
-                    <div id="aesthetic" class="category-title category-title-aesthetic">
-                        <div class="title">醫美專欄</div>
-                        <div class="sub-title">AESTHETIC MED</div>
-                    </div>
-                </div>
-                <div class="article-container">
-                    <div class="article-list">
-                        <div class="article-block">
-                            <div class="article-item article-item-small">
-                                <div class="article-img">
-                                    <img src="images/sample/2.jpg">
-                                </div>
-                                <div class="article-desc">
-                                    <div class="article-date">2021.04.05</div>
-                                    <div class="article-title">
-                                        <p>標題假字標題假字</p>
-                                        <p>標題假字標題假字標題假</p>
-                                        <p>標題假字標題假字</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="article-item article-item-small">
-                                <div class="article-img">
-                                    <img src="images/sample/3.jpg">
-                                </div>
-                                <div class="article-desc">
-                                    <div class="article-date">2021.04.05</div>
-                                    <div class="article-title">
-                                        <p>標題假字標題假字</p>
-                                        <p>標題假字標題假字標題假</p>
-                                        <p>標題假字標題假字</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="article-item article-item-small">
-                                <div class="article-img">
-                                    <img src="images/sample/4.jpg">
-                                </div>
-                                <div class="article-desc">
-                                    <div class="article-date">2021.04.05</div>
-                                    <div class="article-title">
-                                        <p>標題假字標題假字</p>
-                                        <p>標題假字標題假字標題假</p>
-                                        <p>標題假字標題假字</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="article-item article-item-small">
-                                <div class="article-img">
-                                    <img src="images/sample/5.jpg">
-                                </div>
-                                <div class="article-desc">
-                                    <div class="article-date">2021.04.05</div>
-                                    <div class="article-title">
-                                        <p>標題假字標題假字</p>
-                                        <p>標題假字標題假字標題假</p>
-                                        <p>標題假字標題假字</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="article-item article-item-large">
-                            <div class="article-img">
-                                <img
-                                    src="https://coolhealth.sharkcdn.io/blog/52b5069c9164e19a1299449aaaf0bfbd6afdd7cc.jpg">
-                            </div>
-                            <div class="article-desc">
-                                <div class="article-date">2021.04.05</div>
-                                <div class="article-title">
-                                    <p>標題假字標題假字</p>
-                                    <p>標題假字標題假字標題假字假字</p>
-                                    <p>標題假字標題假字</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ad-banner">
-                        <img src="images/sample/2.jpg">
-                    </div>
-                    <div class="btn-more D(n,pt)">
-                        <a>看更多</a>
-                    </div>
-                </div>
-            </section>
-            <!-- 兩性生活 -->
-            <section class="category">
-                <div class="category-title-container">
-                    <div id="tech" class="category-title category-title-gender">
-                        <div class="title">兩性生活</div>
-                        <div class="sub-title">COOL gender</div>
-                    </div>
-                </div>
-                <div class="article-container">
-                    <div class="article-list">
-                        <div class="article-item article-item-large">
-                            <div class="article-img">
-                                <img
-                                    src="https://coolhealth.sharkcdn.io/blog/52b5069c9164e19a1299449aaaf0bfbd6afdd7cc.jpg">
-                            </div>
-                            <div class="article-desc">
-                                <div class="article-date">2021.04.05</div>
-                                <div class="article-title">
-                                    <p>標題假字標題假字</p>
-                                    <p>標題假字標題假字標題假字假字</p>
-                                    <p>標題假字標題假字</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="article-block">
-                            <div class="article-item article-item-small">
-                                <div class="article-img">
-                                    <img src="images/sample/2.jpg">
-                                </div>
-                                <div class="article-desc">
-                                    <div class="article-date">2021.04.05</div>
-                                    <div class="article-title">
-                                        <p>標題假字標題假字</p>
-                                        <p>標題假字標題假字標題假</p>
-                                        <p>標題假字標題假字</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="article-item article-item-small">
-                                <div class="article-img">
-                                    <img src="images/sample/3.jpg">
-                                </div>
-                                <div class="article-desc">
-                                    <div class="article-date">2021.04.05</div>
-                                    <div class="article-title">
-                                        <p>標題假字標題假字</p>
-                                        <p>標題假字標題假字標題假</p>
-                                        <p>標題假字標題假字</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="article-item article-item-small">
-                                <div class="article-img">
-                                    <img src="images/sample/4.jpg">
-                                </div>
-                                <div class="article-desc">
-                                    <div class="article-date">2021.04.05</div>
-                                    <div class="article-title">
-                                        <p>標題假字標題假字</p>
-                                        <p>標題假字標題假字標題假</p>
-                                        <p>標題假字標題假字</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="article-item article-item-small">
-                                <div class="article-img">
-                                    <img src="images/sample/5.jpg">
-                                </div>
-                                <div class="article-desc">
-                                    <div class="article-date">2021.04.05</div>
-                                    <div class="article-title">
-                                        <p>標題假字標題假字</p>
-                                        <p>標題假字標題假字標題假</p>
-                                        <p>標題假字標題假字</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ad-banner">
-                        <img src="images/sample/2.jpg">
-                    </div>
-                    <div class="btn-more D(n,pt)">
-                        <a>看更多</a>
-                    </div>
-                </div>
-            </section>
-            <!-- 潮健專家 -->
-            <section class="category expert">
-                <div class="category-title-container">
-                    <div id="expert" class="category-title category-title-expert">
-                        <div class="title">潮健專家</div>
-                        <div class="sub-title">COOLEXPERT</div>
-                    </div>
-                </div>
-                <div class="owl-carousel owl-theme expert-list">
-                    <div class="item">
-                        <div class="expert-card">
-                            <img class="expert-img" src="images/sample/person1.png">
-                            <div class="expert-info">
-                                <div class="expert-desc">名人介紹名人介紹名人</div>
-                                <div class="expert-name">陳 大文 醫師</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="expert-card">
-                            <img class="expert-img" src="images/sample/person1.png">
-                            <div class="expert-info">
-                                <div class="expert-desc">名人介紹名人介紹名人</div>
-                                <div class="expert-name">陳 大文 醫師</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="expert-card">
-                            <img class="expert-img" src="images/sample/person1.png">
-                            <div class="expert-info">
-                                <div class="expert-desc">名人介紹名人介紹名人</div>
-                                <div class="expert-name">陳 大文 醫師</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="expert-card">
-                            <img class="expert-img" src="images/sample/person1.png">
-                            <div class="expert-info">
-                                <div class="expert-desc">名人介紹名人介紹名人</div>
-                                <div class="expert-name">陳 大文 醫師</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
-    <footer class="ftr">
-        <div class="ftr-container">
-            <div class="ftr-item">
-                <a href="#body" class="btn-scroll-top">TOP</a>
-                <div class="footer-info">
-                    <div class="footer-link D(n,m)">
-                        <a><span>關於我們</span></a>
-                        <a><span>連絡我們</span></a>
-                        <a><span>媒體查詢</span></a>
-                        <a><span>外部連結</span></a>
-                    </div>
-                    <div class="copyright">
-                        COPYRIGHT © 2021 <span class="copyright-name">COOL HEALTH 潮健康新媒體</span>
+                <div class="item">
+                    <div class="banner-slide-item">
+                        <img src="images/sample/IDAH-web-04.jpg" />
                     </div>
                 </div>
             </div>
+        </section>
+    </main>
 
-            <div class="footer-social-list D(n,m)">
-                <a><img src="images/cool-health/social/cool-health_material-08.svg"></a>
-                <a><img src="images/cool-health/social/cool-health_material-09.svg"></a>
-                <a><img src="images/cool-health/social/cool-health_material-10.svg"></a>
-                <a><img src="images/cool-health/social/cool-health_material-11.svg"></a>
+    <footer class="ftr">
+        <div class="ftr-info">
+            <div class="ftr-link-topic">&nbsp;</div>
+            <div class="ftr-info-container">
+                <div class="ftr-logo">
+                    <a><img src="images/logo/IDAH-web-30.png"></a>
+                </div>
+                <div class="ftr-socail-list">
+                    <a><i class="fa fa-facebook"></i></a>
+                    <a><i class="fa fa-linkedin"></i></a>
+                    <a><i class="fa fa-twitter"></i></a>
+                    <a><i class="fa fa-envelope"></i></a>
+                    <a><i class="fa fa-phone display-none-pc-tablet"></i></a>
+                    <div class="ftr-sel-lang">
+                        <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="lang-txt"><span>English</span><i class="fa fa-chevron-down"></i></span>
+                            <img class="lang-img" src="images/flags/usa.png">
+                        </a>
+                        <ul class="ftr-sel-lang-option-list">
+                            <li class="ftr-sel-lang-option">
+                                <a href="#">
+                                    <span class="lang-txt">English</span>
+                                    <img class="lang-img" src="images/flags/usa.png">
+                                </a>
+                            </li>
+                            <li class="ftr-sel-lang-option">
+                                <a href="#">
+                                    <span class="lang-txt">Chinses(Traditional)</span>
+                                    <img class="lang-img" src="images/flags/taiwan.png">
+                                </a>
+                            </li>
+                            <li class="ftr-sel-lang-option">
+                                <a href="#">
+                                    <span class="lang-txt">Chinese(Simplified)</span>
+                                    <img class="lang-img" src="images/flags/chinese.png">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ftr-copy-right">
+                    Copyright © 2021 Avantron Micro & Idah Co. Ltd.
+                    All rights reserved.
+                </div>
+            </div>
+        </div>
+        <div class="ftr-link-list jCollapse" data-reject-device="['p','t']">
+            <div class="ftr-link-group">
+                <a class="ftr-link-topic jCollapseTopic">
+                    <span>Innovation</span>
+                    <img class="icon-plus" src="images/icon/icon-plus-white.svg">
+                    <img class="icon-minus" src="images/icon/icon-minus-white.svg"></a>
+                <div class="ftr-link-item-list jCollapseContent">
+                    <a class="ftr-link-item">Pelleting</a>
+                    <a class="ftr-link-item">Extrusion</a>
+                    <a class="ftr-link-item">Drying</a>
+                    <a class="ftr-link-item">Grinding</a>
+                    <a class="ftr-link-item">Mixing</a>
+                </div>
+            </div>
+            <div class="ftr-link-group">
+                <a class="ftr-link-topic jCollapseTopic">
+                    <span>Solution</span>
+                    <img class="icon-plus" src="images/icon/icon-plus-white.svg">
+                    <img class="icon-minus" src="images/icon/icon-minus-white.svg"></a>
+                <div class="ftr-link-item-list jCollapseContent">
+                    <a class="ftr-link-item">Aqua Feed</a>
+                    <a class="ftr-link-item">Animal Feed</a>
+                    <a class="ftr-link-item">Pet Food</a>
+                    <a class="ftr-link-item">Food</a>
+                    <a class="ftr-link-item">Wood & Biomass</a>
+                    <a class="ftr-link-item">Premix & Concentrates</a>
+                </div>
+            </div>
+            <div class="ftr-link-group">
+                <a class="ftr-link-topic jCollapseTopic">
+                    <span>Product</span>
+                    <img class="icon-plus" src="images/icon/icon-plus-white.svg">
+                    <img class="icon-minus" src="images/icon/icon-minus-white.svg"></a>
+                <div class="ftr-link-item-list jCollapseContent">
+                    <a class="ftr-link-item">Grinding, Pulverizing, Crumbling</a>
+                    <a class="ftr-link-item">Sieving and Cleaning</a>
+                    <a class="ftr-link-item">Extrusion and Expander</a>
+                    <a class="ftr-link-item">Mixing and Coating</a>
+                    <a class="ftr-link-item">Drying and Cooling</a>
+                    <a class="ftr-link-item">Pelleting</a>
+                    <a class="ftr-link-item">Conditioning</a>
+                    <a class="ftr-link-item">Conveying</a>
+                    <a class="ftr-link-item">Weighing</a>
+                    <a class="ftr-link-item">Control and Automation</a>
+                    <a class="ftr-link-item">Auxilary</a>
+                    <a class="ftr-link-item">Parts</a>
+                </div>
+            </div>
+            <div class="ftr-link-group">
+                <a class="ftr-link-topic jCollapseTopic">
+                    <span>Service</span>
+                    <img class="icon-plus" src="images/icon/icon-plus-white.svg">
+                    <img class="icon-minus" src="images/icon/icon-minus-white.svg"></a>
+                <div class="ftr-link-item-list jCollapseContent">
+                    <a class="ftr-link-item">Turn-key</a>
+                    <a class="ftr-link-item">Sales Service</a>
+                    <a class="ftr-link-item">Innovation Center</a>
+                    <a class="ftr-link-item">Reapir Maintanance</a>
+                    <a class="ftr-link-item">Technical Support</a>
+                </div>
+            </div>
+            <div class="ftr-link-group">
+                <a class="ftr-link-topic jCollapseTopic">
+                    <span>IDAH</span>
+                    <img class="icon-plus" src="images/icon/icon-plus-white.svg">
+                    <img class="icon-minus" src="images/icon/icon-minus-white.svg"></a>
+                <div class="ftr-link-item-list jCollapseContent">
+                    <a class="ftr-link-item">About Us</a>
+                    <a class="ftr-link-item">IDAH Innovation</a>
+                    <a class="ftr-link-item">Competitive Advantage</a>
+                    <a class="ftr-link-item">Certication</a>
+                    <a class="ftr-link-item">IDAH Customer</a>
+                    <a class="ftr-link-item">Successful story</a>
+                    <a class="ftr-link-item">News & Events</a>
+                </div>
+            </div>
+            <div class="ftr-link-group">
+                <a class="ftr-link-topic jCollapseTopic">
+                    <span>Blog</span>
+                    <img class="icon-plus" src="images/icon/icon-plus-white.svg">
+                    <img class="icon-minus" src="images/icon/icon-minus-white.svg"></a>
+                <div class="ftr-link-item-list jCollapseContent">
+                    <a class="ftr-link-item">News</a>
+                    <a class="ftr-link-item">Event and Fairs (Exhibition)</a>
+                    <a class="ftr-link-item">White Paper (Technical Article)</a>
+                    <a class="ftr-link-item">Successful Story</a>
+                </div>
             </div>
         </div>
     </footer>
-    <div id="mask" class="bg-mask"></div>
+    <div id="searchDiolog" class="search-diolog">
+        <button id="btnSearchClose"><img class="btn-search-close" src="images/icon/icon-times-white.svg"></img></button>
+        <div class="search-container">
+            <p class="search-prompt">Hi, what are you looking for?</p>
+            <div class="search-box">
+                <form>
+                    <div class="input-group">
+                        <input type="text">
+                        <button type="submit" id="btnSearchSubmit" class="btn-search">
+                            <img src="images/navigation/IDAH-web-02.png" />
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

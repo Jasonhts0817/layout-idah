@@ -60,23 +60,122 @@
             </h1>
             <div id="menuList" class="nav-section">
                 <div class="nav-container">
-                    <nav class="nav nav-list">
-                        <a href="#" class="nav-item">25 Solution</a>
-                        <a href="#" class="nav-item">Innovation</a>
-                        <a href="#" class="nav-item">Product</a>
-                        <a href="#" class="nav-item">Service</a>
-                        <a href="#" class="nav-item">IDAH</a>
-                        <a href="#" class="nav-item">Blog</a>
+                    <img id="btnMenuClose" class="btn-menu-close" src="images/icon/icon-times-gray.svg"></img>
+                    <nav class="nav nav-list jCollapse" data-reject-device="['p','t']">
+                        <div class="nav-group">
+                            <a href="#" class="nav-topic jCollapseTopic"><span>Solution</span>
+                                <img class="icon-plus" src="images/icon/icon-plus-gray.svg">
+                                <img class="icon-minus" src="images/icon/icon-minus-gray.svg"></a>
+                            <div class="nav-item-list jCollapseContent">
+                                <a class="nav-item">Aqua Feed</a>
+                                <a class="nav-item">Animal Feed</a>
+                                <a class="nav-item">Pet Food</a>
+                                <a class="nav-item">Food</a>
+                                <a class="nav-item">Wood & Biomass</a>
+                                <a class="nav-item">Premix & Concentrates</a>
+                            </div>
+                        </div>
+                        <div class="nav-group">
+                            <a href="#" class="nav-topic jCollapseTopic"><span>Innovation</span>
+                                <img class="icon-plus" src="images/icon/icon-plus-gray.svg">
+                                <img class="icon-minus" src="images/icon/icon-minus-gray.svg"></a>
+                            <div class="nav-item-list jCollapseContent">
+                                <a class="nav-item">Pelleting</a>
+                                <a class="nav-item">Extrusion</a>
+                                <a class="nav-item">Drying</a>
+                                <a class="nav-item">Grinding</a>
+                                <a class="nav-item">Mixing</a>
+                            </div>
+                        </div>
+                        <div class="nav-group">
+                            <a href="#" class="nav-topic jCollapseTopic"><span>Product</span>
+                                <img class="icon-plus" src="images/icon/icon-plus-gray.svg">
+                                <img class="icon-minus" src="images/icon/icon-minus-gray.svg"></a>
+                            <div class="nav-item-list jCollapseContent">
+                                <a class="nav-item">Grinding, Pulverizing, Crumbling</a>
+                                <a class="nav-item">Sieving and Cleaning</a>
+                                <a class="nav-item">Extrusion and Expander</a>
+                                <a class="nav-item">Mixing and Coating</a>
+                                <a class="nav-item">Drying and Cooling</a>
+                                <a class="nav-item">Pelleting</a>
+                                <a class="nav-item">Conditioning</a>
+                                <a class="nav-item">Conveying</a>
+                                <a class="nav-item">Weighing</a>
+                                <a class="nav-item">Control and Automation</a>
+                                <a class="nav-item">Auxilary</a>
+                                <a class="nav-item">Parts</a>
+                            </div>
+                        </div>
+                        <div class="nav-group">
+                            <a href="#" class="nav-topic jCollapseTopic"> <span>Service</span>
+                                <img class="icon-plus" src="images/icon/icon-plus-gray.svg">
+                                <img class="icon-minus" src="images/icon/icon-minus-gray.svg"></a>
+                            <div class="nav-item-list jCollapseContent">
+                                <a class="nav-item">Turn-key</a>
+                                <a class="nav-item">Sales Service</a>
+                                <a class="nav-item">Innovation Center</a>
+                                <a class="nav-item">Reapir Maintanance</a>
+                                <a class="nav-item">Technical Support</a>
+                            </div>
+                        </div>
+                        <div class="nav-group">
+                            <a href="#" class="nav-topic jCollapseTopic"><span>IDAH</span>
+                                <img class="icon-plus" src="images/icon/icon-plus-gray.svg">
+                                <img class="icon-minus" src="images/icon/icon-minus-gray.svg"></a>
+                            <div class="nav-item-list jCollapseContent">
+                                <a class="nav-item">About Us</a>
+                                <a class="nav-item">IDAH Innovation</a>
+                                <a class="nav-item">Competitive Advantage</a>
+                                <a class="nav-item">Certication</a>
+                                <a class="nav-item">IDAH Customer</a>
+                                <a class="nav-item">Successful story</a>
+                                <a class="nav-item">News & Events</a>
+                            </div>
+                        </div>
+                        <div class="nav-group">
+                            <a href="#" class="nav-topic jCollapseTopic"> <span>Blog</span>
+                                <img class="icon-plus" src="images/icon/icon-plus-gray.svg">
+                                <img class="icon-minus" src="images/icon/icon-minus-gray.svg"></a>
+                            <div class="nav-item-list jCollapseContent">
+                                <a class="nav-item">News</a>
+                                <a class="nav-item">Event and Fairs (Exhibition)</a>
+                                <a class="nav-item">White Paper (Technical Article)</a>
+                                <a class="nav-item">Successful Story</a>
+                            </div>
+                        </div>
                     </nav>
                 </div>
             </div>
             <div class="feature-list">
-                <a class="feature-item btn-search"><img src="images/navigation/IDAH-web-02.png"></a>
-                <a class="feature-item btn-lang display-none-mobile">EN 24</a>
-                <a class="feature-item btn-lang display-none-pc-tablet">
-                    <img src="images/flags/taiwan.png">
-                </a>
-                <a id="menuBtn" class="feature-item btn-lang display-none-pc-tablet">
+                <button id="btnSearchOpen" class="feature-item btn-search"><img
+                        src="images/navigation/IDAH-web-02.png"></button>
+                <div class="feature-item hdr-sel-lang">
+                    <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="lang-txt"><span>EN</span></span>
+                        <img class="lang-img" src="images/flags/usa.png">
+                    </a>
+                    <ul class="sel-lang-option-list">
+                        <li class="sel-lang-option">
+                            <a href="#">
+                                <span class="lang-txt">EN</span>
+                                <img class="lang-img" src="images/flags/usa.png">
+                            </a>
+                        </li>
+                        <li class="sel-lang-option">
+                            <a href="#">
+                                <span class="lang-txt">Zh-TW</span>
+                                <img class="lang-img" src="images/flags/taiwan.png">
+                            </a>
+                        </li>
+                        <li class="sel-lang-option">
+                            <a href="#">
+                                <span class="lang-txt">CN</span>
+                                <img class="lang-img" src="images/flags/chinese.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a id="menuBtn" class="feature-item display-none-pc-tablet">
                     <img src="images/navigation/menu-btn.png">
                 </a>
             </div>
@@ -125,20 +224,157 @@
             </div>
         </section>
     </main>
+
     <footer class="ftr">
-    </footer>
-    <div id="searchDiolog" class="search-diolog">
-        <div class="search-container">
-            <form class="search display-none-pc-tablet" ng-submit="search(keyword)">
-                <div class="input-group">
-                    <input name="q" ng-model="keyword" type="text" placeholder="輸入關鍵字">
-                    <div class="input-group-btn">
-                        <button type="submit" class="btn btn-search">
-                            <img src="IDAH-web-02.png" />
-                        </button>
+        <div class="ftr-info">
+            <div class="ftr-link-topic">&nbsp;</div>
+            <div class="ftr-info-container">
+                <div class="ftr-logo">
+                    <a><img src="images/logo/IDAH-web-30.png"></a>
+                </div>
+                <div class="ftr-socail-list">
+                    <a><i class="fa fa-facebook"></i></a>
+                    <a><i class="fa fa-linkedin"></i></a>
+                    <a><i class="fa fa-twitter"></i></a>
+                    <a><i class="fa fa-envelope"></i></a>
+                    <a><i class="fa fa-phone display-none-pc-tablet"></i></a>
+                    <div class="ftr-sel-lang">
+                        <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="lang-txt"><span>English</span><i class="fa fa-chevron-down"></i></span>
+                            <img class="lang-img" src="images/flags/usa.png">
+                        </a>
+                        <ul class="ftr-sel-lang-option-list">
+                            <li class="ftr-sel-lang-option">
+                                <a href="#">
+                                    <span class="lang-txt">English</span>
+                                    <img class="lang-img" src="images/flags/usa.png">
+                                </a>
+                            </li>
+                            <li class="ftr-sel-lang-option">
+                                <a href="#">
+                                    <span class="lang-txt">Chinses(Traditional)</span>
+                                    <img class="lang-img" src="images/flags/taiwan.png">
+                                </a>
+                            </li>
+                            <li class="ftr-sel-lang-option">
+                                <a href="#">
+                                    <span class="lang-txt">Chinese(Simplified)</span>
+                                    <img class="lang-img" src="images/flags/chinese.png">
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </form>
+                <div class="ftr-copy-right">
+                    Copyright © 2021 Avantron Micro & Idah Co. Ltd.
+                    All rights reserved.
+                </div>
+            </div>
+        </div>
+        <div class="ftr-link-list jCollapse" data-reject-device="['p','t']">
+            <div class="ftr-link-group">
+                <a class="ftr-link-topic jCollapseTopic">
+                    <span>Innovation</span>
+                    <img class="icon-plus" src="images/icon/icon-plus-white.svg">
+                    <img class="icon-minus" src="images/icon/icon-minus-white.svg"></a>
+                <div class="ftr-link-item-list jCollapseContent">
+                    <a class="ftr-link-item">Pelleting</a>
+                    <a class="ftr-link-item">Extrusion</a>
+                    <a class="ftr-link-item">Drying</a>
+                    <a class="ftr-link-item">Grinding</a>
+                    <a class="ftr-link-item">Mixing</a>
+                </div>
+            </div>
+            <div class="ftr-link-group">
+                <a class="ftr-link-topic jCollapseTopic">
+                    <span>Solution</span>
+                    <img class="icon-plus" src="images/icon/icon-plus-white.svg">
+                    <img class="icon-minus" src="images/icon/icon-minus-white.svg"></a>
+                <div class="ftr-link-item-list jCollapseContent">
+                    <a class="ftr-link-item">Aqua Feed</a>
+                    <a class="ftr-link-item">Animal Feed</a>
+                    <a class="ftr-link-item">Pet Food</a>
+                    <a class="ftr-link-item">Food</a>
+                    <a class="ftr-link-item">Wood & Biomass</a>
+                    <a class="ftr-link-item">Premix & Concentrates</a>
+                </div>
+            </div>
+            <div class="ftr-link-group">
+                <a class="ftr-link-topic jCollapseTopic">
+                    <span>Product</span>
+                    <img class="icon-plus" src="images/icon/icon-plus-white.svg">
+                    <img class="icon-minus" src="images/icon/icon-minus-white.svg"></a>
+                <div class="ftr-link-item-list jCollapseContent">
+                    <a class="ftr-link-item">Grinding, Pulverizing, Crumbling</a>
+                    <a class="ftr-link-item">Sieving and Cleaning</a>
+                    <a class="ftr-link-item">Extrusion and Expander</a>
+                    <a class="ftr-link-item">Mixing and Coating</a>
+                    <a class="ftr-link-item">Drying and Cooling</a>
+                    <a class="ftr-link-item">Pelleting</a>
+                    <a class="ftr-link-item">Conditioning</a>
+                    <a class="ftr-link-item">Conveying</a>
+                    <a class="ftr-link-item">Weighing</a>
+                    <a class="ftr-link-item">Control and Automation</a>
+                    <a class="ftr-link-item">Auxilary</a>
+                    <a class="ftr-link-item">Parts</a>
+                </div>
+            </div>
+            <div class="ftr-link-group">
+                <a class="ftr-link-topic jCollapseTopic">
+                    <span>Service</span>
+                    <img class="icon-plus" src="images/icon/icon-plus-white.svg">
+                    <img class="icon-minus" src="images/icon/icon-minus-white.svg"></a>
+                <div class="ftr-link-item-list jCollapseContent">
+                    <a class="ftr-link-item">Turn-key</a>
+                    <a class="ftr-link-item">Sales Service</a>
+                    <a class="ftr-link-item">Innovation Center</a>
+                    <a class="ftr-link-item">Reapir Maintanance</a>
+                    <a class="ftr-link-item">Technical Support</a>
+                </div>
+            </div>
+            <div class="ftr-link-group">
+                <a class="ftr-link-topic jCollapseTopic">
+                    <span>IDAH</span>
+                    <img class="icon-plus" src="images/icon/icon-plus-white.svg">
+                    <img class="icon-minus" src="images/icon/icon-minus-white.svg"></a>
+                <div class="ftr-link-item-list jCollapseContent">
+                    <a class="ftr-link-item">About Us</a>
+                    <a class="ftr-link-item">IDAH Innovation</a>
+                    <a class="ftr-link-item">Competitive Advantage</a>
+                    <a class="ftr-link-item">Certication</a>
+                    <a class="ftr-link-item">IDAH Customer</a>
+                    <a class="ftr-link-item">Successful story</a>
+                    <a class="ftr-link-item">News & Events</a>
+                </div>
+            </div>
+            <div class="ftr-link-group">
+                <a class="ftr-link-topic jCollapseTopic">
+                    <span>Blog</span>
+                    <img class="icon-plus" src="images/icon/icon-plus-white.svg">
+                    <img class="icon-minus" src="images/icon/icon-minus-white.svg"></a>
+                <div class="ftr-link-item-list jCollapseContent">
+                    <a class="ftr-link-item">News</a>
+                    <a class="ftr-link-item">Event and Fairs (Exhibition)</a>
+                    <a class="ftr-link-item">White Paper (Technical Article)</a>
+                    <a class="ftr-link-item">Successful Story</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="searchDiolog" class="search-diolog">
+        <button id="btnSearchClose"><img class="btn-search-close" src="images/icon/icon-times-white.svg"></img></button>
+        <div class="search-container">
+            <p class="search-prompt">Hi, what are you looking for?</p>
+            <div class="search-box">
+                <form>
+                    <div class="input-group">
+                        <input type="text">
+                        <button type="submit" id="btnSearchSubmit" class="btn-search">
+                            <img src="images/navigation/IDAH-web-02.png" />
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </body>

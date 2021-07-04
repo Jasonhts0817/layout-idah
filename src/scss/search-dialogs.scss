@@ -1,0 +1,122 @@
+@import "./features";
+.search-diolog {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: color(opacity-75);
+  z-index: z-index(diolog);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: top 0.1s;
+  &.active {
+    top: 0;
+  }
+}
+@include response(PC) {
+}
+
+@include response(PC-Tablet) {
+  .search-container {
+    width: 50vw;
+    text-align: center;
+  }
+  .btn-search-close {
+    position: absolute;
+    top: 3vw;
+    right: 5vw;
+    width: 2.5vw;
+  }
+  .search-prompt {
+    color: color(white);
+    font-size: 3vw;
+    padding-bottom: 20px;
+  }
+  .search-box {
+    background: color(opacity-w-15);
+    border: 1px solid color(white);
+    border-radius: 10px;
+    width: 100%;
+    overflow: hidden;
+    .input-group {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      input[type="text"] {
+        color: color(white);
+        background: none;
+        border: none;
+        outline: none;
+        font-size: 3vw;
+        font-weight: 300;
+        line-height: 1;
+        padding: 20px;
+        position: relative;
+        width: 85%;
+        height: 5.2vw;
+      }
+      .btn-search {
+        background: color(thunder);
+        flex-grow: 1;
+        height: 5.2vw;
+      }
+    }
+  }
+}
+
+@include response(Tablet) {
+}
+
+@include response(Tablet-Mobile) {
+}
+
+@include response(Mobile) {
+  .search-container {
+    width: 90vw;
+    text-align: center;
+  }
+  .btn-search-close {
+    position: absolute;
+    top: 5vw;
+    right: 8vw;
+    width: 6vw;
+  }
+  .search-prompt {
+    color: color(white);
+    font-size: 6vw;
+    padding-bottom: 20px;
+  }
+  .search-box {
+    background: color(opacity-w-15);
+    border: 1px solid color(white);
+    border-radius: 10px;
+    width: 100%;
+    overflow: hidden;
+    .input-group {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      input[type="text"] {
+        color: color(white);
+        background: none;
+        border: none;
+        outline: none;
+        font-size: 6vw;
+        font-weight: 300;
+        line-height: 1;
+        padding: 5px 15px;
+        position: relative;
+        width: 85%;
+        height: 11.2vw;
+      }
+      .btn-search {
+        background: color(thunder);
+        flex-grow: 1;
+        height: 11.2vw;
+      }
+    }
+  }
+}

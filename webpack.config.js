@@ -13,9 +13,9 @@ const config = {
     main: "./src/index.js",
     idah: "./src/scss/idah.scss",
     'idah-rwd': "./src/scss/idah-rwd.scss",
-    'idah-service': "./src/scss/idah-rwd.scss",
-    'idah-solution': "./src/scss/idah-rwd.scss",
-    'search-dialogs': "./src/scss/idah-rwd.scss",
+    // 'idah-service': "./src/scss/idah-service.scss",
+    // 'idah-solution': "./src/scss/idah-solution.scss",
+    'search-dialogs': "./src/scss/search-dialogs.scss",
   },
   optimization: {
     removeEmptyChunks: true,
