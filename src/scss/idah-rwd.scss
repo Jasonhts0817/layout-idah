@@ -6,6 +6,10 @@
   @include footer-PC;
   @include index-PC;
   @include banner-PC;
+  @include intro-PC;
+  @include product-PC;
+  @include news-PC;
+  @include contact-PC;
 }
 
 @include response(PC-Tablet) {
@@ -13,6 +17,10 @@
   @include footer-PC-Tablet;
   @include index-PC-Tablet;
   @include banner-PC-Tablet;
+  @include intro-PC-Tablet;
+  @include product-PC-Tablet;
+  @include news-PC-Tablet;
+  @include contact-PC-Tablet;
 }
 
 @include response(Tablet) {
@@ -20,6 +28,10 @@
   @include footer-Tablet;
   @include index-Tablet;
   @include banner-Tablet;
+  @include intro-Tablet;
+  @include product-Tablet;
+  @include news-Tablet;
+  @include contact-Tablet;
 }
 
 @include response(Tablet-Mobile) {
@@ -27,6 +39,10 @@
   @include footer-Tablet-Mobile;
   @include index-Tablet-Mobile;
   @include banner-Tablet-Mobile;
+  @include intro-Tablet-Mobile;
+  @include product-Tablet-Mobile;
+  @include news-Tablet-Mobile;
+  @include contact-Tablet-Mobile;
 }
 
 @include response(Mobile) {
@@ -34,6 +50,10 @@
   @include footer-Mobile;
   @include index-Mobile;
   @include banner-Mobile;
+  @include intro-Mobile;
+  @include product-Mobile;
+  @include news-Mobile;
+  @include contact-Mobile;
 }
 
 @include boostrap-response(PC) {

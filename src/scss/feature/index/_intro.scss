@@ -1,0 +1,41 @@
+@mixin intro {
+}
+@mixin intro-PC {
+}
+@mixin intro-PC-Tablet {
+  .intro {
+    margin: 0 16.3vw;
+    padding: 2.91vw 0 3.8vw 0;
+    text-align: center;
+    color: color(dark-gray);
+    border-bottom: 1px solid color(dark-gray);
+  }
+  .intro-title {
+    padding: 0 4.6vw;
+    line-height: 2.9vw;
+    font-size: 3.1vw;
+    font-weight: 500;
+    padding-bottom: 1vw;
+  }
+  .intro-sub-title {
+    font-size: 1.4vw;
+    line-height: 1.8vw;
+    font-weight: 500;
+    padding-bottom: 1vw;
+  }
+  .intro-article {
+    padding: 0 7vw;
+  }
+  .intro-section {
+    font-size: 0.82vw;
+    line-height: 1.2vw;
+    font-weight: 400;
+    padding-top: 1vw;
+  }
+}
+@mixin intro-Tablet {
+}
+@mixin intro-Tablet-Mobile {
+}
+@mixin intro-Mobile {
+}

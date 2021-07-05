@@ -118,9 +118,9 @@ function initAccordion() {
         var $contents = $collapse.find('.jCollapseContent');
         $contents.hide();
         $topics.click(function () {
-            if ($collapse.data('reject-device').includes(getDeviceSize())) { return; }
+            if ($collapse.data('reject-device') && $collapse.data('reject-device').includes(getDeviceSize())) { return; }
             var $content = $(this).siblings('.jCollapseContent');
-            var isActive = $content.attr('style').includes('display: block');
+            var isActive = !$content.attr('style').includes('display: none');
             $contents.slideUp();
             $topics.attr("data-expanded", false)
             if (isActive) { return; }

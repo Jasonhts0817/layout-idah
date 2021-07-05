@@ -1,0 +1,88 @@
+@mixin product {
+}
+@mixin product-PC {
+}
+@mixin product-PC-Tablet {
+  .product {
+    margin: 0 16.3vw;
+  }
+  .product-title {
+    text-align: center;
+    padding: 2.7vw 0;
+    font-size: 3.1vw;
+    font-weight: 500;
+  }
+  .product-list {
+    display: flex;
+    width: 100%;
+    height: 42vw;
+    padding: 0 2.6vw;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .product-item {
+      position: relative;
+      width: 19.6vw;
+      color: color(white);
+      .product-item-display {
+        .product-img {
+          object-fit: cover;
+          width: 100%;
+          height: 16.5vw;
+        }
+        .product-category {
+          text-align: center;
+          font-size: 1.2vw;
+          font-weight: 300;
+          letter-spacing: 1px;
+          padding: 1vw 0;
+          background: color(dark-gray);
+        }
+      }
+      .product-item-hover {
+        position: absolute;
+        display: none !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        .product-info {
+          height: 16.5vw;
+          background: color(opacity-75);
+          padding: 2vw 1vw;
+          .product-intro {
+            font-size: 1.4vw;
+            line-height: 1.8vw;
+            font-weight: 400;
+            padding-bottom: 1vw;
+          }
+          .product-desc {
+            font-size: 0.82vw;
+            line-height: 1.2vw;
+            font-weight: 300;
+            padding-top: 1vw;
+          }
+        }
+        .product-view {
+          text-align: center;
+          font-size: 1.2vw;
+          font-weight: 300;
+          letter-spacing: 1px;
+          padding: 1vw 0;
+          background: color(orange);
+        }
+      }
+
+      &:hover {
+        .product-item-hover {
+          display: block !important;
+        }
+      }
+    }
+  }
+}
+@mixin product-Tablet {
+}
+@mixin product-Tablet-Mobile {
+}
+@mixin product-Mobile {
+}

@@ -58,7 +58,7 @@
       }
       .icon-plus,
       .icon-minus {
-        display: none;
+        display: none !important;
       }
     }
   }
@@ -115,7 +115,7 @@
       }
     }
     .lang-img {
-      display: none;
+      display: none !important;
     }
     .lang-txt {
       display: flex;
@@ -269,14 +269,18 @@
       justify-content: space-between;
 
       .icon-minus {
-        display: none;
+        display: none !important;
+        width: 16px;
+      }
+      .icon-minus {
+        width: 16px;
       }
       &[data-expanded="true"] {
         .icon-plus {
-          display: none;
+          display: none !important;
         }
         .icon-minus {
-          display: inline;
+          display: inline !important;
         }
       }
     }

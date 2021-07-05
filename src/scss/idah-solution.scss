@@ -1,0 +1,11 @@
+@import "./features";
+@include response(PC) {
+}
+@include response(PC-Tablet) {
+}
+@include response(Tablet) {
+}
+@include response(Tablet-Mobile) {
+}
+@include response(Mobile) {
+}

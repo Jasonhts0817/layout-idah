@@ -9,6 +9,27 @@
     z-index: 1;
     color: color(white);
   }
+  .banner-list {
+    .owl-dots {
+      position: absolute;
+      display: flex;
+      .owl-dot {
+        &:nth-child(odd) {
+          background-image: url("/images/owlcarousel/IDAH-web-07.png");
+          &.active {
+            background-image: url("/images/owlcarousel/IDAH-web-05.png");
+          }
+        }
+        &:nth-child(even) {
+          background-image: url("/images/owlcarousel/IDAH-web-06.png");
+          &.active {
+            background-image: url("/images/owlcarousel/IDAH-web-05.png");
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
 }
 
 @mixin banner-PC {
@@ -24,29 +45,21 @@
     }
   }
   .banner-slide-title {
-    bottom: 48px;
-    left: 55px;
-    font-size: 39px;
-    font-weight: 700;
-    line-height: 49px;
-    text-shadow: color(black) 2px 2px 10px;
+    top: 7.8vw;
+    left: 17vw;
+    font-size: 3.12vw;
+    width: 28vw;
+    color: color(dark-gray);
   }
 
   .banner-list {
     .owl-dots {
-      position: absolute;
-      display: flex;
-      right: 16px;
-      bottom: 16px;
+      left: 55px;
+      bottom: 30px;
       .owl-dot {
-        width: 10px;
-        height: 10px;
+        width: 18px;
+        height: 17px;
         margin: 4px;
-        border-radius: 50%;
-        background-color: color(black);
-        &.active {
-          background-color: color(white);
-        }
       }
     }
   }
@@ -60,35 +73,28 @@
     padding-top: $header-height-mobile;
   }
   .banner-slide-item {
-    height: 61.5vmax;
+    height: 66.8vmax;
     img {
       object-fit: cover;
       height: 100%;
     }
   }
   .banner-slide-title {
-    bottom: 55px;
-    left: 35px;
-    font-size: 23px;
-    font-weight: 700;
-    line-height: 32px;
+    top: 7.8vw;
+    left: 17vw;
+    font-size: 3.12vw;
+    width: 28vw;
+    color: color(dark-gray);
   }
-
   .banner-list {
     .owl-dots {
-      position: absolute;
-      display: flex;
-      left: 35px;
-      bottom: 25px;
+      left: 16px;
+      bottom: 24px;
       .owl-dot {
-        width: 9px;
-        height: 9px;
+        width: 13px;
+        height: 12px;
+        background-size: cover;
         margin-right: 5px;
-        border-radius: 50%;
-        background-color: color(black);
-        &.active {
-          background-color: color(white);
-        }
       }
     }
   }

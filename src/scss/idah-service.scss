@@ -1,0 +1,85 @@
+@import "./features";
+@include response(PC) {
+}
+@include response(PC-Tablet) {
+  .service {
+    background: url("/images/background/IDAH-web-15.jpg");
+    background-size: cover;
+  }
+  .service-container {
+    margin: 0 16.3vw;
+    padding: 0 2.6vw;
+    display: flex;
+    color: color(dark-gray);
+  }
+  .service-title-container {
+    width: 15vw;
+    margin-right: 4.4vw;
+    .service-title {
+      font-size: 3.1vw;
+      font-weight: 500;
+    }
+    .service-intro {
+      font-size: 0.82vw;
+      line-height: 1.2vw;
+      font-weight: 400;
+    }
+  }
+  .service-list {
+    flex-grow: 1;
+    .service-item {
+      .service-topic-container {
+        display: flex;
+        background: color(nobel);
+        .service-icon-arrow {
+          background: url("/images/icon/IDAH-web-11.png");
+          background-size: cover;
+          width: 24px;
+          height: 39px;
+        }
+        .service-topic {
+          font-size: 1.4vw;
+          font-weight: 400;
+        }
+        .service-icon-hand {
+          background: url("/images/icon/IDAH-web-12.png");
+          background-size: cover;
+          width: 24px;
+          height: 39px;
+        }
+        &[data-expanded="true"] {
+          background: color(orange);
+          .service-icon-arrow {
+            background: url("/images/icon/IDAH-web-11.png");
+          }
+          .service-topic {
+            color: color(white);
+          }
+          .service-icon-hand {
+            background: url("/images/icon/IDAH-web-12.png");
+          }
+        }
+      }
+      .service-desc-container {
+        display: flex;
+        .service-desc {
+          font-size: 0.82vw;
+          line-height: 1.2vw;
+          font-weight: 400;
+        }
+        .service-read-more {
+          display: flex;
+          .service-btn-read-more {
+            border: 1px solid color(dark-gray);
+          }
+        }
+      }
+    }
+  }
+}
+@include response(Tablet) {
+}
+@include response(Tablet-Mobile) {
+}
+@include response(Mobile) {
+}
