@@ -14,7 +14,7 @@ const config = {
     idah: "./src/scss/idah.scss",
     'idah-rwd': "./src/scss/idah-rwd.scss",
     'idah-service': "./src/scss/idah-service.scss",
-    // 'idah-solution': "./src/scss/idah-solution.scss",
+    'idah-solution': "./src/scss/idah-solution.scss",
     'search-dialogs': "./src/scss/search-dialogs.scss",
   },
   optimization: {

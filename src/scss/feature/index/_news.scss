@@ -3,6 +3,90 @@
 @mixin news-PC {
 }
 @mixin news-PC-Tablet {
+  .idah-news {
+    margin: 0 16.3vw;
+  }
+  .idah-news-title {
+    color: color(dark-gray);
+    text-align: center;
+    padding: 2.7vw 0;
+    font-size: 3.1vw;
+    font-weight: 500;
+  }
+  .idah-news-slide {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5.5vw;
+    border-bottom: 1px solid color(dark-gray);
+    margin-bottom: 3.7vw;
+  }
+  .idah-news-item {
+    display: flex;
+    .idah-news-article {
+      width: 16.4vw;
+      height: 16.4vw;
+      background: color(athens-gray);
+      .idah-news-date {
+        font-size: 0.82vw;
+        line-height: 1.2vw;
+        font-weight: 400;
+      }
+      .idah-news-topic {
+        font-size: 1.2vw;
+      }
+      .idah-news-desc {
+        font-size: 0.82vw;
+        line-height: 1.2vw;
+        font-weight: 400;
+      }
+      .idah-news-read-more {
+        font-size: 0.82vw;
+        line-height: 1.2vw;
+        font-weight: 400;
+      }
+    }
+    .idah-news-img {
+      img {
+        object-fit: cover;
+        width: 16.4vw;
+        height: 16.4vw;
+      }
+    }
+  }
+
+  .idah-share {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 13.1vw;
+    .idah-share-social {
+      color: color(dark-gray);
+      display: flex;
+      align-items: center;
+      .idah-share-social-title {
+        font-size: 1.02vw;
+        line-height: 1.2vw;
+        font-weight: 400;
+      }
+      .idah-share-social-arrow {
+        padding: 0 0.6vw;
+        img {
+          width: 0.3vw;
+        }
+      }
+      i {
+        font-size: 1.5vw;
+        padding: 0 0.6vw;
+      }
+    }
+    .idah-share-btn-back {
+      color: color(orange);
+      font-size: 0.82vw;
+      line-height: 1.2vw;
+      font-weight: 400;
+      padding: 0.4vw 2.4vw;
+      border: 1px solid color(orange);
+    }
+  }
 }
 @mixin news-Tablet {
 }
