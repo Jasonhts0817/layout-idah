@@ -15,7 +15,6 @@
   .solution-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 12.15vw;
     grid-auto-flow: row dense;
     grid-gap: 1.6vw;
     .solution-item {
@@ -43,7 +42,6 @@
           }
         }
         .solution-desc {
-          overflow: hidden;
           flex-grow: 1;
           font-size: 0.82vw;
           line-height: 1.2vw;
@@ -59,67 +57,74 @@
         }
       }
       .solution-img {
+        position: relative;
+        height: auto;
         img {
-          object-fit: cover;
-          height: 12.15vw;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
         }
       }
       &:nth-child(6n-5) {
         grid-area: auto / auto / auto / span 2;
-        .solution-intro .solution-desc {
-          max-height: 5.7vw;
+        .solution-intro {
+          flex-basis: 48%;
         }
-        .solution-img img {
-          width: 22.7vw;
+        .solution-img {
+          flex-basis: 52%;
         }
       }
       &:nth-child(6n-4) {
         grid-area: auto / auto / auto / span 2;
         flex-direction: row-reverse;
-        .solution-intro .solution-desc {
-          max-height: 5.7vw;
+        .solution-intro {
+          flex-basis: 52%;
         }
-        .solution-img img {
-          width: 21.1vw;
+        .solution-img {
+          flex-basis: 48%;
         }
       }
       &:nth-child(6n-3) {
         grid-area: auto / auto / span 2 / auto;
         flex-direction: column;
-        .solution-intro .solution-desc {
-          max-height: 7.4vw;
+        .solution-intro {
+          flex-basis: 52%;
         }
-        .solution-img img {
-          width: 100%;
+        .solution-img {
+          flex-basis: 48%;
         }
       }
       &:nth-child(6n-2) {
         grid-area: auto / auto / span 2 / auto;
         flex-direction: column;
-        .solution-intro .solution-desc {
-          max-height: 7.4vw;
+        .solution-intro {
+          flex-basis: 52%;
         }
-        .solution-img img {
-          width: 100%;
+        .solution-img {
+          flex-basis: 48%;
         }
       }
       &:nth-child(6n-1) {
         grid-area: auto / auto / auto / span 2;
         flex-direction: row-reverse;
-        .solution-intro .solution-desc {
-          max-height: 5.7vw;
+        .solution-intro {
+          flex-basis: 52%;
         }
-        .solution-img img {
-          width: 22.7vw;
+        .solution-img {
+          flex-basis: 48%;
         }
       }
       &:nth-child(6n) {
         grid-area: auto / auto / auto / span 2;
-        .solution-intro .solution-desc {
-          max-height: 5.7vw;
+        .solution-intro {
+          flex-basis: 48%;
         }
-        .solution-img img {
-          width: 21.1vw;
+        .solution-img {
+          flex-basis: 52%;
         }
       }
     }
