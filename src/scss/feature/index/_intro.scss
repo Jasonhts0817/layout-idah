@@ -38,4 +38,33 @@
 @mixin intro-Tablet-Mobile {
 }
 @mixin intro-Mobile {
+  .intro {
+    padding: 9vw 0 0 0;
+    text-align: center;
+    color: color(dark-gray);
+  }
+  .intro-title {
+    padding: 0 4.6vw;
+    font-size: 10vw;
+    font-weight: 500;
+    padding-bottom: 3vw;
+  }
+  .intro-sub-title {
+    font-size: 6.3vw;
+    font-weight: 500;
+    line-height: 7vw;
+    padding: 0 1.8vw;
+    padding-bottom: 1.5vw;
+  }
+  .intro-article {
+    margin: 0 7vw 0 7vw;
+    padding-bottom: 12vw;
+    border-bottom: 1px solid color(dark-gray);
+  }
+  .intro-section {
+    font-size: 4vw;
+    line-height: 6.5vw;
+    font-weight: 400;
+    padding-top: 3.5vw;
+  }
 }

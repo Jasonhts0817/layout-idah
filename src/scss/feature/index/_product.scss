@@ -86,4 +86,48 @@
 @mixin product-Tablet-Mobile {
 }
 @mixin product-Mobile {
+  .product {
+    margin: 0 0 12.7vw 0;
+  }
+  .product-title {
+    color: color(dark-gray);
+    text-align: center;
+    padding: 7.9vw 0;
+    font-size: 9.8vw;
+    font-weight: 500;
+  }
+  .product-list {
+    display: flex;
+    width: 100%;
+    padding: 0 4.5vw;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .product-item {
+      flex-basis: 48.5%;
+      position: relative;
+      color: color(white);
+      padding-bottom: 2.2vw;
+      .product-item-display {
+        .product-img {
+          object-fit: cover;
+          width: 100%;
+        }
+        .product-category {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          font-size: 4.6vw;
+          font-weight: 300;
+          letter-spacing: 1px;
+          padding: 1vw 0;
+          background: color(dark-gray);
+          height: 22.3vw;
+        }
+      }
+      .product-item-hover {
+        display: none !important;
+      }
+    }
+  }
 }

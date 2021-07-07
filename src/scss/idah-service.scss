@@ -115,4 +115,101 @@
 @include response(Tablet-Mobile) {
 }
 @include response(Mobile) {
+  .service {
+    background: color(athens-gray);
+    background-size: cover;
+  }
+  .service-container {
+    padding: 0 4.5vw;
+    color: color(dark-gray);
+  }
+  .service-title-container {
+    .service-title {
+      font-size: 9.8vw;
+      font-weight: 500;
+      padding-bottom: 0.9vw;
+    }
+    .service-intro {
+      font-size: 4.3vw;
+      line-height: 5.5vw;
+      font-weight: 400;
+    }
+  }
+  .service-list {
+    .service-item {
+      padding-bottom: 2.2vw;
+      .service-topic-container {
+        display: flex;
+        height: 17.3vw;
+        background: color(french-gray);
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 7.6vw;
+        .service-icon-arrow {
+          transition: transform 0.3s;
+          background: url("/images/icon/IDAH-web-11.png");
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+          width: 6.6vw;
+          height: 6.6vw;
+        }
+        .service-topic {
+          font-size: 6.3vw;
+          font-weight: 400;
+          flex-grow: 1;
+          justify-self: left;
+          padding: 0 7vw 0 2.6vw;
+        }
+        .service-icon-hand {
+          transition: all 0.3s;
+          background: url("/images/icon/IDAH-web-12.png");
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+          width: 12.4vw;
+          height: 11.9vw;
+        }
+        &[data-expanded="true"] {
+          background: color(orange);
+          .service-icon-arrow {
+            background: url("/images/icon/IDAH-web-13.png");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            transform: rotate(90deg);
+            width: 6.6vw;
+            height: 6.6vw;
+          }
+          .service-topic {
+            color: color(white);
+          }
+          .service-icon-hand {
+            background: url("/images/icon/IDAH-web-14.png");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 12.4vw;
+            height: 11.9vw;
+          }
+        }
+      }
+      .service-desc-container {
+        background: color(white);
+        padding: 2vw;
+        .service-desc {
+          font-size: 4.3vw;
+          line-height: 5.5vw;
+          font-weight: 400;
+        }
+        .service-btn-read-more {
+          font-size: 4.3vw;
+          border: 1px solid color(dark-gray);
+          height: 2.6vw;
+          line-height: 4.3vw;
+          padding: 0 1.7vw;
+        }
+      }
+    }
+  }
 }
