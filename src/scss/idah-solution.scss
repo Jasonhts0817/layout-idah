@@ -135,4 +135,49 @@
 @include response(Tablet-Mobile) {
 }
 @include response(Mobile) {
+  .solution {
+    margin: 0 4.5vw 2vw 4.5vw;
+  }
+  .solution-title {
+    color: color(dark-gray);
+    text-align: center;
+    padding: 10vw 0 7vw 0;
+    font-size: 9.8vw;
+    font-weight: 500;
+  }
+  .solution-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .solution-item {
+      flex-basis: 48.5%;
+      padding-bottom: 2.2vw;
+      .solution-intro {
+        background: color(french-gray);
+        color: color(dark-gray);
+        height: 22.3vw;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 5.9vw;
+        font-weight: 500;
+        letter-spacing: 1px;
+        .solution-desc {
+          display: none !important;
+        }
+        .solution-icon-plus {
+          display: none !important;
+        }
+      }
+      .solution-img {
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 25vw;
+        }
+      }
+    }
+  }
 }
