@@ -1,5 +1,6 @@
 $(document).ready(function () {
-    initOwlSlider();
+    // initOwlSlider();
+    initMasterSlider();
     menuClick();
     headerScroll();
     scrollToHash();
@@ -22,6 +23,20 @@ function initOwlSlider() {
         }
     });
     owlSliderEnableLazyload($bannerList);
+}
+function initMasterSlider() {
+    var slider = new MasterSlider();
+
+    slider.control('arrows');
+    slider.control('bullets', { autohide: false, align: 'bottom', margin: 10 });
+    slider.control('scrollbar', { dir: 'h', color: '#333' });
+
+    slider.setup('masterslider', {
+        width: 750,
+        height: 430,
+        space: 5,
+        view: 'parallaxMask'
+    });
 }
 
 function owlSliderEnableLazyload($owlSlider) {
