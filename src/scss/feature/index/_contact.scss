@@ -51,4 +51,45 @@
 @mixin contact-Tablet-Mobile {
 }
 @mixin contact-Mobile {
+  .contact {
+    background: color(iron);
+  }
+  .contact-container {
+    margin: 0 8vw;
+    padding: 9.3vw 0 10.6vw 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-title {
+    padding: 0 12vw 4.6vw 0;
+    color: color(dark-gray);
+    font-size: 5.8vw;
+    line-height: 6.6vw;
+    font-weight: 500;
+  }
+  .contact-desc {
+    color: color(dark-gray);
+    font-size: 4.8vw;
+    line-height: 6vw;
+    font-weight: 400;
+    padding: 0 0 11vw 0;
+  }
+  .contact-phone,
+  .contact-email {
+    color: color(orange);
+    border-bottom: 1px solid color(orange);
+    &:hover {
+      color: color(orange);
+    }
+  }
+
+  .contact-btn {
+    align-self: center;
+    font-size: 5vw;
+    letter-spacing: 1px;
+    background: color(orange);
+    font-weight: 300;
+    padding: 3.1vw 5.3vw;
+    color: color(white);
+  }
 }

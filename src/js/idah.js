@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    // initOwlSlider();
-    initMasterSlider();
+    initOwlSlider();
+    // initMasterSlider();
     menuClick();
     headerScroll();
     scrollToHash();
@@ -10,16 +10,21 @@ $(document).ready(function () {
 
 function initOwlSlider() {
 
-    var $bannerList = $('.banner-list');
+    var $bannerList = $('.idah-news-slide');
     $bannerList.owlCarousel({
-        loop: true,
-        nav: false,
+        loop: false,
+        nav: true,
         dots: true,
-        items: 1,
         responsiveRefreshRate: 0,
+        navText: ['<span class="nav-btn nav-prev">&lt;</span>', '<span class="nav-btn nav-next">&gt;</span>'],
         responsive: {
-            0: {},
-            767: {}
+            0: {
+                items: 1
+            },
+            767: {
+                items: 2,
+                margin: 20
+            }
         }
     });
     owlSliderEnableLazyload($bannerList);
