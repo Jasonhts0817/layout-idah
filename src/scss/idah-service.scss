@@ -120,10 +120,11 @@
     background-size: cover;
   }
   .service-container {
-    padding: 0 4.5vw;
+    padding: 10vw 4.5vw;
     color: color(dark-gray);
   }
   .service-title-container {
+    padding-bottom: 7vw;
     .service-title {
       font-size: 9.8vw;
       font-weight: 500;
@@ -196,18 +197,23 @@
       }
       .service-desc-container {
         background: color(white);
-        padding: 2vw;
+        padding: 5.5vw 6vw 6vw 6vw;
+        display: flex;
+        flex-direction: column;
         .service-desc {
           font-size: 4.3vw;
           line-height: 5.5vw;
           font-weight: 400;
+          padding: 0 6vw 12vw 0;
         }
         .service-btn-read-more {
           font-size: 4.3vw;
           border: 1px solid color(dark-gray);
-          height: 2.6vw;
-          line-height: 4.3vw;
-          padding: 0 1.7vw;
+          height: 10.6vw;
+          line-height: 10.6vw;
+          width: 35vw;
+          text-align: center;
+          align-self: flex-end;
         }
       }
     }
