@@ -1,6 +1,6 @@
 $(document).ready(function () {
     initOwlSlider();
-    // initMasterSlider();
+    initMasterSlider();
     menuClick();
     headerScroll();
     scrollToHash();
@@ -32,15 +32,12 @@ function initOwlSlider() {
 function initMasterSlider() {
     var slider = new MasterSlider();
 
-    slider.control('arrows');
-    slider.control('bullets', { autohide: false, align: 'bottom', margin: 10 });
-    slider.control('scrollbar', { dir: 'h', color: '#333' });
+    slider.control('bullets', { autohide: false, align: 'bottom' });
 
-    slider.setup('masterslider', {
-        width: 750,
-        height: 430,
-        space: 5,
-        view: 'parallaxMask'
+    slider.setup('bannerList', {
+        width: 1920,
+        view: 'mask',
+        layout: 'autofill',
     });
 }
 

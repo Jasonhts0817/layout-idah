@@ -3,7 +3,7 @@
 }
 @include response(PC-Tablet) {
   .service {
-    background: url("/images/background/IDAH-web-15.jpg");
+    background: url("../images/background/IDAH-web-15.jpg");
     background-size: cover;
   }
   .service-container {
@@ -39,7 +39,7 @@
         padding: 0 2.2vw 0 1.6vw;
         .service-icon-arrow {
           transition: transform 0.3s;
-          background: url("/images/icon/IDAH-web-11.png");
+          background: url("../images/icon/IDAH-web-11.png");
           background-size: contain;
           background-position: center;
           background-repeat: no-repeat;
@@ -55,7 +55,7 @@
         }
         .service-icon-hand {
           transition: all 0.3s;
-          background: url("/images/icon/IDAH-web-12.png");
+          background: url("../images/icon/IDAH-web-12.png");
           background-size: contain;
           background-position: center;
           background-repeat: no-repeat;
@@ -65,7 +65,7 @@
         &[data-expanded="true"] {
           background: color(orange);
           .service-icon-arrow {
-            background: url("/images/icon/IDAH-web-13.png");
+            background: url("../images/icon/IDAH-web-13.png");
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
@@ -77,7 +77,7 @@
             color: color(white);
           }
           .service-icon-hand {
-            background: url("/images/icon/IDAH-web-14.png");
+            background: url("../images/icon/IDAH-web-14.png");
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
@@ -148,7 +148,7 @@
         padding: 0 7.6vw;
         .service-icon-arrow {
           transition: transform 0.3s;
-          background: url("/images/icon/IDAH-web-11.png");
+          background: url("../images/icon/IDAH-web-11.png");
           background-size: contain;
           background-position: center;
           background-repeat: no-repeat;
@@ -164,7 +164,7 @@
         }
         .service-icon-hand {
           transition: all 0.3s;
-          background: url("/images/icon/IDAH-web-12.png");
+          background: url("../images/icon/IDAH-web-12.png");
           background-size: contain;
           background-position: center;
           background-repeat: no-repeat;
@@ -174,7 +174,7 @@
         &[data-expanded="true"] {
           background: color(orange);
           .service-icon-arrow {
-            background: url("/images/icon/IDAH-web-13.png");
+            background: url("../images/icon/IDAH-web-13.png");
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
@@ -186,7 +186,7 @@
             color: color(white);
           }
           .service-icon-hand {
-            background: url("/images/icon/IDAH-web-14.png");
+            background: url("../images/icon/IDAH-web-14.png");
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;

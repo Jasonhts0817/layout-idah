@@ -10,23 +10,21 @@
     color: color(white);
   }
   .banner-list {
-    .owl-dots {
-      position: absolute;
-      display: flex;
-      .owl-dot {
-        &:nth-child(odd) {
-          background-image: url("/images/owlcarousel/IDAH-web-07.png");
-          &.active {
-            background-image: url("/images/owlcarousel/IDAH-web-05.png");
-          }
-        }
-        &:nth-child(even) {
-          background-image: url("/images/owlcarousel/IDAH-web-06.png");
-          &.active {
-            background-image: url("/images/owlcarousel/IDAH-web-05.png");
-            transform: rotate(180deg);
-          }
-        }
+    .ms-bullet {
+      &:nth-child(odd) {
+        background-image: url("../images/owlcarousel/IDAH-web-07.png");
+      }
+      &:nth-child(even) {
+        background-image: url("../images/owlcarousel/IDAH-web-06.png");
+      }
+    }
+    .ms-bullet-selected {
+      &:nth-child(odd) {
+        background-image: url("../images/owlcarousel/IDAH-web-05.png");
+      }
+      &:nth-child(even) {
+        background-image: url("../images/owlcarousel/IDAH-web-05.png");
+        transform: rotate(180deg);
       }
     }
   }
@@ -37,10 +35,10 @@
 @mixin banner-PC-Tablet {
   .banner {
     padding-top: $header-height-pc;
+    height: 100vh;
   }
   .banner-slide-item {
     img {
-      object-fit: cover;
       height: calc(100vh - #{$header-height-pc});
     }
   }
@@ -53,15 +51,14 @@
   }
 
   .banner-list {
-    .owl-dots {
-      left: 55px;
-      bottom: 30px;
-      .owl-dot {
-        width: 18px;
-        height: 17px;
-        margin: 4px;
-      }
+    .ms-bullet {
+      width: 18px;
+      height: 17px;
     }
+  }
+  .ms-bullets {
+    left: 0.4vw !important;
+    bottom: 1.8vw !important;
   }
 }
 @mixin banner-Tablet {
@@ -71,6 +68,7 @@
 @mixin banner-Mobile {
   .banner {
     padding-top: $header-height-mobile;
+    height: 61vh;
   }
   .banner-slide-item {
     height: 66.8vmax;
@@ -80,22 +78,24 @@
     }
   }
   .banner-slide-title {
-    top: 7.8vw;
-    left: 17vw;
-    font-size: 3.12vw;
-    width: 28vw;
+    top: 12.8vw;
+    left: 10vw;
+    font-size: 9vw;
+    width: 70vw;
     color: color(dark-gray);
+    font-weight: 500;
   }
+
   .banner-list {
-    .owl-dots {
-      left: 16px;
-      bottom: 24px;
-      .owl-dot {
-        width: 13px;
-        height: 12px;
-        background-size: cover;
-        margin-right: 5px;
-      }
+    .ms-bullet {
+      width: 13px;
+      height: 12px;
+      background-size: cover;
+      margin: 4px !important;
     }
+  }
+  .ms-bullets {
+    left: -5.6vw !important;
+    bottom: 3.8vw !important;
   }
 }
