@@ -4,7 +4,8 @@
 @include response(PC-Tablet) {
   .service {
     background: url("../images/background/IDAH-web-15.jpg");
-    background-size: cover;
+    background-size: 100vw 130vh;
+    background-repeat: no-repeat;
   }
   .service-container {
     margin: 0 16.3vw;

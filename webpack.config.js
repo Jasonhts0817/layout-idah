@@ -7,16 +7,26 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const RemoveEmptyScriptsPlugin = require('webpack-remove-empty-scripts');
 
 const isProduction = process.env.NODE_ENV == "production";
+const isLocal = process.env.NODE_ENV == "local";
 
 const config = {
-  entry: {
-    main: "./src/index.js",
-    idah: "./src/scss/idah.scss",
-    'idah-rwd': "./src/scss/idah-rwd.scss",
-    'idah-service': "./src/scss/idah-service.scss",
-    'idah-solution': "./src/scss/idah-solution.scss",
-    'search-dialogs': "./src/scss/search-dialogs.scss",
-  },
+  entry: () => {
+    let outPutFile = {
+      main: "./src/index.js",
+      idah: "./src/scss/idah.scss",
+      'idah-rwd': "./src/scss/idah-rwd.scss",
+      'idah-service': "./src/scss/idah-service.scss",
+      'idah-solution': "./src/scss/idah-solution.scss",
+      'search-dialogs': "./src/scss/search-dialogs.scss",
+
+    };
+    let localFile = {
+      'develop-css': "./src/scss/develop-css.scss",
+    }
+    outPutFile = isLocal ? { ...outPutFile, ...localFile } : outPutFile;
+    return outPutFile;
+  }
+  ,
   optimization: {
     removeEmptyChunks: true,
   },
@@ -28,7 +38,7 @@ const config = {
     host: "localhost"
   },
   plugins: [
-    new HtmlWebpackPlugin({ template: "index.html", minify: false, inject: !isProduction }),
+    new HtmlWebpackPlugin({ template: "index.html", minify: false, inject: isLocal }),
     new MiniCssExtractPlugin({ filename: "css/[name].css" }),
     new RemoveEmptyScriptsPlugin(),
     new CopyPlugin({
@@ -56,7 +66,11 @@ const config = {
   target: 'web'
 };
 
+if (isLocal) {
+
+}
 module.exports = () => {
+  console.log(process.env.NODE_ENV);
   if (isProduction) {
     config.mode = "production";
   } else {

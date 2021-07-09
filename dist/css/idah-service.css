@@ -3,7 +3,8 @@
 @media screen and (min-width: 768px) {
   .service {
     background: url("../images/background/IDAH-web-15.jpg");
-    background-size: cover;
+    background-size: 100vw 130vh;
+    background-repeat: no-repeat;
   }
 
   .service-container {
