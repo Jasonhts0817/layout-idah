@@ -1,5 +1,6 @@
 $(document).ready(function () {
     initOwlSlider();
+    initMasterSlider();
     menuClick();
     headerScroll();
     scrollToHash();
@@ -9,19 +10,35 @@ $(document).ready(function () {
 
 function initOwlSlider() {
 
-    var $bannerList = $('.banner-list');
+    var $bannerList = $('.idah-news-slide');
     $bannerList.owlCarousel({
-        loop: true,
-        nav: false,
+        loop: false,
+        nav: true,
         dots: true,
-        items: 1,
         responsiveRefreshRate: 0,
+        navText: ['<span class="nav-btn nav-prev">&lt;</span>', '<span class="nav-btn nav-next">&gt;</span>'],
         responsive: {
-            0: {},
-            767: {}
+            0: {
+                items: 1
+            },
+            767: {
+                items: 2,
+                margin: 20
+            }
         }
     });
     owlSliderEnableLazyload($bannerList);
+}
+function initMasterSlider() {
+    var slider = new MasterSlider();
+
+    slider.control('bullets', { autohide: false, align: 'bottom' });
+
+    slider.setup('bannerList', {
+        width: 1920,
+        view: 'mask',
+        layout: 'autofill',
+    });
 }
 
 function owlSliderEnableLazyload($owlSlider) {
@@ -118,9 +135,9 @@ function initAccordion() {
         var $contents = $collapse.find('.jCollapseContent');
         $contents.hide();
         $topics.click(function () {
-            if ($collapse.data('reject-device').includes(getDeviceSize())) { return; }
+            if ($collapse.data('reject-device') && $collapse.data('reject-device').includes(getDeviceSize())) { return; }
             var $content = $(this).siblings('.jCollapseContent');
-            var isActive = $content.attr('style').includes('display: block');
+            var isActive = !$content.attr('style').includes('display: none');
             $contents.slideUp();
             $topics.attr("data-expanded", false)
             if (isActive) { return; }

@@ -121,3 +121,18 @@ button {
   z-index: 1;
   color: #fff;
 }
+
+.banner-list .ms-bullet:nth-child(odd) {
+  background-image: url("../images/owlcarousel/IDAH-web-07.png");
+}
+.banner-list .ms-bullet:nth-child(even) {
+  background-image: url("../images/owlcarousel/IDAH-web-06.png");
+}
+.banner-list .ms-bullet-selected:nth-child(odd) {
+  background-image: url("../images/owlcarousel/IDAH-web-05.png");
+}
+.banner-list .ms-bullet-selected:nth-child(even) {
+  background-image: url("../images/owlcarousel/IDAH-web-05.png");
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}

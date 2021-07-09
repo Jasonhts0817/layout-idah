@@ -135,11 +135,25 @@
       top: 45%;
       transform: scaleY(2);
     }
-    .nav-prev {
-      left: 3vw;
+    .owl-prev {
+      .nav-prev {
+        left: 3vw;
+      }
+      &.disabled {
+        .nav-prev {
+          display: none !important;
+        }
+      }
     }
-    .nav-next {
-      right: 3vw;
+    .owl-next {
+      .nav-next {
+        right: 3vw;
+      }
+      &.disabled {
+        .nav-next {
+          display: none !important;
+        }
+      }
     }
   }
   .idah-news-item {
