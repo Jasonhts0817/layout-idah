@@ -1,23 +1,17 @@
 @mixin index {
 }
 @mixin index-PC {
-  .cool-container {
-    max-width: $container;
-    margin: 0 auto;
-  }
 }
 @mixin index-PC-Tablet {
 }
 @mixin index-Tablet {
-  .cool-container {
-    max-width: $container;
-    margin: 0 auto;
-  }
 }
 @mixin index-Tablet-Mobile {
 }
 @mixin index-Mobile {
-  .cool-container {
-    margin: 0 auto;
+  .idah-container {
+    position: relative;
+    width: 100%;
+    height: auto;
   }
 }
