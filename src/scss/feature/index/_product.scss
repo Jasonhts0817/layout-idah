@@ -49,12 +49,21 @@
         .product-info {
           height: 16.5vw;
           background: color(opacity-75);
-          padding: 2vw 1vw;
+          padding: 2.4vw 1.9vw;
           .product-intro {
             font-size: 1.4vw;
             line-height: 1.8vw;
             font-weight: 400;
             padding-bottom: 1vw;
+            position: relative;
+            &::after {
+              content: "";
+              bottom: 0;
+              left: 0;
+              position: absolute;
+              border-bottom: 1px solid color(orange);
+              width: 3.7vw;
+            }
           }
           .product-desc {
             font-size: 0.82vw;
