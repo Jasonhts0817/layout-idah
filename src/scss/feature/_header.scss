@@ -45,6 +45,40 @@
       justify-content: center;
       align-items: center;
       padding: 0 1.4vw;
+      position: relative;
+      .nav-item-list {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: color(white);
+        min-width: 9vw;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s;
+        .nav-item {
+          &:first-child {
+            padding: 3vw 2vw 1vw 2vw;
+          }
+          padding: 1vw 2vw;
+          color: color(dark-gray);
+          text-align: right;
+          white-space: nowrap;
+          &:hover,
+          &:active,
+          &:focus,
+          &.active {
+            color: color(dusty-gray);
+          }
+        }
+      }
+      &:hover {
+        .nav-item-list {
+          transition: max-height 0.3s;
+          max-height: 50vw;
+        }
+      }
     }
     .nav-topic {
       color: color(dark-gray);
@@ -54,7 +88,7 @@
       &:active,
       &:focus,
       &.active {
-        color: color(gray);
+        color: color(dusty-gray);
       }
       .icon-plus,
       .icon-minus {
@@ -76,7 +110,7 @@
       &:active,
       &:focus,
       &.active {
-        color: color(gray);
+        color: color(dusty-gray);
       }
       &:first-child {
         border-right: 1px solid color(dark-gray);
@@ -106,19 +140,28 @@
       max-height: 500px;
       position: absolute;
       top: 100%;
-      right: 1.4vw;
+      right: 0;
+      padding: 2vw 0 0 0;
       .sel-lang-option {
         color: color(dark-gray);
-        padding: 10px;
-        width: 100px;
+        padding: 1vw 1.4vw;
+        display: flex;
+        justify-content: flex-end;
+        a {
+          &:hover,
+          &:active,
+          &:focus,
+          &.active {
+            color: color(dusty-gray);
+          }
+        }
       }
     }
     .lang-img {
       display: none !important;
     }
     .lang-txt {
-      display: flex;
-      justify-content: space-between;
+      white-space: nowrap;
     }
   }
   .btn-contact-us {
