@@ -1251,6 +1251,7 @@
   .product-list .product-item .product-item-display .product-img {
     -o-object-fit: cover;
        object-fit: cover;
+    height: 37.1vw;
     width: 100%;
   }
   .product-list .product-item .product-item-display .product-category {
