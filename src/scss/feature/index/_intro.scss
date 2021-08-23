@@ -17,6 +17,10 @@
     font-weight: 500;
     padding-bottom: 1vw;
   }
+  html[lang="zh-hant-TW"] .intro-title,
+  html[lang="zh-hans-CN"] .intro-title {
+    line-height: 60px;
+  }
   .intro-sub-title {
     font-size: 1.4vw;
     line-height: 1.8vw;
@@ -49,6 +53,12 @@
     font-weight: 500;
     padding-bottom: 3vw;
   }
+
+  html[lang="zh-hant-TW"] .intro-title,
+  html[lang="zh-hans-CN"] .intro-title {
+    line-height: 43px;
+  }
+
   .intro-sub-title {
     font-size: 6.3vw;
     font-weight: 500;

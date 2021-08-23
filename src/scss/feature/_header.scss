@@ -145,6 +145,7 @@
       .sel-lang-option {
         color: color(dark-gray);
         padding: 1vw 1.4vw;
+        width: 200px;
         display: flex;
         justify-content: flex-end;
         a {
@@ -241,12 +242,11 @@
       position: absolute;
       top: 100%;
       right: 2vmin;
+      margin-top: 20px;
       .sel-lang-option {
-        padding-top: 5px;
+        padding-top: 20px;
+        padding-bottom: 10px;
       }
-    }
-    .lang-txt {
-      display: none;
     }
     .lang-img {
       width: 37px;

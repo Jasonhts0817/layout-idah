@@ -64,6 +64,7 @@
     }
     .idah-news-img-box {
       flex-basis: 50%;
+      position: relative;
       height: auto;
       .idah-news-img {
         object-fit: cover;
@@ -157,6 +158,7 @@
     margin: 0 auto;
     .idah-news-article {
       position: relative;
+      flex-basis: 50%;
       background: color(athens-gray);
       padding: 8vw 1.6vw 6.5vw 8vw;
       color: color(dark-gray);
@@ -188,6 +190,7 @@
       }
     }
     .idah-news-img-box {
+      position: relative;
       height: 75.8vw;
       .idah-news-img {
         object-fit: cover;

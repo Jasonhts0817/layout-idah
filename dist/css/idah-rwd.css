@@ -283,6 +283,7 @@
   .hdr-sel-lang .sel-lang-option-list .sel-lang-option {
     color: #57585e;
     padding: 1vw 1.4vw;
+    width: 200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -354,6 +355,7 @@
   }
   .ftr-info .ftr-info-container .ftr-logo img {
     max-width: 14.6vw;
+    margin-top: 20px;
   }
   .ftr-info .ftr-info-container .ftr-socail-list {
     display: -webkit-box;
@@ -401,6 +403,7 @@
   }
   .ftr-info .ftr-info-container .ftr-socail-list .ftr-sel-lang .ftr-sel-lang-option-list .ftr-sel-lang-option {
     padding: 10px;
+    width: 120px;
   }
   .ftr-info .ftr-info-container .ftr-socail-list .ftr-sel-lang .lang-img {
     display: none;
@@ -439,7 +442,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 10.41vw;
+    width: 20vw;
     background-color: #231f20;
     border: initial;
     margin-bottom: 0;
@@ -523,6 +526,11 @@
     font-size: 3.1vw;
     font-weight: 500;
     padding-bottom: 1vw;
+  }
+
+  html[lang=zh-hant-TW] .intro-title,
+html[lang=zh-hans-CN] .intro-title {
+    line-height: 60px;
   }
 
   .intro-sub-title {
@@ -715,6 +723,7 @@
   .idah-news-item .idah-news-img-box {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+    position: relative;
     height: auto;
   }
   .idah-news-item .idah-news-img-box .idah-news-img {
@@ -877,12 +886,11 @@
     position: absolute;
     top: 100%;
     right: 2vmin;
+    margin-top: 20px;
   }
   .hdr-sel-lang .sel-lang-option-list .sel-lang-option {
-    padding-top: 5px;
-  }
-  .hdr-sel-lang .lang-txt {
-    display: none;
+    padding-top: 20px;
+    padding-bottom: 10px;
   }
   .hdr-sel-lang .lang-img {
     width: 37px;
@@ -1191,6 +1199,11 @@
     padding-bottom: 3vw;
   }
 
+  html[lang=zh-hant-TW] .intro-title,
+html[lang=zh-hans-CN] .intro-title {
+    line-height: 43px;
+  }
+
   .intro-sub-title {
     font-size: 6.3vw;
     font-weight: 500;
@@ -1362,6 +1375,8 @@
   }
   .idah-news-item .idah-news-article {
     position: relative;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
     background: #ececee;
     padding: 8vw 1.6vw 6.5vw 8vw;
     color: #57585e;
@@ -1402,6 +1417,7 @@
     margin-right: 0.4vw;
   }
   .idah-news-item .idah-news-img-box {
+    position: relative;
     height: 75.8vw;
   }
   .idah-news-item .idah-news-img-box .idah-news-img {
