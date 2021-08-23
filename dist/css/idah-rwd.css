@@ -646,22 +646,23 @@
   }
 
   .idah-news-slide {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-bottom: 5.5vw;
     border-bottom: 1px solid #57585e;
     margin-bottom: 3.7vw;
+    min-height: 16.7vmax;
   }
 
   .idah-news-item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    min-height: 16.7vmax;
+    height: 100%;
   }
   .idah-news-item .idah-news-article {
     position: relative;
@@ -714,18 +715,12 @@
   .idah-news-item .idah-news-img-box {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
-    position: relative;
     height: auto;
   }
   .idah-news-item .idah-news-img-box .idah-news-img {
-    z-index: 0;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-size: cover;
-    background-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
   }
 
   .idah-share {
@@ -1273,7 +1268,51 @@
     height: 22.3vw;
   }
   .product-list .product-item .product-item-hover {
+    position: absolute;
     display: none !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .product-list .product-item .product-item-hover .product-info {
+    height: 37.1vw;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 2.4vw 1.9vw;
+  }
+  .product-list .product-item .product-item-hover .product-info .product-intro {
+    font-size: 3.4vw;
+    line-height: 3.8vw;
+    font-weight: 400;
+    padding-bottom: 2vw;
+    position: relative;
+  }
+  .product-list .product-item .product-item-hover .product-info .product-intro::after {
+    content: "";
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    border-bottom: 1px solid #ea5432;
+    width: 8.7vw;
+  }
+  .product-list .product-item .product-item-hover .product-info .product-desc {
+    font-size: 2.5vw;
+    line-height: 2.8vw;
+    font-weight: 300;
+    padding-top: 2vw;
+  }
+  .product-list .product-item .product-item-hover .product-view {
+    text-align: center;
+    font-size: 4.6vw;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 1vw 0;
+    background: #ea5432;
+    line-height: 22.3vw;
+    height: 22.3vw;
+  }
+  .product-list .product-item:hover .product-item-hover {
+    display: block !important;
   }
 
   .idah-news-title {
@@ -1323,8 +1362,6 @@
   }
   .idah-news-item .idah-news-article {
     position: relative;
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
     background: #ececee;
     padding: 8vw 1.6vw 6.5vw 8vw;
     color: #57585e;
@@ -1365,18 +1402,12 @@
     margin-right: 0.4vw;
   }
   .idah-news-item .idah-news-img-box {
-    position: relative;
     height: 75.8vw;
   }
   .idah-news-item .idah-news-img-box .idah-news-img {
-    z-index: 0;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-size: cover;
-    background-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
   }
 
   .idah-share {

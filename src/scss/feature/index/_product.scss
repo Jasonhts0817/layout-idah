@@ -136,7 +136,54 @@
         }
       }
       .product-item-hover {
+        position: absolute;
         display: none !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        .product-info {
+          height: 37.1vw;
+          background: color(opacity-75);
+          padding: 2.4vw 1.9vw;
+          .product-intro {
+            font-size: 3.4vw;
+            line-height: 3.8vw;
+            font-weight: 400;
+            padding-bottom: 2vw;
+            position: relative;
+            &::after {
+              content: "";
+              bottom: 0;
+              left: 0;
+              position: absolute;
+              border-bottom: 1px solid color(orange);
+              width: 8.7vw;
+            }
+          }
+          .product-desc {
+            font-size: 2.5vw;
+            line-height: 2.8vw;
+            font-weight: 300;
+            padding-top: 2vw;
+          }
+        }
+        .product-view {
+          text-align: center;
+          font-size: 4.6vw;
+          font-weight: 300;
+          letter-spacing: 1px;
+          padding: 1vw 0;
+          background: color(orange);
+          line-height: 22.3vw;
+          height: 22.3vw;
+        }
+      }
+
+      &:hover {
+        .product-item-hover {
+          display: block !important;
+        }
       }
     }
   }
