@@ -157,12 +157,10 @@
           }
         }
       }
-    }
-    .lang-img {
-      display: none !important;
-    }
-    .lang-txt {
-      white-space: nowrap;
+
+      .lang-txt {
+        white-space: nowrap;
+      }
     }
   }
   .btn-contact-us {
@@ -235,6 +233,7 @@
       }
     }
     .sel-lang-option-list {
+      z-index: z-index(select);
       overflow: hidden;
       background-color: color(white);
       transition: max-height 0.3s;
@@ -242,14 +241,17 @@
       position: absolute;
       top: 100%;
       right: 2vmin;
-      margin-top: 20px;
+      margin-top: 10px;
       .sel-lang-option {
+        color: color(dark-gray);
+        text-align: right;
+        padding: 20px 10px 10px 10px;
         padding-top: 20px;
         padding-bottom: 10px;
       }
-    }
-    .lang-img {
-      width: 37px;
+      .lang-txt {
+        white-space: nowrap;
+      }
     }
   }
 

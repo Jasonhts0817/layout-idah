@@ -294,10 +294,7 @@
   .hdr-sel-lang .sel-lang-option-list .sel-lang-option a:hover, .hdr-sel-lang .sel-lang-option-list .sel-lang-option a:active, .hdr-sel-lang .sel-lang-option-list .sel-lang-option a:focus, .hdr-sel-lang .sel-lang-option-list .sel-lang-option a.active {
     color: #999999;
   }
-  .hdr-sel-lang .lang-img {
-    display: none !important;
-  }
-  .hdr-sel-lang .lang-txt {
+  .hdr-sel-lang .sel-lang-option-list .lang-txt {
     white-space: nowrap;
   }
 
@@ -878,6 +875,7 @@ html[lang=zh-hans-CN] .intro-title {
     max-height: 0px;
   }
   .hdr-sel-lang .sel-lang-option-list {
+    z-index: 999;
     overflow: hidden;
     background-color: #fff;
     -webkit-transition: max-height 0.3s;
@@ -886,14 +884,17 @@ html[lang=zh-hans-CN] .intro-title {
     position: absolute;
     top: 100%;
     right: 2vmin;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .hdr-sel-lang .sel-lang-option-list .sel-lang-option {
+    color: #57585e;
+    text-align: right;
+    padding: 20px 10px 10px 10px;
     padding-top: 20px;
     padding-bottom: 10px;
   }
-  .hdr-sel-lang .lang-img {
-    width: 37px;
+  .hdr-sel-lang .sel-lang-option-list .lang-txt {
+    white-space: nowrap;
   }
 
   .menu {
@@ -1075,6 +1076,7 @@ html[lang=zh-hans-CN] .intro-title {
     max-height: 0px;
   }
   .ftr-info .ftr-info-container .ftr-socail-list .ftr-sel-lang .ftr-sel-lang-option-list {
+    z-index: 999;
     overflow: hidden;
     background-color: #231f20;
     -webkit-transition: max-height 0.3s;

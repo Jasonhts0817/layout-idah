@@ -178,6 +178,7 @@
             }
           }
           .ftr-sel-lang-option-list {
+            z-index: z-index(select);
             overflow: hidden;
             background-color: color(thunder);
             transition: max-height 0.3s;
