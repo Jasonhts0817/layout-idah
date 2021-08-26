@@ -79,6 +79,8 @@
     overflow: hidden;
   }
   .solution-list .solution-item .solution-img img {
+    -o-object-fit: cover;
+       object-fit: cover;
     -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;

@@ -61,6 +61,7 @@
         height: auto;
         overflow: hidden;
         img {
+          object-fit: cover;
           transition: transform 0.3s;
           position: absolute;
           width: 100%;
