@@ -32,6 +32,7 @@
     .service-item {
       padding-bottom: 1.7vw;
       .service-topic-container {
+        cursor: pointer;
         display: flex;
         height: 6.3vw;
         background: color(french-gray);
