@@ -191,16 +191,16 @@
     background: #fff;
     max-height: 0;
     overflow: hidden;
-    -webkit-transition: max-height 0.3s;
-    transition: max-height 0.3s;
     -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
   }
   .nav-list .nav-group .nav-item-list .nav-item {
     padding: 0.5vw 2vw;
-    color: #57585e;
     text-align: left;
     white-space: nowrap;
+    color: #57585e;
   }
   .nav-list .nav-group .nav-item-list .nav-item:hover, .nav-list .nav-group .nav-item-list .nav-item:active, .nav-list .nav-group .nav-item-list .nav-item:focus, .nav-list .nav-group .nav-item-list .nav-item.active {
     color: #c9151e;
@@ -210,10 +210,11 @@
     padding-right: 5px;
   }
   .nav-list .nav-group:hover .nav-item-list {
-    -webkit-transition: max-height 0.3s;
-    transition: max-height 0.3s;
+    grid-template-rows: repeat(auto-fit, minmax(35px, 1fr));
     max-height: 10vw;
     padding: 1vw 0;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
   }
   .nav-list .nav-topic {
     color: #57585e;
@@ -1538,5 +1539,16 @@ html[lang=zh-hans-CN] .intro-title {
     font-weight: 300;
     padding: 3.1vw 5.3vw;
     color: #fff;
+  }
+}
+@media screen and (min-width: 768px) {
+  .aboutus-product-list .product-list .product-item {
+    width: 32%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .aboutus-product-list .product-list .product-item .product-img {
+    width: 100% !important;
+    height: 16.5vw !important;
   }
 }

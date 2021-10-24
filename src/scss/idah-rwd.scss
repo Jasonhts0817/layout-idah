@@ -57,16 +57,21 @@
 }
 
 @include boostrap-response(PC) {
+  @include product-boostrap-PC;
 }
 
 @include boostrap-response(PC-Tablet) {
+  @include product-boostrap-PC-Tablet;
 }
 
 @include boostrap-response(Tablet) {
+  @include product-boostrap-Tablet;
 }
 
 @include boostrap-response(Tablet-Mobile) {
+  @include product-boostrap-Tablet-Mobile;
 }
 
 @include boostrap-response(Mobile) {
+  @include product-boostrap-Mobile;
 }

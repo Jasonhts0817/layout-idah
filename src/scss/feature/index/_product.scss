@@ -188,3 +188,21 @@
     }
   }
 }
+
+@mixin product-boostrap-PC {
+}
+@mixin product-boostrap-PC-Tablet {
+  .aboutus-product-list .product-list .product-item {
+    width: 32%;
+  }
+}
+@mixin product-boostrap-Tablet {
+}
+@mixin product-boostrap-Tablet-Mobile {
+}
+@mixin product-boostrap-Mobile {
+  .aboutus-product-list .product-list .product-item .product-img {
+    width: 100% !important;
+    height: 16.5vw !important;
+  }
+}

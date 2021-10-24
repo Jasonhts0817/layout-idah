@@ -57,13 +57,13 @@
         background: color(white);
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.3s;
         box-shadow: 0 5px 10px color(opacity-1);
+        transition: all 0.2s;
         .nav-item {
           padding: 0.5vw 2vw;
-          color: color(dark-gray);
           text-align: left;
           white-space: nowrap;
+          color: color(dark-gray);
           &:hover,
           &:active,
           &:focus,
@@ -78,9 +78,10 @@
       }
       &:hover {
         .nav-item-list {
-          transition: max-height 0.3s;
+          grid-template-rows: repeat(auto-fit, minmax(35px, 1fr));
           max-height: 10vw;
           padding: 1vw 0;
+          transition: all 0.2s;
         }
       }
     }
