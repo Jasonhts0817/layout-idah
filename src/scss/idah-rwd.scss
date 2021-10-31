@@ -75,3 +75,7 @@
 @include boostrap-response(Mobile) {
   @include product-boostrap-Mobile;
 }
+
+@include boostrap-response(Small-Mobile) {
+  @include other-boostrap-small-Mobile;
+}

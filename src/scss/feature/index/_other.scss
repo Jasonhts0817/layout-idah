@@ -1,0 +1,36 @@
+@mixin other-boostrap-small-Mobile {
+  header.hdr {
+    padding-top: 10px;
+  }
+
+  html[lang="zh-Hant-TW"] .feature-item.hdr-sel-lang a,
+  html[lang="zh-Hans-CN"] .feature-item.hdr-sel-lang a {
+    font-size: 16px;
+  }
+
+  .intro-section {
+    font-size: 6vw;
+    line-height: 7.5vw;
+  }
+
+  .nav-list .nav-topic img {
+    width: 16px;
+    height: 18px;
+  }
+
+  .nav-list .nav-topic a,
+  .ftr-link-list .ftr-link-topic {
+    font-weight: 600;
+    font-size: 6vw;
+  }
+
+  .nav-list .nav-item-list .nav-item,
+  .ftr-link-list .ftr-link-item-list .ftr-link-item {
+    font-size: 5vw;
+  }
+
+  .ftr-info .ftr-info-container .ftr-socail-list i {
+    font-size: 8.2vw;
+    padding: 0 2.6vw;
+  }
+}

@@ -11,11 +11,12 @@
     border-bottom: 1px solid color(dark-gray);
   }
   .intro-title {
-    padding: 0 4.6vw;
+    padding: 1vw 4.6vw;
     line-height: 2.9vw;
     font-size: 3.1vw;
-    font-weight: 500;
+    font-weight: 600;
     padding-bottom: 1vw;
+    font-style: italic;
   }
   html[lang="zh-hant-TW"] .intro-title,
   html[lang="zh-hans-CN"] .intro-title {
@@ -31,8 +32,8 @@
     padding: 0 7vw;
   }
   .intro-section {
-    font-size: 0.82vw;
-    line-height: 1.2vw;
+    font-size: 1.2vw;
+    line-height: 1.5vw;
     font-weight: 400;
     padding-top: 1vw;
   }
@@ -50,7 +51,8 @@
   .intro-title {
     padding: 0 4.6vw;
     font-size: 10vw;
-    font-weight: 500;
+    font-weight: 600;
+    font-style: italic;
     padding-bottom: 3vw;
   }
 

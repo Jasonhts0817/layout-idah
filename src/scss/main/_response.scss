@@ -43,5 +43,9 @@
     @media screen and (max-width: $boostrap-tablet-min-width) {
       @content;
     }
+  } @else if ($res == Small-Mobile) {
+    @media screen and (max-width: $boostrap-small-mobile-max-width) {
+      @content;
+    }
   }
 }

@@ -446,7 +446,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 20vw;
+    width: 10vw;
     background-color: #231f20;
     border: initial;
     margin-bottom: 0;
@@ -525,11 +525,12 @@
   }
 
   .intro-title {
-    padding: 0 4.6vw;
+    padding: 1vw 4.6vw;
     line-height: 2.9vw;
     font-size: 3.1vw;
-    font-weight: 500;
+    font-weight: 600;
     padding-bottom: 1vw;
+    font-style: italic;
   }
 
   html[lang=zh-hant-TW] .intro-title,
@@ -549,8 +550,8 @@ html[lang=zh-hans-CN] .intro-title {
   }
 
   .intro-section {
-    font-size: 0.82vw;
-    line-height: 1.2vw;
+    font-size: 1.2vw;
+    line-height: 1.5vw;
     font-weight: 400;
     padding-top: 1vw;
   }
@@ -564,7 +565,7 @@ html[lang=zh-hans-CN] .intro-title {
     text-align: center;
     padding: 2.7vw 0;
     font-size: 3.1vw;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   .product-list {
@@ -594,7 +595,7 @@ html[lang=zh-hans-CN] .intro-title {
   .product-list .product-item .product-item-display .product-category {
     text-align: center;
     font-size: 1.2vw;
-    font-weight: 300;
+    font-weight: 600;
     letter-spacing: 1px;
     padding: 1vw 0;
     background: #57585e;
@@ -613,9 +614,9 @@ html[lang=zh-hans-CN] .intro-title {
     padding: 2.4vw 1.9vw;
   }
   .product-list .product-item .product-item-hover .product-info .product-intro {
-    font-size: 1.4vw;
+    font-size: 1.8vw;
     line-height: 1.8vw;
-    font-weight: 400;
+    font-weight: 600;
     padding-bottom: 1vw;
     position: relative;
   }
@@ -628,8 +629,8 @@ html[lang=zh-hans-CN] .intro-title {
     width: 3.7vw;
   }
   .product-list .product-item .product-item-hover .product-info .product-desc {
-    font-size: 0.82vw;
-    line-height: 1.2vw;
+    font-size: 1.2vw;
+    line-height: 1.5vw;
     font-weight: 300;
     padding-top: 1vw;
   }
@@ -654,7 +655,7 @@ html[lang=zh-hans-CN] .intro-title {
     text-align: center;
     padding: 2.7vw 0;
     font-size: 3.1vw;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   .idah-news-slide {
@@ -665,8 +666,6 @@ html[lang=zh-hans-CN] .intro-title {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-bottom: 5.5vw;
-    border-bottom: 1px solid #57585e;
-    margin-bottom: 3.7vw;
     min-height: 16.7vmax;
   }
 
@@ -701,10 +700,11 @@ html[lang=zh-hans-CN] .intro-title {
     font-size: 1.2vw;
     line-height: 1.5vw;
     padding-bottom: 0.7vw;
+    font-weight: 500;
   }
   .idah-news-item .idah-news-article .idah-news-desc {
-    font-size: 0.82vw;
-    line-height: 1.2vw;
+    font-size: 0.9vw;
+    line-height: 1.1vw;
     font-weight: 400;
     padding-bottom: 2.6vw;
   }
@@ -743,7 +743,7 @@ html[lang=zh-hans-CN] .intro-title {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-bottom: 13.1vw;
+    padding-bottom: 2vw;
   }
   .idah-share .idah-share-social {
     color: #57585e;
@@ -766,7 +766,7 @@ html[lang=zh-hans-CN] .intro-title {
     width: 0.3vw;
   }
   .idah-share .idah-share-social i {
-    font-size: 1.5vw;
+    font-size: 2vw;
     padding: 0 0.6vw;
   }
   .idah-share .idah-share-btn-back {
@@ -800,7 +800,7 @@ html[lang=zh-hans-CN] .intro-title {
     width: 17.4vw;
     color: #57585e;
     font-size: 1.4vw;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1.4vw;
   }
 
@@ -1112,7 +1112,7 @@ html[lang=zh-hans-CN] .intro-title {
   .ftr-info .ftr-info-container .ftr-copy-right {
     color: #9f9f9f;
     width: 245px;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .ftr-link-list {
@@ -1211,7 +1211,8 @@ html[lang=zh-hans-CN] .intro-title {
   .intro-title {
     padding: 0 4.6vw;
     font-size: 10vw;
-    font-weight: 500;
+    font-weight: 600;
+    font-style: italic;
     padding-bottom: 3vw;
   }
 
@@ -1250,7 +1251,7 @@ html[lang=zh-hans-CN] .intro-title {
     text-align: center;
     padding: 7.9vw 0;
     font-size: 9.8vw;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   .product-list {
@@ -1290,7 +1291,7 @@ html[lang=zh-hans-CN] .intro-title {
             justify-content: center;
     text-align: center;
     font-size: 4.6vw;
-    font-weight: 300;
+    font-weight: 600;
     letter-spacing: 1px;
     padding: 1vw 0;
     background: #57585e;
@@ -1333,7 +1334,7 @@ html[lang=zh-hans-CN] .intro-title {
   .product-list .product-item .product-item-hover .product-view {
     text-align: center;
     font-size: 4.6vw;
-    font-weight: 300;
+    font-weight: 600;
     letter-spacing: 1px;
     padding: 1vw 0;
     background: #ea5432;
@@ -1349,7 +1350,7 @@ html[lang=zh-hans-CN] .intro-title {
     text-align: center;
     padding: 4.3vw 0 7vw 0;
     font-size: 9.8vw;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   .idah-news-slide {
@@ -1411,8 +1412,8 @@ html[lang=zh-hans-CN] .intro-title {
     padding-bottom: 4vw;
   }
   .idah-news-item .idah-news-article .idah-news-topic {
-    font-size: 5vw;
-    line-height: 6vw;
+    font-size: 6vw;
+    line-height: 9vw;
     padding-bottom: 6vw;
   }
   .idah-news-item .idah-news-article .idah-news-desc {
@@ -1482,10 +1483,10 @@ html[lang=zh-hans-CN] .intro-title {
   .idah-share .idah-share-btn-back {
     color: #ea5432;
     font-size: 5vw;
-    font-weight: 400;
     padding: 3vw 11.5vw;
     border: 1px solid #ea5432;
     margin-bottom: 15.5vw;
+    font-weight: 600;
   }
 
   .contact {
@@ -1509,7 +1510,7 @@ html[lang=zh-hans-CN] .intro-title {
     color: #57585e;
     font-size: 5.8vw;
     line-height: 6.6vw;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   .contact-desc {
@@ -1550,5 +1551,41 @@ html[lang=zh-hans-CN] .intro-title {
   .aboutus-product-list .product-list .product-item .product-img {
     width: 100% !important;
     height: 16.5vw !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  header.hdr {
+    padding-top: 10px;
+  }
+
+  html[lang=zh-Hant-TW] .feature-item.hdr-sel-lang a,
+html[lang=zh-Hans-CN] .feature-item.hdr-sel-lang a {
+    font-size: 16px;
+  }
+
+  .intro-section {
+    font-size: 6vw;
+    line-height: 7.5vw;
+  }
+
+  .nav-list .nav-topic img {
+    width: 16px;
+    height: 18px;
+  }
+
+  .nav-list .nav-topic a,
+.ftr-link-list .ftr-link-topic {
+    font-weight: 600;
+    font-size: 6vw;
+  }
+
+  .nav-list .nav-item-list .nav-item,
+.ftr-link-list .ftr-link-item-list .ftr-link-item {
+    font-size: 5vw;
+  }
+
+  .ftr-info .ftr-info-container .ftr-socail-list i {
+    font-size: 8.2vw;
+    padding: 0 2.6vw;
   }
 }

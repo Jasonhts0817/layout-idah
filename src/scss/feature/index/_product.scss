@@ -11,7 +11,7 @@
     text-align: center;
     padding: 2.7vw 0;
     font-size: 3.1vw;
-    font-weight: 500;
+    font-weight: 600;
   }
   .product-list {
     display: flex;
@@ -33,7 +33,7 @@
         .product-category {
           text-align: center;
           font-size: 1.2vw;
-          font-weight: 300;
+          font-weight: 600;
           letter-spacing: 1px;
           padding: 1vw 0;
           background: color(dark-gray);
@@ -51,9 +51,9 @@
           background: color(opacity-75);
           padding: 2.4vw 1.9vw;
           .product-intro {
-            font-size: 1.4vw;
+            font-size: 1.8vw;
             line-height: 1.8vw;
-            font-weight: 400;
+            font-weight: 600;
             padding-bottom: 1vw;
             position: relative;
             &::after {
@@ -66,8 +66,8 @@
             }
           }
           .product-desc {
-            font-size: 0.82vw;
-            line-height: 1.2vw;
+            font-size: 1.2vw;
+            line-height: 1.5vw;
             font-weight: 300;
             padding-top: 1vw;
           }
@@ -103,7 +103,7 @@
     text-align: center;
     padding: 7.9vw 0;
     font-size: 9.8vw;
-    font-weight: 500;
+    font-weight: 600;
   }
   .product-list {
     display: flex;
@@ -128,7 +128,7 @@
           justify-content: center;
           text-align: center;
           font-size: 4.6vw;
-          font-weight: 300;
+          font-weight: 600;
           letter-spacing: 1px;
           padding: 1vw 0;
           background: color(dark-gray);
@@ -171,7 +171,7 @@
         .product-view {
           text-align: center;
           font-size: 4.6vw;
-          font-weight: 300;
+          font-weight: 600;
           letter-spacing: 1px;
           padding: 1vw 0;
           background: color(orange);
