@@ -76,6 +76,9 @@
               font-size: 12px;
             }
           }
+          .dropdown-backdrop {
+            z-index: z-index(default);
+          }
         }
       }
       .ftr-copy-right {

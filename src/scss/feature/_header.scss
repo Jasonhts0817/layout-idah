@@ -173,6 +173,9 @@
         white-space: nowrap;
       }
     }
+    .dropdown-backdrop {
+      z-index: z-index(default);
+    }
   }
   .btn-contact-us {
     position: fixed;
