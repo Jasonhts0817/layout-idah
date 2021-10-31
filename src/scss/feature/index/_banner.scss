@@ -9,25 +9,6 @@
     z-index: 1;
     color: color(white);
   }
-  .banner-list {
-    .ms-bullet {
-      &:nth-child(odd) {
-        background-image: url("../images/owlcarousel/IDAH-web-07.png");
-      }
-      &:nth-child(even) {
-        background-image: url("../images/owlcarousel/IDAH-web-06.png");
-      }
-    }
-    .ms-bullet-selected {
-      &:nth-child(odd) {
-        background-image: url("../images/owlcarousel/IDAH-web-05.png");
-      }
-      &:nth-child(even) {
-        background-image: url("../images/owlcarousel/IDAH-web-05.png");
-        transform: rotate(180deg);
-      }
-    }
-  }
 }
 
 @mixin banner-PC {

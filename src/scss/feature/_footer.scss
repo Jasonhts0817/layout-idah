@@ -7,6 +7,9 @@
     background-color: color(thunder);
     display: flex;
     width: 100%;
+    a {
+      color: color(white);
+    }
   }
   .ftr-info {
     flex-grow: 1;
