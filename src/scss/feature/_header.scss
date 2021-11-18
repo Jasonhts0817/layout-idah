@@ -79,7 +79,7 @@
       &:hover {
         .nav-item-list {
           grid-template-rows: repeat(auto-fit, minmax(35px, 1fr));
-          max-height: 10vw;
+          max-height: 175px;
           padding: 1vw 0;
           transition: all 0.2s;
         }
