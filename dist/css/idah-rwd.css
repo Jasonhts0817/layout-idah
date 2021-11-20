@@ -1610,4 +1610,11 @@ html[lang=zh-Hans-CN] .feature-item.hdr-sel-lang a {
     font-size: 8.2vw;
     padding: 0 2.6vw;
   }
+
+  .ftr-socail-list a,
+.ftr-link-list .ftr-link-topic a,
+.nav-list .nav-item-list .nav-item,
+.ftr-link-list .ftr-link-item-list .ftr-link-item {
+    color: #fff;
+  }
 }
