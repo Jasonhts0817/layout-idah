@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* RWD */
 /* boostap - RWD */
 body,
@@ -60,4 +61,13 @@ button {
   position: absolute;
   z-index: 1;
   color: #fff;
+}
+
+/* 子標題 */
+.product-title,
+.solution-title,
+.service-title-container .service-title,
+.idah-news-title {
+  font-size: 40px;
+  font-weight: 600;
 }

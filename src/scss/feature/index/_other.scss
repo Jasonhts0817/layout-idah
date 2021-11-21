@@ -1,8 +1,30 @@
-@mixin other-boostrap-small-Mobile {
-  header.hdr {
-    padding-top: 10px;
+@mixin other {
+  /* 子標題 */
+  .product-title,
+  .solution-title,
+  .service-title-container .service-title,
+  .idah-news-title {
+    font-size: 40px;
+    font-weight: 600;
   }
-
+}
+@mixin other-PC {
+}
+@mixin other-PC-Tablet {
+  .product-title,
+  .solution-title,
+  .service-title-container .service-title,
+  .idah-news-title {
+    font-size: 32px;
+  }
+}
+@mixin other-Tablet {
+}
+@mixin other-Tablet-Mobile {
+}
+@mixin other-Mobile {
+}
+@mixin other-boostrap-small-Mobile {
   html[lang="zh-Hant-TW"] .feature-item.hdr-sel-lang a,
   html[lang="zh-Hans-CN"] .feature-item.hdr-sel-lang a {
     font-size: 16px;
@@ -10,10 +32,10 @@
 
   .product-list .product-item .product-item-display .product-category {
     padding: 2px;
+    font-size: 14px;
   }
 
   .product-list .product-item .product-item-hover .product-info .product-intro {
-    font-size: 5vw;
     line-height: normal;
   }
   .product-list .product-item .product-item-hover .product-info .product-desc {
@@ -21,8 +43,14 @@
   }
 
   .intro-section {
-    font-size: 4vw;
+    font-size: 16px;
+    line-height: 20px;
     line-height: normal;
+  }
+
+  html[lang="zh-hant-TW"] .intro-section,
+  html[lang="zh-hans-CN"] .intro-section {
+    line-height: 24px;
   }
 
   .nav-list .nav-topic img {
@@ -30,15 +58,21 @@
     height: 18px;
   }
 
+  .nav-list .nav-topic a {
+    color: color(dark-gray);
+  }
+
   .nav-list .nav-topic a,
   .ftr-link-list .ftr-link-topic {
     font-weight: 600;
-    font-size: 6vw;
+    font-size: 20px;
+    margin-bottom: 10px;
   }
 
   .nav-list .nav-item-list .nav-item,
   .ftr-link-list .ftr-link-item-list .ftr-link-item {
-    font-size: 5vw;
+    font-size: 18px;
+    margin-bottom: 10px;
   }
 
   .ftr-info .ftr-info-container .ftr-socail-list i {
@@ -48,8 +82,14 @@
 
   .ftr-socail-list a,
   .ftr-link-list .ftr-link-topic a,
-  .nav-list .nav-item-list .nav-item,
   .ftr-link-list .ftr-link-item-list .ftr-link-item {
     color: color(white);
+  }
+
+  .product-title,
+  .solution-title,
+  .service-title-container .service-title,
+  .idah-news-title {
+    margin-bottom: 20px;
   }
 }

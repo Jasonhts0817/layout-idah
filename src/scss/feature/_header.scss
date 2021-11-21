@@ -13,10 +13,21 @@
 }
 
 @mixin header-PC {
-}
-@mixin header-PC-Tablet {
+  /***
+ *     /$$             /$$                                                   /$$               /$$                              
+ *    | $$            | $$                                                  | $$              |__/                              
+ *    | $$$$$$$   /$$$$$$$  /$$$$$$           /$$$$$$$  /$$$$$$  /$$$$$$$  /$$$$$$    /$$$$$$  /$$ /$$$$$$$   /$$$$$$   /$$$$$$ 
+ *    | $$__  $$ /$$__  $$ /$$__  $$ /$$$$$$ /$$_____/ /$$__  $$| $$__  $$|_  $$_/   |____  $$| $$| $$__  $$ /$$__  $$ /$$__  $$
+ *    | $$  \ $$| $$  | $$| $$  \__/|______/| $$      | $$  \ $$| $$  \ $$  | $$      /$$$$$$$| $$| $$  \ $$| $$$$$$$$| $$  \__/
+ *    | $$  | $$| $$  | $$| $$              | $$      | $$  | $$| $$  | $$  | $$ /$$ /$$__  $$| $$| $$  | $$| $$_____/| $$      
+ *    | $$  | $$|  $$$$$$$| $$              |  $$$$$$$|  $$$$$$/| $$  | $$  |  $$$$/|  $$$$$$$| $$| $$  | $$|  $$$$$$$| $$      
+ *    |__/  |__/ \_______/|__/               \_______/ \______/ |__/  |__/   \___/   \_______/|__/|__/  |__/ \_______/|__/      
+ *                                                                                                                              
+ *                                                                                                                              
+ *                                                                                                                              
+ */
   .hdr-container {
-    padding: 1vw 7.8vw;
+    padding: 1vw 3vw;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -87,8 +98,8 @@
     }
     .nav-topic {
       color: color(dark-gray);
-      font-size: 1.3vw;
-      font-weight: 400;
+      font-size: 18px;
+      font-weight: 500;
       padding: 12px 0;
       &:hover,
       &:active,
@@ -113,7 +124,7 @@
     margin-left: 2.3%;
     .feature-item {
       color: color(dark-gray);
-      font-size: 1.25vw;
+      font-size: 16px;
       font-weight: 400;
       padding: 0 1.4vw;
       &:hover,
@@ -200,11 +211,11 @@
     display: none;
   }
 }
+@mixin header-PC-Tablet {
+}
 @mixin header-Tablet {
 }
 @mixin header-Tablet-Mobile {
-}
-@mixin header-Mobile {
   .hdr-container {
     position: relative;
     height: $header-height-mobile;
@@ -235,6 +246,9 @@
       }
       img {
         height: 22px;
+      }
+      a {
+        font-size: 16px;
       }
     }
   }
@@ -302,7 +316,7 @@
     }
   }
   .nav-container {
-    max-height: 100vh;
+    max-height: 75vh;
     overflow-y: auto;
     display: none;
     padding: 10px 60px 10px 20px;
@@ -313,7 +327,7 @@
     flex-direction: column;
     .nav-group {
       width: 100%;
-      padding: 5% 0 5% 2.5%;
+      padding: 15px 0 15px 7px;
       color: color(dark-gray);
       border-top: color(nobel) solid 1px;
       &:last-child {
@@ -321,16 +335,12 @@
       }
     }
     .nav-topic {
-      font-size: 5vw;
       font-weight: 600;
       display: flex;
       justify-content: space-between;
 
       .icon-minus {
         display: none !important;
-        width: 16px;
-      }
-      .icon-minus {
         width: 16px;
       }
       &[data-expanded="true"] {
@@ -344,7 +354,7 @@
     }
     .nav-item-list {
       .nav-item {
-        font-size: 4vw;
+        font-size: 16px;
         padding: 10px 0 0 10px;
         display: block;
         &:hover,
@@ -363,12 +373,12 @@
   .btn-contact-us-box {
     position: fixed;
     top: 77px;
-    left: 90%;
+    right: 0;
     .btn-contact-us {
       color: color(white);
-      font-size: 4vw;
+      font-size: 16px;
       letter-spacing: 1px;
-      padding: 2.5vw 4vw 2.5vw 2vw;
+      padding: 10px 4vw 10px 8px;
       font-weight: 100;
       text-align: center;
       background-color: color(orange);
@@ -385,6 +395,7 @@
   }
   .btn-menu-close {
     padding: 10px 0;
-    width: 20px;
   }
+}
+@mixin header-Mobile {
 }

@@ -119,9 +119,22 @@
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 30%);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1366px) {
+  /***
+  *     /$$             /$$                                                   /$$               /$$                              
+  *    | $$            | $$                                                  | $$              |__/                              
+  *    | $$$$$$$   /$$$$$$$  /$$$$$$           /$$$$$$$  /$$$$$$  /$$$$$$$  /$$$$$$    /$$$$$$  /$$ /$$$$$$$   /$$$$$$   /$$$$$$ 
+  *    | $$__  $$ /$$__  $$ /$$__  $$ /$$$$$$ /$$_____/ /$$__  $$| $$__  $$|_  $$_/   |____  $$| $$| $$__  $$ /$$__  $$ /$$__  $$
+  *    | $$  \ $$| $$  | $$| $$  \__/|______/| $$      | $$  \ $$| $$  \ $$  | $$      /$$$$$$$| $$| $$  \ $$| $$$$$$$$| $$  \__/
+  *    | $$  | $$| $$  | $$| $$              | $$      | $$  | $$| $$  | $$  | $$ /$$ /$$__  $$| $$| $$  | $$| $$_____/| $$      
+  *    | $$  | $$|  $$$$$$$| $$              |  $$$$$$$|  $$$$$$/| $$  | $$  |  $$$$/|  $$$$$$$| $$| $$  | $$|  $$$$$$$| $$      
+  *    |__/  |__/ \_______/|__/               \_______/ \______/ |__/  |__/   \___/   \_______/|__/|__/  |__/ \_______/|__/      
+  *                                                                                                                              
+  *                                                                                                                              
+  *                                                                                                                              
+  */
   .hdr-container {
-    padding: 1vw 7.8vw;
+    padding: 1vw 3vw;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -218,8 +231,8 @@
   }
   .nav-list .nav-topic {
     color: #57585e;
-    font-size: 1.3vw;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 500;
     padding: 12px 0;
   }
   .nav-list .nav-topic:hover, .nav-list .nav-topic:active, .nav-list .nav-topic:focus, .nav-list .nav-topic.active {
@@ -248,7 +261,7 @@
   }
   .feature-list .feature-item {
     color: #57585e;
-    font-size: 1.25vw;
+    font-size: 16px;
     font-weight: 400;
     padding: 0 1.4vw;
   }
@@ -330,6 +343,19 @@
     display: none;
   }
 
+  /***
+  *      /$$$$$$   /$$              
+  *     /$$__  $$ | $$              
+  *    | $$  \__//$$$$$$    /$$$$$$ 
+  *    | $$$$   |_  $$_/   /$$__  $$
+  *    | $$_/     | $$    | $$  \__/
+  *    | $$       | $$ /$$| $$      
+  *    | $$       |  $$$$/| $$      
+  *    |__/        \___/  |__/      
+  *                                 
+  *                                 
+  *                                 
+  */
   .ftr {
     background-color: #231f20;
     display: -webkit-box;
@@ -339,6 +365,9 @@
   }
   .ftr a {
     color: #fff;
+    font-weight: 500;
+    margin: 5px 0 5px 0;
+    padding: 5px;
   }
 
   .ftr-info {
@@ -354,11 +383,11 @@
             flex-direction: column;
   }
   .ftr-info .ftr-link-topic {
-    height: 2.6vw;
+    height: 30px;
   }
   .ftr-info .ftr-info-container {
-    width: 15.7vw;
-    margin: auto 2.3vw auto auto;
+    width: 22.7vw;
+    margin: 1vw 2.3vw 0 3.3vw;
   }
   .ftr-info .ftr-info-container .ftr-logo {
     margin-bottom: 4vw;
@@ -383,25 +412,23 @@
     margin-bottom: 2vw;
   }
   .ftr-info .ftr-info-container .ftr-socail-list i {
-    font-size: 1.3vw;
+    font-size: 26px;
   }
-  .ftr-info .ftr-info-container .ftr-socail-list .ftr-sel-lang {
-    width: 4.4vw;
-    margin-left: 1.6vw;
+  .ftr-info .ftr-info-container .ftr-sel-lang {
     background-color: #231f20;
     border: 0px;
     outline: 0px;
     -moz-text-align-last: center;
          text-align-last: center;
-    font-size: 0.85vw;
+    font-size: 14px;
     position: relative;
   }
-  .ftr-info .ftr-info-container .ftr-socail-list .ftr-sel-lang a[aria-expanded=false] + .ftr-sel-lang-option-list {
+  .ftr-info .ftr-info-container .ftr-sel-lang a[aria-expanded=false] + .ftr-sel-lang-option-list {
     -webkit-transition: max-height 0.3s;
     transition: max-height 0.3s;
     max-height: 0px;
   }
-  .ftr-info .ftr-info-container .ftr-socail-list .ftr-sel-lang .ftr-sel-lang-option-list {
+  .ftr-info .ftr-info-container .ftr-sel-lang .ftr-sel-lang-option-list {
     overflow: hidden;
     background-color: #57585e;
     -webkit-transition: max-height 0.3s;
@@ -409,16 +436,16 @@
     max-height: 500px;
     position: absolute;
     top: 100%;
-    right: 0;
+    left: 0;
   }
-  .ftr-info .ftr-info-container .ftr-socail-list .ftr-sel-lang .ftr-sel-lang-option-list .ftr-sel-lang-option {
+  .ftr-info .ftr-info-container .ftr-sel-lang .ftr-sel-lang-option-list .ftr-sel-lang-option {
     padding: 10px;
     width: 120px;
   }
-  .ftr-info .ftr-info-container .ftr-socail-list .ftr-sel-lang .lang-img {
+  .ftr-info .ftr-info-container .ftr-sel-lang .lang-img {
     display: none;
   }
-  .ftr-info .ftr-info-container .ftr-socail-list .ftr-sel-lang .lang-txt {
+  .ftr-info .ftr-info-container .ftr-sel-lang .lang-txt {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -426,17 +453,17 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .ftr-info .ftr-info-container .ftr-socail-list .ftr-sel-lang .lang-txt i {
+  .ftr-info .ftr-info-container .ftr-sel-lang .lang-txt i {
     font-size: 12px;
   }
-  .ftr-info .ftr-info-container .ftr-socail-list .ftr-sel-lang .dropdown-backdrop {
+  .ftr-info .ftr-info-container .ftr-sel-lang .dropdown-backdrop {
     z-index: 0;
   }
   .ftr-info .ftr-info-container .ftr-copy-right {
     color: #9f9f9f;
     font-weight: 300;
-    font-size: 0.8vw;
-    line-height: 1.1vw;
+    font-size: 14px;
+    line-height: 18px;
   }
 
   .ftr-link-list {
@@ -455,7 +482,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 10vw;
+    width: 12vw;
     background-color: #231f20;
     border: initial;
     margin-bottom: 0;
@@ -476,7 +503,8 @@
   .ftr-link-list .ftr-link-item-list .ftr-link-item {
     display: block;
     color: #fff;
-    font-size: 0.85vw;
+    margin-bottom: 10px;
+    font-size: 15px;
     font-weight: 300;
     padding: 0 0.8vw 0.8vw 1vw;
   }
@@ -485,19 +513,20 @@
   }
 
   .ftr-link-topic {
-    height: 2.6vw;
-    line-height: 2.6vw;
+    height: 30px;
     padding-left: 1vw;
+    padding-top: 8px;
     color: #fff;
     background-color: #57585e;
     font-weight: 300;
-    font-size: 1.05vw;
+    font-size: 16px;
   }
   .ftr-link-topic .icon-plus,
 .ftr-link-topic .icon-minus {
     display: none !important;
   }
-
+}
+@media screen and (min-width: 768px) {
   .banner {
     padding-top: 5.6vw;
     height: 100vh;
@@ -548,9 +577,9 @@ html[lang=zh-hans-CN] .intro-title {
   }
 
   .intro-sub-title {
-    font-size: 1.4vw;
-    line-height: 1.8vw;
-    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
     padding-bottom: 1vw;
   }
 
@@ -559,8 +588,8 @@ html[lang=zh-hans-CN] .intro-title {
   }
 
   .intro-section {
-    font-size: 1.2vw;
-    line-height: 1.5vw;
+    font-size: 16px;
+    line-height: 22px;
     font-weight: 400;
     padding-top: 1vw;
   }
@@ -603,7 +632,7 @@ html[lang=zh-hans-CN] .intro-title {
   }
   .product-list .product-item .product-item-display .product-category {
     text-align: center;
-    font-size: 1.2vw;
+    font-size: 15px;
     font-weight: 600;
     letter-spacing: 1px;
     padding: 1vw 0;
@@ -623,8 +652,8 @@ html[lang=zh-hans-CN] .intro-title {
     padding: 2.4vw 1.9vw;
   }
   .product-list .product-item .product-item-hover .product-info .product-intro {
-    font-size: 1.8vw;
-    line-height: 1.8vw;
+    font-size: 22px;
+    line-height: 24px;
     font-weight: 600;
     padding-bottom: 1vw;
     position: relative;
@@ -638,8 +667,8 @@ html[lang=zh-hans-CN] .intro-title {
     width: 3.7vw;
   }
   .product-list .product-item .product-item-hover .product-info .product-desc {
-    font-size: 1.2vw;
-    line-height: 1.5vw;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 300;
     padding-top: 1vw;
   }
@@ -663,8 +692,6 @@ html[lang=zh-hans-CN] .intro-title {
     color: #57585e;
     text-align: center;
     padding: 2.7vw 0;
-    font-size: 3.1vw;
-    font-weight: 600;
   }
 
   .idah-news-slide {
@@ -700,20 +727,25 @@ html[lang=zh-hans-CN] .intro-title {
             flex-direction: column;
   }
   .idah-news-item .idah-news-article .idah-news-date {
-    font-size: 0.82vw;
-    line-height: 1.2vw;
+    font-size: 14px;
     font-weight: 400;
     padding-bottom: 0.4vw;
   }
   .idah-news-item .idah-news-article .idah-news-topic {
-    font-size: 1.2vw;
-    line-height: 1.5vw;
+    font-size: 18px;
+    line-height: 22px;
     padding-bottom: 0.7vw;
-    font-weight: 500;
+    font-weight: 600;
+  }
+  .idah-news-item .idah-news-article .idah-news-topic a {
+    color: #57585e;
+  }
+  .idah-news-item .idah-news-article .idah-news-topic a:hover {
+    color: #c9151e;
   }
   .idah-news-item .idah-news-article .idah-news-desc {
-    font-size: 0.9vw;
-    line-height: 1.1vw;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 400;
     padding-bottom: 2.6vw;
   }
@@ -728,6 +760,9 @@ html[lang=zh-hans-CN] .intro-title {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .idah-news-item .idah-news-article .idah-news-read-more:hover {
+    color: #c9151e;
   }
   .idah-news-item .idah-news-article .idah-news-read-more img {
     width: 0.4vw;
@@ -764,8 +799,8 @@ html[lang=zh-hans-CN] .intro-title {
             align-items: center;
   }
   .idah-share .idah-share-social .idah-share-social-title {
-    font-size: 1.02vw;
-    line-height: 1.2vw;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 400;
   }
   .idah-share .idah-share-social .idah-share-social-arrow {
@@ -780,8 +815,8 @@ html[lang=zh-hans-CN] .intro-title {
   }
   .idah-share .idah-share-btn-back {
     color: #ea5432;
-    font-size: 0.82vw;
-    line-height: 1.2vw;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 400;
     padding: 0.4vw 2.4vw;
     border: 1px solid #ea5432;
@@ -793,7 +828,7 @@ html[lang=zh-hans-CN] .intro-title {
 
   .contact-container {
     margin: 0 16.3vw;
-    padding: 2.3vw 0;
+    padding: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -808,17 +843,17 @@ html[lang=zh-hans-CN] .intro-title {
   .contact-title {
     width: 17.4vw;
     color: #57585e;
-    font-size: 1.4vw;
+    font-size: 18px;
+    line-height: 22px;
     font-weight: 600;
-    line-height: 1.4vw;
   }
 
   .contact-desc {
     width: 34.2vw;
     color: #57585e;
     border-left: 2px solid #57585e;
-    font-size: 1.13vw;
-    line-height: 1.5vw;
+    font-size: 16px;
+    line-height: 20px;
     padding: 0.3vw 0 0.3vw 1.5vw;
   }
 
@@ -840,11 +875,18 @@ html[lang=zh-hans-CN] .intro-title {
     padding: 0.8vw 1.7vw;
     color: #fff;
   }
+
+  .product-title,
+.solution-title,
+.service-title-container .service-title,
+.idah-news-title {
+    font-size: 32px;
+  }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1365px) {
   .hdr-container {
     position: relative;
-    height: 50px;
+    height: 80px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -880,6 +922,9 @@ html[lang=zh-hans-CN] .intro-title {
   }
   .feature-list .feature-item img {
     height: 22px;
+  }
+  .feature-list .feature-item a {
+    font-size: 16px;
   }
 
   .hdr-sel-lang {
@@ -924,7 +969,7 @@ html[lang=zh-hans-CN] .intro-title {
     padding: 0 18px;
     top: 0;
     right: 1px;
-    height: 50px;
+    height: 80px;
     -webkit-transition: -webkit-transform 0.3s;
     transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
@@ -941,7 +986,7 @@ html[lang=zh-hans-CN] .intro-title {
   .nav-section {
     position: fixed;
     overflow: hidden;
-    top: 50px;
+    top: 80px;
     right: 0;
     width: 100%;
     height: 0;
@@ -957,7 +1002,7 @@ html[lang=zh-hans-CN] .intro-title {
   }
 
   .nav-container {
-    max-height: 100vh;
+    max-height: 75vh;
     overflow-y: auto;
     display: none;
     padding: 10px 60px 10px 20px;
@@ -977,7 +1022,7 @@ html[lang=zh-hans-CN] .intro-title {
   }
   .nav-list .nav-group {
     width: 100%;
-    padding: 5% 0 5% 2.5%;
+    padding: 15px 0 15px 7px;
     color: #57585e;
     border-top: #9f9f9f solid 1px;
   }
@@ -985,7 +1030,6 @@ html[lang=zh-hans-CN] .intro-title {
     border-bottom: #9f9f9f solid 1px;
   }
   .nav-list .nav-topic {
-    font-size: 5vw;
     font-weight: 600;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -998,9 +1042,6 @@ html[lang=zh-hans-CN] .intro-title {
     display: none !important;
     width: 16px;
   }
-  .nav-list .nav-topic .icon-minus {
-    width: 16px;
-  }
   .nav-list .nav-topic[data-expanded=true] .icon-plus {
     display: none !important;
   }
@@ -1008,7 +1049,7 @@ html[lang=zh-hans-CN] .intro-title {
     display: inline !important;
   }
   .nav-list .nav-item-list .nav-item {
-    font-size: 4vw;
+    font-size: 16px;
     padding: 10px 0 0 10px;
     display: block;
   }
@@ -1023,13 +1064,13 @@ html[lang=zh-hans-CN] .intro-title {
   .btn-contact-us-box {
     position: fixed;
     top: 77px;
-    left: 90%;
+    right: 0;
   }
   .btn-contact-us-box .btn-contact-us {
     color: #fff;
-    font-size: 4vw;
+    font-size: 16px;
     letter-spacing: 1px;
-    padding: 2.5vw 4vw 2.5vw 2vw;
+    padding: 10px 4vw 10px 8px;
     font-weight: 100;
     text-align: center;
     background-color: #ea5432;
@@ -1046,7 +1087,6 @@ html[lang=zh-hans-CN] .intro-title {
 
   .btn-menu-close {
     padding: 10px 0;
-    width: 20px;
   }
 
   .ftr {
@@ -1087,18 +1127,18 @@ html[lang=zh-hans-CN] .intro-title {
   .ftr-info .ftr-info-container .ftr-socail-list i {
     font-size: 20px;
   }
-  .ftr-info .ftr-info-container .ftr-socail-list .ftr-sel-lang {
+  .ftr-info .ftr-info-container .ftr-sel-lang {
     background-color: #231f20;
     position: relative;
     width: 39vw;
     text-align: right;
   }
-  .ftr-info .ftr-info-container .ftr-socail-list .ftr-sel-lang a[aria-expanded=false] + .ftr-sel-lang-option-list {
+  .ftr-info .ftr-info-container .ftr-sel-lang a[aria-expanded=false] + .ftr-sel-lang-option-list {
     -webkit-transition: max-height 0.3s;
     transition: max-height 0.3s;
     max-height: 0px;
   }
-  .ftr-info .ftr-info-container .ftr-socail-list .ftr-sel-lang .ftr-sel-lang-option-list {
+  .ftr-info .ftr-info-container .ftr-sel-lang .ftr-sel-lang-option-list {
     z-index: 999;
     overflow: hidden;
     background-color: #231f20;
@@ -1109,13 +1149,13 @@ html[lang=zh-hans-CN] .intro-title {
     top: 100%;
     right: 0;
   }
-  .ftr-info .ftr-info-container .ftr-socail-list .ftr-sel-lang .ftr-sel-lang-option-list .ftr-sel-lang-option {
+  .ftr-info .ftr-info-container .ftr-sel-lang .ftr-sel-lang-option-list .ftr-sel-lang-option {
     padding: 5px 0;
   }
-  .ftr-info .ftr-info-container .ftr-socail-list .ftr-sel-lang .lang-txt {
+  .ftr-info .ftr-info-container .ftr-sel-lang .lang-txt {
     display: none;
   }
-  .ftr-info .ftr-info-container .ftr-socail-list .ftr-sel-lang .lang-img {
+  .ftr-info .ftr-info-container .ftr-sel-lang .lang-img {
     width: 37px;
   }
   .ftr-info .ftr-info-container .ftr-copy-right {
@@ -1169,7 +1209,8 @@ html[lang=zh-hans-CN] .intro-title {
     padding: 10px 0 0 10px;
     display: block;
   }
-
+}
+@media screen and (max-width: 767px) {
   .idah-container {
     position: relative;
     width: 100%;
@@ -1177,7 +1218,7 @@ html[lang=zh-hans-CN] .intro-title {
   }
 
   .banner {
-    padding-top: 50px;
+    padding-top: 80px;
     height: 61vh;
   }
 
@@ -1245,8 +1286,6 @@ html[lang=zh-hans-CN] .intro-title {
   }
 
   .intro-section {
-    font-size: 4vw;
-    line-height: 6.5vw;
     font-weight: 400;
     padding-top: 3.5vw;
   }
@@ -1415,8 +1454,6 @@ html[lang=zh-hans-CN] .intro-title {
             flex-direction: column;
   }
   .idah-news-item .idah-news-article .idah-news-date {
-    font-size: 4.3vw;
-    line-height: 4.3vw;
     font-weight: 200;
     padding-bottom: 4vw;
   }
@@ -1517,17 +1554,20 @@ html[lang=zh-hans-CN] .intro-title {
   .contact-title {
     padding: 0 12vw 4.6vw 0;
     color: #57585e;
-    font-size: 5.8vw;
-    line-height: 6.6vw;
     font-weight: 600;
   }
 
   .contact-desc {
     color: #57585e;
-    font-size: 4.8vw;
-    line-height: 6vw;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 400;
     padding: 0 0 11vw 0;
+  }
+
+  html[lang=zh-hant-TW] .contact-desc,
+html[lang=zh-hans-CN] .contact-desc {
+    line-height: 24px;
   }
 
   .contact-phone,
@@ -1563,10 +1603,6 @@ html[lang=zh-hans-CN] .intro-title {
   }
 }
 @media screen and (max-width: 576px) {
-  header.hdr {
-    padding-top: 10px;
-  }
-
   html[lang=zh-Hant-TW] .feature-item.hdr-sel-lang a,
 html[lang=zh-Hans-CN] .feature-item.hdr-sel-lang a {
     font-size: 16px;
@@ -1574,10 +1610,10 @@ html[lang=zh-Hans-CN] .feature-item.hdr-sel-lang a {
 
   .product-list .product-item .product-item-display .product-category {
     padding: 2px;
+    font-size: 14px;
   }
 
   .product-list .product-item .product-item-hover .product-info .product-intro {
-    font-size: 5vw;
     line-height: normal;
   }
 
@@ -1586,8 +1622,14 @@ html[lang=zh-Hans-CN] .feature-item.hdr-sel-lang a {
   }
 
   .intro-section {
-    font-size: 4vw;
+    font-size: 16px;
+    line-height: 20px;
     line-height: normal;
+  }
+
+  html[lang=zh-hant-TW] .intro-section,
+html[lang=zh-hans-CN] .intro-section {
+    line-height: 24px;
   }
 
   .nav-list .nav-topic img {
@@ -1595,15 +1637,21 @@ html[lang=zh-Hans-CN] .feature-item.hdr-sel-lang a {
     height: 18px;
   }
 
+  .nav-list .nav-topic a {
+    color: #57585e;
+  }
+
   .nav-list .nav-topic a,
 .ftr-link-list .ftr-link-topic {
     font-weight: 600;
-    font-size: 6vw;
+    font-size: 20px;
+    margin-bottom: 10px;
   }
 
   .nav-list .nav-item-list .nav-item,
 .ftr-link-list .ftr-link-item-list .ftr-link-item {
-    font-size: 5vw;
+    font-size: 18px;
+    margin-bottom: 10px;
   }
 
   .ftr-info .ftr-info-container .ftr-socail-list i {
@@ -1613,8 +1661,14 @@ html[lang=zh-Hans-CN] .feature-item.hdr-sel-lang a {
 
   .ftr-socail-list a,
 .ftr-link-list .ftr-link-topic a,
-.nav-list .nav-item-list .nav-item,
 .ftr-link-list .ftr-link-item-list .ftr-link-item {
     color: #fff;
+  }
+
+  .product-title,
+.solution-title,
+.service-title-container .service-title,
+.idah-news-title {
+    margin-bottom: 20px;
   }
 }

@@ -10,6 +10,7 @@
   @include product-PC;
   @include news-PC;
   @include contact-PC;
+  @include other-PC;
 }
 
 @include response(PC-Tablet) {
@@ -21,6 +22,7 @@
   @include product-PC-Tablet;
   @include news-PC-Tablet;
   @include contact-PC-Tablet;
+  @include other-PC-Tablet;
 }
 
 @include response(Tablet) {
@@ -32,6 +34,7 @@
   @include product-Tablet;
   @include news-Tablet;
   @include contact-Tablet;
+  @include other-Tablet;
 }
 
 @include response(Tablet-Mobile) {
@@ -43,6 +46,7 @@
   @include product-Tablet-Mobile;
   @include news-Tablet-Mobile;
   @include contact-Tablet-Mobile;
+  @include other-Tablet-Mobile;
 }
 
 @include response(Mobile) {
@@ -54,6 +58,7 @@
   @include product-Mobile;
   @include news-Mobile;
   @include contact-Mobile;
+  @include other-Mobile;
 }
 
 @include boostrap-response(PC) {
