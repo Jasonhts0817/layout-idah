@@ -30,6 +30,29 @@
     font-size: 16px;
   }
 
+  .intro {
+    padding: 20px;
+  }
+
+  .intro-title {
+    padding: 5px;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .intro-sub-title {
+    font-size: 20px;
+  }
+
+  html[lang="zh-hant-TW"] .intro-sub-title,
+  html[lang="zh-hans-CN"] .intro-sub-title {
+    line-height: 28px;
+  }
+
+  .intro-article {
+    margin: 0 1vw;
+  }
+
   .product-list .product-item .product-item-display .product-category {
     padding: 2px;
     font-size: 14px;
@@ -45,7 +68,6 @@
   .intro-section {
     font-size: 16px;
     line-height: 20px;
-    line-height: normal;
   }
 
   html[lang="zh-hant-TW"] .intro-section,
@@ -80,10 +102,8 @@
     padding: 0 2.6vw;
   }
 
-  .ftr-socail-list a,
-  .ftr-link-list .ftr-link-topic a,
-  .ftr-link-list .ftr-link-item-list .ftr-link-item {
-    color: color(white);
+  .idah-news-item .idah-news-article {
+    order: 1;
   }
 
   .product-title,

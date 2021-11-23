@@ -50,6 +50,10 @@ button {
   overflow: hidden;
 }
 
+.intro {
+  margin: 0 16.3vw;
+}
+
 .banner-slide-bullets {
   position: absolute;
   display: -webkit-box;

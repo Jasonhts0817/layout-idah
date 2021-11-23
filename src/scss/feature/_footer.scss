@@ -241,7 +241,7 @@
     }
     .ftr-link-topic {
       display: flex;
-      font-weight: 300;
+      font-weight: 600;
       justify-content: space-between;
       align-items: center;
       .icon-minus {
@@ -267,6 +267,12 @@
         display: block;
       }
     }
+  }
+  .ftr-link-list .ftr-link-topic a,
+  .ftr-socail-list a,
+  .ftr-link-list .ftr-link-item-list .ftr-link-item {
+    color: color(white);
+    font-size: 18px;
   }
 }
 @mixin footer-Mobile {

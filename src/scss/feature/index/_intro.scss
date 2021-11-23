@@ -1,10 +1,13 @@
 @mixin intro {
+  .intro {
+    margin: 0 16.3vw;
+  }
 }
 @mixin intro-PC {
 }
 @mixin intro-PC-Tablet {
   .intro {
-    margin: 0 16.3vw;
+    margin: 0 10vw;
     padding: 2.91vw 0 3.8vw 0;
     text-align: center;
     color: color(dark-gray);
@@ -12,18 +15,20 @@
   }
   .intro-title {
     padding: 1vw 4.6vw;
-    line-height: 2.9vw;
-    font-size: 3.1vw;
+    font-size: 46px;
+    line-height: 50px;
     font-weight: 600;
     padding-bottom: 1vw;
     font-style: italic;
+    margin-bottom: 30px;
   }
   html[lang="zh-hant-TW"] .intro-title,
   html[lang="zh-hans-CN"] .intro-title {
-    line-height: 3.8vw;
+    font-size: 40px;
+    line-height: 52px;
   }
   .intro-sub-title {
-    font-size: 18px;
+    font-size: 24px;
     line-height: 20px;
     font-weight: 600;
     padding-bottom: 1vw;
@@ -37,6 +42,11 @@
     font-weight: 400;
     padding-top: 1vw;
   }
+
+  html[lang="zh-hant-TW"] .intro-section,
+  html[lang="zh-hans-CN"] .intro-section {
+    line-height: 24px;
+  }
 }
 @mixin intro-Tablet {
 }
@@ -47,10 +57,10 @@
     padding: 9vw 0 0 0;
     text-align: center;
     color: color(dark-gray);
+    margin: 0 2vw;
   }
   .intro-title {
     padding: 0 4.6vw;
-    font-size: 10vw;
     font-weight: 600;
     font-style: italic;
     padding-bottom: 3vw;
@@ -58,13 +68,11 @@
 
   html[lang="zh-hant-TW"] .intro-title,
   html[lang="zh-hans-CN"] .intro-title {
-    line-height: 43px;
+    line-height: 38px;
   }
 
   .intro-sub-title {
-    font-size: 6.3vw;
-    font-weight: 500;
-    line-height: 7vw;
+    font-weight: 600;
     padding: 0 1.8vw;
     padding-bottom: 1.5vw;
   }

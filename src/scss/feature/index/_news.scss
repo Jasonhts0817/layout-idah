@@ -1,10 +1,17 @@
 @mixin news {
 }
 @mixin news-PC {
+  .idah-news-slide .owl-prev .nav-prev {
+    left: -3vw;
+  }
+
+  .idah-news-slide .owl-next .nav-next {
+    right: -3vw;
+  }
 }
 @mixin news-PC-Tablet {
   .idah-news {
-    margin: 0 16.3vw;
+    margin: 0 10vw;
   }
   .idah-news-title {
     color: color(dark-gray);
@@ -36,6 +43,7 @@
       .idah-news-topic {
         font-size: 18px;
         line-height: 22px;
+        margin-top: 10px;
         padding-bottom: 0.7vw;
         font-weight: 600;
         a {
@@ -54,7 +62,8 @@
       .idah-news-read-more {
         position: absolute;
         bottom: 1.3vw;
-        font-size: 0.82vw;
+        font-size: 14px;
+        color: color(dark-gray);
         font-weight: 400;
         display: flex;
         align-items: center;
@@ -124,38 +133,12 @@
     font-size: 9.8vw;
     font-weight: 600;
   }
+
   .idah-news-slide {
     padding-bottom: 15.5vw;
     position: relative;
-    .nav-btn {
-      color: color(nobel);
-      position: absolute;
-      font-size: 8vw;
-      font-weight: lighter;
-      top: 45%;
-      transform: scaleY(2);
-    }
-    .owl-prev {
-      .nav-prev {
-        left: 3vw;
-      }
-      &.disabled {
-        .nav-prev {
-          display: none !important;
-        }
-      }
-    }
-    .owl-next {
-      .nav-next {
-        right: 3vw;
-      }
-      &.disabled {
-        .nav-next {
-          display: none !important;
-        }
-      }
-    }
   }
+
   .idah-news-item {
     display: flex;
     flex-direction: column;
@@ -174,15 +157,14 @@
         padding-bottom: 4vw;
       }
       .idah-news-topic {
-        font-size: 6vw;
-        line-height: 9vw;
         padding-bottom: 6vw;
       }
       .idah-news-desc {
         display: none;
       }
       .idah-news-read-more {
-        font-size: 4.3vw;
+        font-size: 14px;
+        color: color(dark-gray);
         font-weight: 400;
         display: flex;
         align-items: center;
@@ -194,12 +176,27 @@
     }
     .idah-news-img-box {
       position: relative;
-      height: 75.8vw;
+      height: 50vw;
       .idah-news-img {
         object-fit: cover;
         height: 100%;
       }
     }
+  }
+  .idah-news-item .idah-news-article .idah-news-topic a {
+    color: color(dark-gray);
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+  }
+
+  .idah-news-item .idah-news-article .idah-news-topic:hover {
+    color: color(red);
+  }
+
+  html[lang="zh-Hant-TW"] .idah-news-item .idah-news-article .idah-news-topic,
+  html[lang="zh-Hans-CN"] .idah-news-item .idah-news-article .idah-news-topic {
+    line-height: 24px;
   }
 
   .idah-share {
